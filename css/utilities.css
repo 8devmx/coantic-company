@@ -6,6 +6,26 @@
   float: right !important;
 }
 
+.clear {
+  clear: both;
+  display: block;
+}
+
 .mt-35 {
   margin-top: 35px !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
