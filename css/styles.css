@@ -411,7 +411,7 @@ footer {
   .process_steps {
     display: flex;
     margin: auto;
-    width: 94%;
+    width: fit-content;
 
   }
 
