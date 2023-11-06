@@ -277,6 +277,10 @@ footer {
     transition: all ease 0.5s;
     cursor: pointer;
 
+    & a {
+      text-decoration: none;
+    }
+
     .service_title {
       margin-top: 15px;
       display: flex;
