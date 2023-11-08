@@ -1,5 +1,6 @@
 @import url('bootstrap.css');
 @import url('utilities.css');
+@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
@@ -743,15 +744,59 @@ footer {
     margin-bottom: 35px;
   }
 
-  & select {
-    width: 200px;
-    background: var(--green-900-color);
+  .select {
+    width: 225px;
+    cursor: pointer;
+    background-color: var(--green-900-color);
     border: none;
-    color: var(--white-color);
     font-size: 15px;
     border-radius: 30px;
-    padding: 9px;
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .fi {
+      width: 3.333333em;
+      line-height: 1.4em;
+      left: 9px;
+    }
+
+    & select {
+      color: var(--white-color);
+      background: transparent;
+      width: 100%;
+      padding: 12px;
+      cursor: pointer;
+      border: 0;
+      border-radius: 0;
+      line-height: 1;
+      -webkit-appearance: none;
+      appearance: none;
+      -moz-appearance: none;
+      z-index: 1;
+      position: relative;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &:before {
+      right: 15px;
+      position: absolute;
+      transform: translateY(-40%);
+      content: "\f107";
+      font-size: 15px !important;
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      color: var(--white-color);
+      top: 50%;
+    }
   }
 
   .phones {
