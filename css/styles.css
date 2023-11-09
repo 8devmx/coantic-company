@@ -25,6 +25,8 @@
 
 body {
   font-family: var(--open-font);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -41,10 +43,12 @@ p {
 }
 
 header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   padding: 0 15px;
   z-index: 2;
+  transition: all 0.5s ease;
 
   & .navbar ul {
     margin-top: 35px;
@@ -125,18 +129,19 @@ header {
     }
   }
 
-  .whatsapp {
-    position: fixed;
-    top: 109px;
-    right: 25px;
-    z-index: 1;
-  }
 
   &.dark {
+    position: sticky;
     background: var(--prefooter-background);
-    position: unset;
     padding-bottom: 5px;
   }
+}
+
+.whatsapp {
+  position: absolute;
+  top: 109px;
+  right: 25px;
+  z-index: 1;
 }
 
 .hero {
@@ -305,12 +310,13 @@ footer {
 
   .service {
     border-right: 2px solid var(--gray-200-color);
-    padding: 42px 40px;
     transition: all ease 0.5s;
     cursor: pointer;
 
     & a {
       text-decoration: none;
+      padding: 42px 40px;
+      display: block;
     }
 
     .service_title {
@@ -1109,5 +1115,105 @@ footer {
   & p {
     margin-bottom: 10px;
     margin-top: 20px;
+  }
+}
+
+.aviso_de_privacidad {
+  padding-top: 77px;
+  padding-bottom: 67px;
+
+  & h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--prefooter-background);
+    text-align: center;
+    margin-bottom: 78px;
+  }
+
+  & h4 {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 700;
+    margin-top: 25px;
+  }
+
+  & ul {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: var(--gray-color);
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.gracias {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  .details,
+  .image {
+    flex: 1;
+  }
+
+  .details {
+    padding: 97px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .gracias_logo {
+    margin-bottom: 78px;
+  }
+
+  .gracias_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--prefooter-background);
+  }
+
+  .gracias_description {
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: var(--gray-color);
+    line-height: 1.4;
+  }
+
+  .bg_detail {
+    position: absolute;
+    left: 0px;
+    bottom: -335px;
+    z-index: -1;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 11px 16px;
+    width: 118px;
+    height: 41px;
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    background: var(--gold-color);
+    border-radius: 30px;
+    font-weight: 600;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+
+    .btn:last-child {
+      background: var(--prefooter-background);
+      width: 140px;
+    }
   }
 }

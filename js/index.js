@@ -9,3 +9,10 @@ $(document).ready(function () {
     cssEase: 'linear'
   })
 })
+$(document).on("scroll", () => {
+  const top = $(window).scrollTop()
+  $("header").removeClass('dark');
+  if (top > 90) {
+    $("header").addClass('dark');
+  }
+})
