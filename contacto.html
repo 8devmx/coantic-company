@@ -252,15 +252,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     const countries = {
-      "mx": { flag: "fi-mx", tel: "52 664 309534", cel: "52 664 1158473" },
-      "us": { flag: "fi-us", tel: "52 664 115812", cel: "52 664 1151233" }
+      "mx": { flag: "fi-mx", tel: "52 664 309534", cel: "52 664 1158473", email: "ernesto.tovar@coatinc.com" },
+      "us": { flag: "fi-us", tel: "1 619 7516830", cel: "", email: "p.mcsweeney@coatinc.com" }
     }
     $(document).ready(() => {
       $("#country").change(() => {
         const country = $("#country").val()
         $("#country_flag").removeClass(countries["mx"].flag).removeClass(countries["us"].flag).addClass(countries[country].flag)
         $("#tel_country").text(countries[country].tel)
-        $("#cel_country").text(countries[country].cel)
+        if (countries[country].cel == "") {
+          $("#cel_country").parent().hide()
+        } else {
+          $("#cel_country").parent().show()
+          $("#cel_country").text(countries[country].cel)
+        }
       })
     })
   </script>
