@@ -80,26 +80,30 @@ header {
     margin-top: 25px;
   }
 
-  .phones i {
-    color: var(--green-color);
-    font-size: 13px;
-    margin-right: 14px;
-  }
-
-  & .phones a {
-    font-weight: 600;
-    font-size: 15px;
-    text-decoration: none;
-    color: var(--white-color);
-
-    &:first-child {
-      margin-right: 10px;
-    }
-
-    & span {
+  .phones {
+    & i {
       color: var(--green-color);
+      font-size: 13px;
+    }
+
+    & a {
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      color: var(--white-color);
+
+
+      & span {
+        color: var(--green-color);
+      }
+
+    }
+
+    :nth-child(2) {
+      margin-right: 20px;
     }
   }
+
 
   & .btn {
     font-size: 14px;
@@ -1216,4 +1220,8 @@ footer {
       width: 140px;
     }
   }
+}
+
+.img_footer {
+  max-height: 96px;
 }

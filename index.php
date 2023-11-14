@@ -6,69 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Coantic Company</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="js/slick/slick.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-5">
-          <nav class="navbar">
-            <ul>
-              <li>
-                <a href="/">Inicio</a>
-              </li>
-              <li>
-                <a href="#">Servicios</a>
-              </li>
-              <li>
-                <a href="#">Proceso</a>
-              </li>
-              <li>
-                <a href="#">Industrias</a>
-              </li>
-              <li>
-                <a href="#">Nosotros</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-sm-2">
-          <a href="#" class="logo">
-            <img src="img/logo.svg" alt="Logo Coantic Company">
-          </a>
-        </div>
-        <div class="col-sm-5">
-          <div class="information">
-            <div class="phones">
-              <i class="fa-solid fa-phone"></i>
-              <a href="#"><span>+</span>52 664 309534</a>
-              <a href="#"><span>+</span>52 664 1158473</a>
-            </div>
-            <a href="contacto.html" class="btn">VENTAS</a>
-            <div class="languages">
-              <a href="#">ES</a>
-              <span> | </span>
-              <a href="#">EN</a>
-            </div>
-          </div>
-          <div class="whatsapp">
-            <a href="https://wa.link/v6kz4e" target="_BLANK">
-              <img src="img/whatsapp.png" alt="WhatsApp Coantic Company">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <?php require_once 'includes/_header.php'; ?>
   <div class="hero">
     <video class="fillWidth" src="img/video-home.mp4" autoplay="" muted="" loop="">
       Your browser does not support the video tag1.
@@ -79,11 +23,11 @@
         <strong>POR INMERSIÓN EN CALIENTE</strong>
       </h1>
       <p>Conoce la Calidad Alemana en Servicios de Galvanizado en México</p>
-      <a href="contacto.html" class="btn mt-35">CONTÁCTANOS</a>
+      <a href="<?php echo base_url; ?>contacto" class="btn mt-35">CONTÁCTANOS</a>
     </div>
     <div class="services">
       <div class="service">
-        <a href="productos-interna.html">
+        <a href="<?php echo base_url; ?>productos-interna">
           <img src="img/icon-galvanizado.svg" alt="Galvanizado Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Galvanizado <br>por inmersión en caliente</h4>
@@ -124,7 +68,7 @@
             Alemania para ofrecer a sus
             clientes la
             mejor protección contra la corrosión a través del galvanizado <br>por inmersión en caliente.</p>
-          <a href="#" class="btn">VER BENEFICIOS</a>
+          <a href="<?php echo base_url; ?>productos-interna" class="btn">VER BENEFICIOS</a>
         </div>
       </div>
     </div>
@@ -225,7 +169,7 @@
     <div class="container">
       <div class="row">
         <div class="col-2 offset-5">
-          <a href="#" class="btn">VER PROCESO A DETALLE</a>
+          <a href="<?php echo base_url; ?>productos-interna" class="btn">VER PROCESO A DETALLE</a>
         </div>
       </div>
     </div>
@@ -283,7 +227,7 @@
           <div class="row">
             <div class="col-8 offset-4">
               <p>¿Estás interesado en alguno de nuestros servicios de Acero Galvanizado?</p>
-              <a href="#" class="btn">CONTÁCTANOS</a>
+              <a href="<?php echo base_url; ?>contacto" class="btn">CONTÁCTANOS</a>
             </div>
           </div>
         </div>
@@ -351,9 +295,7 @@
   <div class="location">
     <div class="container">
       <div class="maps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.698984905477!2d-116.7568405!3d32.534185599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d915809dd5d4c5%3A0x6074f9a05ad1f96f!2sCoatinc%20Mexico!5e0!3m2!1ses-419!2smx!4v1699224202534!5m2!1ses-419!2smx"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.698984905477!2d-116.7568405!3d32.534185599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d915809dd5d4c5%3A0x6074f9a05ad1f96f!2sCoatinc%20Mexico!5e0!3m2!1ses-419!2smx!4v1699224202534!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="row">
         <div class="col-4 offset-8">
@@ -371,105 +313,12 @@
           <p class="location_phone">
             <i class="fa-solid fa-phone">+</i> 52 664 1158473
           </p>
-          <a href="contacto.html" class="btn">CONTÁCTANOS</a>
+          <a href="<?php echo base_url; ?>contacto" class="btn">CONTÁCTANOS</a>
         </div>
       </div>
     </div>
   </div>
-  <footer>
-    <div class="prefooter">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-2">
-            <h3>SERVICIOS</h3>
-            <ul>
-              <li>Galvanizado por inmersión</li>
-              <li>Importación y exportación</li>
-              <li>Soluciones logísticas</li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <div class="row">
-              <div class="col">
-                <h3>INDUSTRIAS</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <ul>
-                  <li>Automotriz y transporte</li>
-                  <li>Construcción</li>
-                  <li>Energías renovables</li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul>
-                  <li>Comercio de acero</li>
-                  <li>Herrería</li>
-                  <li>Infraestructura</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="row">
-              <div class="col">
-                <h3>NOSOTROS</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <ul>
-                  <li>Historia</li>
-                  <li>Filosofía</li>
-                  <li>Responsabilidad</li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul>
-                  <li>Nuestro proceso</li>
-                  <li>Referencias</li>
-                  <li>Sustentabilidad</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <img src="img/500-years.png" class="img_footer float-end" alt="500 Years Family Business">
-            <div class="clear"></div>
-            <div class="downloads">
-              <a href="#">Descargas</a>
-              <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="postfooter">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-sm-5">
-            <p>TheCoatincCompany® México. Todos los Derechos Reservados 2023.</p>
-          </div>
-          <div class="col-sm-2">
-            <a href="#" class="logo">
-              <img src="img/logo.svg" alt="Logo Coantic Company">
-            </a>
-          </div>
-          <div class="col-sm-5">
-            <div class="information_footer">
-              <div class="menu_footer">
-                <a href="#">Bolsa de trabajo</a>
-                <span> | </span>
-                <a href="#">Aviso de Privacidad</a>
-              </div>
-              <a href="contacto.html" class="btn">CONTACTO</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php require_once 'includes/_footer.php'; ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/index.js"></script>
