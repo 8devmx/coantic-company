@@ -39,7 +39,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-5 offset-7">
+        <div class="col-sm-5 offset-sm-7">
           <p>Déjanos tus datos, pronto nos pondremos en contacto contigo.</p>
           <div class="row">
             <div class="col-6">
@@ -83,10 +83,10 @@
             VISÍTANOS EN MÉXICO
           </h3>
         </div>
-        <div class="col-9">
+        <div class="col-sm-9">
           <p>Andador Vecinal 3001, Colonia Otra No Especificada en el Catálogo, Valle Redondo, 22720 Tijuana, B.C.</p>
         </div>
-        <div class="col-3">
+        <div class="col-sm-3">
           <a href="#" class="btn float-end">VER OTROS PAÍSES</a>
         </div>
       </div>

@@ -16,8 +16,11 @@
   <?php require_once 'includes/_whatsapp.php'; ?>
   <div class="gracias">
     <div class="details">
-      <a href="<?php echo base_url; ?>" class="gracias_logo">
+      <a href="<?php echo base_url; ?>" class="gracias_logo d-none d-sm-block">
         <img src="img/logo-color.svg" alt="" class="img-fluid">
+      </a>
+      <a href="<?php echo base_url; ?>" class="gracias_logo d-sm-none d-block">
+        <img src="img/favicon.png" alt="" class="img-fluid">
       </a>
       <h1 class="gracias_title">ERROR 404</h1>
       <p class="gracias_description">Lo sentimos, no encontramos la página que buscas.</p>

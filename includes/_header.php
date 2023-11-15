@@ -6,7 +6,7 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
 <header class="<?php echo $dark; ?>">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-5">
+      <div class="col-8 col-sm-5">
         <nav class="navbar">
           <ul>
             <li>
@@ -30,9 +30,14 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
           </ul>
         </nav>
       </div>
-      <div class="col-sm-2">
+      <div class="d-none d-sm-block col-sm-2">
         <a href="<?php echo base_url; ?>" class="logo">
           <img src="img/logo.svg" alt="Logo Coantic Company">
+        </a>
+      </div>
+      <div class="d-sm-none d-block col-4">
+        <a href="<?php echo base_url; ?>" class="logo">
+          <img src="img/favicon.png" alt="Logo Coantic Company">
         </a>
       </div>
       <div class="col-sm-5">

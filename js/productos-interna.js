@@ -5,6 +5,22 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     slidesToShow: 4,
-    SlidesToScroll: 1
+    SlidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   })
 })

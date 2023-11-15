@@ -16,7 +16,7 @@
   <div class="hero_products_detail">
     <div class="container">
       <div class="row">
-        <div class="col-6 offset-3">
+        <div class="col-sm-6 offset-sm-3">
           <h1>ACERO GALVANIZADO</h1>
           <p>Conoce los beneficios del Acero Galvanizado por Inmersión en Caliente</p>
         </div>
@@ -26,7 +26,7 @@
   <div class="aleman_experience">
     <div class="container">
       <div class="row">
-        <div class="col-10 offset-1">
+        <div class="col-sm-10 offset-sm-1">
           <img src="img/icon-aleman-experence.svg" alt="Acero Galvanizado Coantic Company" class="icon">
           <h2>EXPERIENCIA ALEMANA</h2>
           <p>En nuestros servicios de <strong>acero galvanizado</strong>, combinamos el conocimiento alemán con el
@@ -51,7 +51,7 @@
   <div class="benefits_detail">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-sm-6">
           <h2>BENEFICIOS</h2>
           <ul>
             <li>Protección contra corrosión de 35 – 75 años</li>
@@ -68,7 +68,7 @@
   </div>
   <div class="container acero_galvanizado">
     <div class="row">
-      <div class="col-10 offset-1">
+      <div class="col-sm-10 offset-sm-1">
         <h2>QUÉ ES EL ACERO GALVANIZADO</h2>
         <p>El Galvanizado por inmersión en Caliente es un proceso industrial cuyo objetivo es brindar <strong>protección
             contra la
@@ -121,7 +121,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-5 offset-7">
+        <div class="col-sm-5 offset-sm-7">
           <h2>REQUISITOS</h2>
           <p>Descarga nuestros brochures para conocer más</p>
           <a href="uploads/como-preparar-los-materiales.pptx" class="requirement">
@@ -170,7 +170,7 @@
       <div class="col-12">
         <div class="interest">
           <div class="row">
-            <div class="col-8 offset-4">
+            <div class="col-sm-8 offset-sm-4">
               <p>¿Estás interesado en alguno de nuestros servicios de Acero Galvanizado?</p>
               <a href="<?php echo base_url; ?>contacto" class="btn">CONTÁCTANOS</a>
             </div>

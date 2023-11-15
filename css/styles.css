@@ -1225,3 +1225,422 @@ footer {
 .img_footer {
   max-height: 96px;
 }
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* SOLO MOBIL */
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+
+  header {
+    position: fixed !important;
+    padding: 0;
+
+    & .navbar ul {
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    .logo {
+      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+      float: right;
+    }
+
+    & .information {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      background: var(--third-color);
+      float: none;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .phones {
+      :nth-child(2) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+
+  .whatsapp {
+    top: 85px;
+    right: 15px;
+
+    & img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero_description {
+
+    & p {
+      font-size: 14px;
+    }
+
+    & h1 {
+      font-size: 23px;
+    }
+  }
+
+  .services {
+    height: 57px;
+    bottom: -26px;
+
+    .service {
+      & a {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .service_title {
+        display: none;
+      }
+    }
+  }
+
+  .benefits {
+    padding-top: 80px;
+
+    & h3 {
+      font-size: 22px;
+    }
+
+  }
+
+  .process {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .btn {
+      margin: auto;
+    }
+
+    .process_description {
+      & br {
+        display: none;
+      }
+    }
+
+    .process_step_number {
+
+      & p {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .company {
+    padding-top: 80px;
+    text-align: center;
+
+    & h4 {
+      font-size: 22px;
+    }
+
+    .company_description {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .btn {
+      margin: auto;
+    }
+
+    .company_image {
+      position: unset;
+      top: auto;
+      right: auto;
+      margin-top: 40px;
+    }
+  }
+
+  .sustainability {
+    padding-top: 145px;
+
+    & h4 {
+      font-size: 22px;
+    }
+  }
+
+  .sustainability_image {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 80px;
+
+    .logo_infinite {
+      position: absolute;
+      right: 0;
+      top: -38px;
+      animation: rotate 15s infinite linear;
+    }
+
+  }
+
+  .interest {
+    background: var(--postfooter-background);
+    min-height: 267px;
+    width: 96%;
+    margin: 10px auto 40px;
+    padding-top: 90px;
+
+    & p {
+      font-size: 15px;
+    }
+
+  }
+
+  .sectors {
+    .sectors_title {
+      margin-bottom: 40px;
+    }
+  }
+
+  .other_services {
+
+    height: auto;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    & h4 {
+      font-size: 22px;
+    }
+
+    .other_service {
+      margin-bottom: 20px;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .location {
+    padding-top: 450px;
+
+    .maps {
+      width: 100%;
+      height: 400px;
+    }
+
+    & h4 {
+      font-size: 22px;
+    }
+
+    .location_phone {
+      font-size: 16px;
+    }
+  }
+
+  .img_footer {
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+
+
+  footer {
+    .prefooter {
+      .downloads {
+        justify-content: center;
+      }
+    }
+
+    & .postfooter {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+
+    .information_footer {
+      justify-content: center;
+    }
+  }
+
+  .hero_products_detail {
+    height: 310px;
+    margin-top: 80px;
+
+    & h1 {
+      font-size: 25px;
+    }
+
+    & p {
+      font-size: 14px;
+      border-top: none;
+    }
+  }
+
+  .benefits_detail {
+    padding-bottom: 0;
+
+    .benefits_detail_image {
+      position: unset;
+      right: auto;
+      top: auto;
+      width: 100%;
+    }
+
+    & h2 {
+      font-size: 22px;
+    }
+
+    & ul {
+      font-size: 14px;
+    }
+  }
+
+  .requirements {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    & h2 {
+      font-size: 22px;
+    }
+
+    .requirements_image {
+      position: unset;
+      top: auto;
+      left: auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .hero_contacto {
+    padding-top: 150px;
+
+    & h1 {
+      font-size: 35px;
+    }
+
+    & p {
+      font-size: 16px;
+    }
+
+  }
+
+  .form_contacto {
+    padding-bottom: 50px;
+
+    .form_image {
+      width: 100%;
+      position: unset;
+      left: auto;
+      top: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .location_contacto {
+    padding-bottom: 0;
+
+    & h3 {
+      font-size: 22px;
+    }
+
+    .maps {
+      height: 400px;
+
+      & iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .btn {
+      margin: 0 auto 40px;
+      float: none !important;
+    }
+  }
+
+  .aviso_de_privacidad {
+    padding-top: 130px;
+
+    & h1 {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+
+    & h4 {
+      font-size: 14px;
+    }
+
+    & ul {
+      font-size: 14px;
+    }
+
+  }
+
+  .gracias {
+    display: block;
+
+    .details {
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .gracias_logo {
+      margin-bottom: 38px;
+    }
+
+    .gracias_title {
+      font-size: 25px;
+    }
+
+    .gracias_description {
+      font-size: 14px;
+    }
+
+    .bg_detail {
+      position: absolute;
+      left: 0px;
+      bottom: -335px;
+      z-index: -1;
+    }
+
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+
+      .btn:last-child {
+        background: var(--prefooter-background);
+        width: 140px;
+      }
+    }
+  }
+}
