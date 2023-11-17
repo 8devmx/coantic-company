@@ -11,7 +11,7 @@ function get_base_url()
     $carpetaProyecto = "coantic-company/";
     define("base_url", "http://" . $_SERVER['HTTP_HOST'] . "/" . $carpetaProyecto); // RUTA ABSOLUTA DEL SITIO
   } else {
-    $carpetaProyecto = ""; // si es un beta se debe de poner: beta/
+    $carpetaProyecto = "coantic-company/"; // si es un beta se debe de poner: beta/
     define("base_url", "https://" . $_SERVER['HTTP_HOST'] . "/" . $carpetaProyecto); // RUTA ABSOLUTA DEL SITIO
   }
 }

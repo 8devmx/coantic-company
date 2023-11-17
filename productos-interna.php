@@ -16,7 +16,7 @@
   <div class="hero_products_detail">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 offset-sm-3">
+        <div class="col-lg-6 offset-lg-3">
           <h1>ACERO GALVANIZADO</h1>
           <p>Conoce los beneficios del Acero Galvanizado por Inmersión en Caliente</p>
         </div>
@@ -26,7 +26,7 @@
   <div class="aleman_experience">
     <div class="container">
       <div class="row">
-        <div class="col-sm-10 offset-sm-1">
+        <div class="col-lg-10 offset-lg-1">
           <img src="img/icon-aleman-experence.svg" alt="Acero Galvanizado Coantic Company" class="icon">
           <h2>EXPERIENCIA ALEMANA</h2>
           <p>En nuestros servicios de <strong>acero galvanizado</strong>, combinamos el conocimiento alemán con el
@@ -68,7 +68,7 @@
   </div>
   <div class="container acero_galvanizado">
     <div class="row">
-      <div class="col-sm-10 offset-sm-1">
+      <div class="col-lg-10 offset-lg-1">
         <h2>QUÉ ES EL ACERO GALVANIZADO</h2>
         <p>El Galvanizado por inmersión en Caliente es un proceso industrial cuyo objetivo es brindar <strong>protección
             contra la
@@ -77,7 +77,7 @@
           capa de zinc a estructuras de hierro o acero a través de la inmersión de los materiales en un baño de zinc
           fundido a
           450°C.</p>
-        <a href="<?php echo base_url; ?>productos-interna" class="btn">CONOCE NUESTRO PROCESO</a>
+        <!-- <a href="<?php echo base_url; ?>productos-interna" class="btn">CONOCE NUESTRO PROCESO</a> -->
       </div>
     </div>
   </div>
@@ -121,28 +121,28 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-5 offset-sm-7">
+        <div class="col-lg-5 offset-lg-7 col-md-6 offset-md-6">
           <h2>REQUISITOS</h2>
           <p>Descarga nuestros brochures para conocer más</p>
-          <a href="uploads/como-preparar-los-materiales.pptx" class="requirement">
+          <a href="uploads/como-preparar-los-materiales.pptx" target="_BLANK" class="requirement">
             <span>
               <img src="img/pdf.svg" alt="">
               ¿Cómo preparar los materiales?</span>
             <img src="img/gold-arrow.svg" alt="">
           </a>
-          <a href="uploads/nuestro-proceso.pdf" class="requirement">
+          <a href="uploads/nuestro-proceso.pdf" target="_BLANK" class="requirement">
             <span>
               <img src="img/pdf.svg" alt="">
               Nuestro Proceso</span>
             <img src="img/gold-arrow.svg" alt="">
           </a>
-          <a href="uploads/perfil.pdf" class="requirement">
+          <a href="uploads/perfil.pdf" target="_BLANK" class="requirement">
             <span>
               <img src="img/pdf.svg" alt="">
               Perfil de la Compañía</span>
             <img src="img/gold-arrow.svg" alt="">
           </a>
-          <a href="uploads/acerca-de-nosotros.pdf" class="requirement">
+          <a href="uploads/acerca-de-nosotros.pdf" target="_BLANK" class="requirement">
             <span>
               <img src="img/pdf.svg" alt="">
               Acerca de Nosotros</span>
@@ -154,7 +154,7 @@
   </div>
   <div class="container entrega_express">
     <div class="row">
-      <div class="col-10 offset-1">
+      <div class="col-lg-10 offset-lg-1">
         <img src="img/entrega-express.png" alt="">
         <h2>Entregamos en 5 días</h2>
         <p>Podemos galvanizar una gran variedad de estructuras y piezas. Garantizamos un servicio rápido, en un máximo

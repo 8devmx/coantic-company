@@ -13,7 +13,10 @@
 </head>
 
 <body>
-  <?php require_once 'includes/_whatsapp.php'; ?>
+  <?php
+  require_once 'includes/_whatsapp.php';
+  require_once 'includes/_config.php';
+  ?>
   <div class="gracias">
     <div class="details">
       <a href="<?php echo base_url; ?>" class="gracias_logo d-none d-sm-block">

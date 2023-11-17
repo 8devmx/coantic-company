@@ -74,12 +74,28 @@ $("#frm_button").click(function () {
   })
 
   if (pass != 0) {
-    $.post($url + "includes/_functions.php", obj, function (response) {
-      if (response > 0) {
+    const data = {
+      name: obj.nombre + " " + obj.apellido,
+      company: obj.empresa,
+      phone: obj.telefono,
+      email: obj.email,
+      subject: "Interés: " + obj.interes,
+      message: obj.mensaje
+    }
+    fetch("https://formspree.io/f/mgejbyan", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
         window.location.replace($url + "gracias")
       } else {
         $("#ajaxBusy").fadeOut(300)
       }
+    }).catch(error => {
+      $("#ajaxBusy").fadeOut(300)
     })
   } else {
     $("#ajaxBusy").fadeOut(300)

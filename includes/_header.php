@@ -6,7 +6,7 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
 <header class="<?php echo $dark; ?>">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-8 col-sm-5">
+      <div class="col-8 col-lg-5 col-md-4">
         <nav class="navbar">
           <ul>
             <li>
@@ -30,14 +30,14 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
           </ul>
         </nav>
       </div>
-      <div class="d-none d-sm-block col-sm-2">
+      <div class="d-none d-sm-block col-lg-2 col-md-3">
         <a href="<?php echo base_url; ?>" class="logo">
           <img src="img/logo.svg" alt="Logo Coantic Company">
         </a>
       </div>
       <div class="d-sm-none d-block col-4">
         <a href="<?php echo base_url; ?>" class="logo">
-          <img src="img/favicon.png" alt="Logo Coantic Company">
+          <img src="img/coatinc-logo.png" alt="Logo Coantic Company" class="img-fluid logo_mobil">
         </a>
       </div>
       <div class="col-sm-5">
@@ -45,7 +45,7 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
           <div class="phones">
             <i class="fa-solid fa-phone"></i>
             <a href="tel:+52664309534"><span>+</span>52 664 309534</a>
-            <a href="https://wa.link/v6kz4e" target="_BLANK"><span>+</span>52 664 1158473</a>
+            <a href="https://wa.link/pt2weh" target="_BLANK"><span>+</span>52 664 1158473</a>
           </div>
           <a href="<?php echo base_url; ?>contacto" class="btn">VENTAS</a>
           <!-- <div class="languages">

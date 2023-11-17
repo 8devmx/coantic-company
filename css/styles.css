@@ -146,7 +146,47 @@ header {
   top: 109px;
   right: 25px;
   z-index: 1;
+
+  & span {
+    background: rgb(0 198 79);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+
+  & a {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0 198 79);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+
+    & i {
+      font-size: 40px;
+      color: var(--white-color);
+    }
+  }
 }
+
+@keyframes ping {
+
+  75%,
+  to {
+    transform: scale(2);
+    opacity: 0
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, .2, 1) infinite
+}
+
 
 .hero {
   height: 748px;
@@ -838,8 +878,10 @@ footer {
     top: 30px;
   }
 
-  & input {
+  & input,
+  & select {
     width: 100%;
+    color: var(--gray-color);
     border: none;
     border-bottom: 1px solid var(--prefooter-background);
     background: transparent;
@@ -1226,7 +1268,396 @@ footer {
   max-height: 96px;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {}
+@media (min-width: 980px) and (max-width: 1299px) {
+  .benefits {
+    .benefits_description {
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .paila {
+
+    .paila_description {
+
+      & br {
+        display: none;
+      }
+    }
+
+    .paila_details {
+
+      & h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+    }
+
+    .paila_img {
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+  }
+
+  .process {
+    .process_description {
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .company {
+    .company_image {
+      top: 160px;
+      width: 65%;
+    }
+  }
+
+
+  .sustainability_image {
+    left: -70px;
+    top: 310px;
+  }
+
+  .interest {
+    min-height: 200px;
+    width: 100%;
+    padding-top: 30px;
+
+  }
+
+  .benefits_detail {
+
+    .benefits_detail_image {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .application_materials {
+    padding: 30px 20px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .requirements {
+
+    .requirements_image {
+      width: 55%;
+      top: 10%;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .form_contacto {
+
+    .form_image {
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .gracias {
+
+    .details {
+      padding: 80px 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    position: fixed !important;
+
+    & .information {
+      text-align: right;
+    }
+
+    .phones {
+      :nth-child(2) {
+        margin-right: 0px;
+      }
+
+      :nth-child(3) {
+        display: block;
+      }
+    }
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero_description {
+
+    & h1 {
+      font-size: 40px;
+    }
+  }
+
+  .services {
+    height: 155px;
+
+    .service {
+      & a {
+        padding: 25px;
+      }
+    }
+  }
+
+  .benefits {
+    .benefits_description {
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .paila {
+
+    .paila_description {
+      font-size: 15px;
+      margin-top: 0;
+
+      & br {
+        display: none;
+      }
+    }
+
+    .paila_details {
+
+      & h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+    }
+
+    .paila_img {
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+  }
+
+  .process {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .btn {
+      margin: auto;
+    }
+
+    .process_description {
+      & br {
+        display: none;
+      }
+    }
+
+    .process_step_number {
+
+      & p {
+        font-size: 15px;
+        line-height: 1.2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .company {
+    padding-top: 80px;
+
+    & h4 {
+      font-size: 25px;
+    }
+
+    .company_description {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      margin: auto;
+    }
+
+    .company_image {
+      top: 50px;
+      right: -50%;
+    }
+  }
+
+  .sustainability {
+    padding-top: 145px;
+
+    & h4 {
+      font-size: 22px;
+    }
+  }
+
+  .sustainability_image {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 80px;
+
+    .logo_infinite {
+      position: absolute;
+      right: 50%;
+      margin-right: -75px;
+      top: -108px;
+      animation: rotate 15s infinite linear;
+    }
+
+    :nth-child(2) {
+      display: none;
+    }
+  }
+
+  .interest {
+    min-height: 146px;
+    width: 100%;
+    padding-top: 30px;
+
+    & p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .other_services {
+
+    height: auto;
+
+    padding-bottom: 70px;
+
+    .other_service {
+      margin-bottom: 20px;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .location {
+    padding-bottom: 37px;
+    height: auto;
+
+    .maps {
+      width: 55%;
+    }
+  }
+
+  footer {
+    .postfooter {
+      & p {
+        line-height: 1.5 !important;
+      }
+    }
+  }
+
+  .hero_products_detail {
+
+    & p {
+      border-top: none;
+    }
+  }
+
+  .benefits_detail {
+
+    .benefits_detail_image {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & ul {
+      line-height: 1.7;
+
+      & li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .application_materials {
+    padding: 30px 20px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .requirements {
+
+    .requirements_image {
+      width: 50%;
+      top: 20%;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .form_contacto {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    min-height: auto;
+
+    .form_image {
+      top: 75px;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .gracias {
+
+    .details {
+      padding: 40px 0;
+
+    }
+
+    .gracias_logo {
+      margin-bottom: 38px;
+    }
+
+    .gracias_title {
+      font-size: 25px;
+    }
+
+    .gracias_description {
+      font-size: 16px;
+    }
+
+  }
+}
 
 /* SOLO MOBIL */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1248,6 +1679,11 @@ footer {
       margin-top: 25px;
     }
 
+    .logo_mobil {
+      height: 42px;
+      margin-top: 10px;
+    }
+
     .logo {
       margin-bottom: 10px;
       width: auto;
@@ -1261,7 +1697,7 @@ footer {
       left: 0;
       bottom: 0;
       z-index: 2;
-      background: var(--third-color);
+      background: var(--postfooter-background);
       float: none;
       padding: 10px;
       gap: 10px;
@@ -1301,6 +1737,7 @@ footer {
   }
 
   .services {
+    display: none;
     height: 57px;
     bottom: -26px;
 
@@ -1400,11 +1837,24 @@ footer {
   }
 
   .interest {
-    background: var(--postfooter-background);
+    background: var(--prefooter-background);
     min-height: 267px;
     width: 96%;
-    margin: 10px auto 40px;
+    margin: 100px auto 40px;
     padding-top: 90px;
+    position: relative;
+
+    &:before {
+      height: 155px;
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      width: 240px;
+      margin-left: -120px;
+      background: url(../img/viga.png) no-repeat;
+      background-size: cover;
+      content: ' ';
+    }
 
     & p {
       font-size: 15px;
@@ -1465,6 +1915,8 @@ footer {
 
   footer {
     .prefooter {
+      text-align: center;
+
       .downloads {
         justify-content: center;
       }
@@ -1615,6 +2067,10 @@ footer {
 
     .gracias_logo {
       margin-bottom: 38px;
+
+      & img {
+        height: 80px;
+      }
     }
 
     .gracias_title {

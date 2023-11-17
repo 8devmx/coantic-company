@@ -16,7 +16,7 @@
   <?php require_once 'includes/_header.php'; ?>
   <div class="container aviso_de_privacidad">
     <div class="row">
-      <div class="col-sm-10 offset-sm-1">
+      <div class="col-lg-10 offset-lg-1">
         <h1>AVISO DE PRIVACIDAD</h1>
         <p>En cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su
           Reglamento,

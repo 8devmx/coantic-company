@@ -13,14 +13,17 @@
 </head>
 
 <body>
-  <?php require_once 'includes/_whatsapp.php'; ?>
+  <?php
+  require_once 'includes/_whatsapp.php';
+  require_once 'includes/_config.php';
+  ?>
   <div class="gracias">
     <div class="details">
       <a href="<?php echo base_url; ?>" class="gracias_logo d-none d-sm-block">
         <img src="img/logo-color.svg" alt="" class="img-fluid">
       </a>
       <a href="<?php echo base_url; ?>" class="gracias_logo d-sm-none d-block">
-        <img src="img/favicon.png" alt="" class="img-fluid">
+        <img src="img/coatinc-logo.png" alt="" class="img-fluid">
       </a>
       <h1 class="gracias_title">GRACIAS</h1>
       <p class="gracias_description">Tu mensaje se envió con éxito, en breve nos <br>pondremos en contacto contigo.</p>

@@ -58,10 +58,14 @@
               <input type="text" placeholder="Email" id="email" name="email" class="correo">
             </div>
             <div class="col-6">
-              <input type="text" placeholder="Interesado" id="interes" name="interes">
+              <select name="interes" id="interes">
+                <option value="Acero galvanizado">Acero galvanizado</option>
+                <option value="Importación y exportación">Importación y exportación</option>
+                <option value="Fletes">Fletes</option>
+              </select>
             </div>
             <div class="col-12">
-              <input type="text" placeholder="Mensaje" id="mensaje" name="mensaje">
+              <input type="text" placeholder="Mensaje" id="mensaje" name="mensaje" class="norequired">
             </div>
             <div class="col-12">
               <div class="captcha"></div>
@@ -87,7 +91,7 @@
           <p>Andador Vecinal 3001, Colonia Otra No Especificada en el Catálogo, Valle Redondo, 22720 Tijuana, B.C.</p>
         </div>
         <div class="col-sm-3">
-          <a href="#" class="btn float-end">VER OTROS PAÍSES</a>
+          <!-- <a href="#" class="btn float-end">VER OTROS PAÍSES</a> -->
         </div>
       </div>
       <div class="row">

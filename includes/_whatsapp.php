@@ -1,5 +1,6 @@
 <div class="whatsapp">
-  <a href="https://wa.link/v6kz4e" target="_BLANK">
-    <img src="img/whatsapp.png" alt="WhatsApp Coantic Company">
+  <span class="animate-ping"></span>
+  <a href="https://wa.link/pt2weh" target="_BLANK">
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 </div>

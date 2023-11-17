@@ -27,11 +27,11 @@
     </div>
     <div class="services">
       <div class="service">
-        <a href="<?php echo base_url; ?>productos-interna">
+        <a href="<?php echo base_url; ?>">
           <img src="img/icon-galvanizado.svg" alt="Galvanizado Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Galvanizado <br>por inmersión en caliente</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
           </div>
         </a>
       </div>
@@ -40,7 +40,7 @@
           <img src="img/icon-importacion.svg" alt="Importación Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Importación <br>y exportación</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
           </div>
         </a>
       </div>
@@ -49,7 +49,7 @@
           <img src="img/icon-logistica.svg" alt="Logística Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Soluciones <br>logísticas</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
           </div>
         </a>
       </div>
@@ -168,8 +168,8 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-2 offset-sm-5 col-12">
-          <a href="<?php echo base_url; ?>productos-interna" class="btn">VER PROCESO A DETALLE</a>
+        <div class="col-lg-2 offset-lg-5 col-12">
+          <!-- <a href="<?php echo base_url; ?>productos-interna" class="btn">VER PROCESO A DETALLE</a> -->
         </div>
       </div>
     </div>
@@ -185,7 +185,7 @@
             acero por inmersión en caliente. Nuestra experiencia y tecnología nos permiten ofrecer soluciones
             excepcionales para
             diversos sectores.</p>
-          <a href="#" class="btn">NUESTRA FILOSOFÍA</a>
+          <!-- <a href="#" class="btn">NUESTRA FILOSOFÍA</a> -->
         </div>
       </div>
     </div>
@@ -200,7 +200,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-7 offset-sm-5">
+        <div class="col-lg-7 offset-lg-5">
           <h4>SUSTENTABILIDAD EN SERVICIOS DE GALVANIZADO</h4>
           <p>Nos enorgullece ser líderes en galvanización, nuestra experiencia nos respalda, y nuestra pasión por la
             excelencia se
@@ -243,30 +243,30 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-2">
-          <img src="img/transporte.png" alt="Transporte y Automotriz Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
           <h5 class="sectors_title">Transporte
             <br>y Automotriz
           </h5>
         </div>
-        <div class="col-sm-2">
-          <img src="img/construccion.png" alt="Construcción Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/construccion.png" class="img-fluid" alt="Construcción Coantic Company">
           <h5 class="sectors_title">Construcción</h5>
         </div>
-        <div class="col-sm-2">
-          <img src="img/energias-renovables.png" alt="Energías Renovables Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coantic Company">
           <h5 class="sectors_title">Energías Renovables</h5>
         </div>
-        <div class="col-sm-2">
-          <img src="img/comercio.png" alt="Comercio de Acero Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coantic Company">
           <h5 class="sectors_title">Comercio de Acero</h5>
         </div>
-        <div class="col-sm-2">
-          <img src="img/herreria.png" alt="Herrería Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/herreria.png" class="img-fluid" alt="Herrería Coantic Company">
           <h5 class="sectors_title">Herrería</h5>
         </div>
-        <div class="col-sm-2">
-          <img src="img/infraestructura.png" alt="Infraestructura Coantic Company">
+        <div class="col-lg-2 col-md-4">
+          <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coantic Company">
           <h5 class="sectors_title">Infraestructura</h5>
         </div>
       </div>
@@ -282,11 +282,11 @@
       </div>
       <div class="row">
         <div class="col-sm-6 other_service">
-          <img src="img/importacion.png" alt="Importación y exportación Coantic Company">
+          <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
           <h5>Importación y exportación</h5>
         </div>
         <div class="col-sm-6 other_service">
-          <img src="img/soluciones-logisticas.png" alt="Soluciones logísticas Coantic Company">
+          <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
           <h5>Soluciones logísticas</h5>
         </div>
       </div>
@@ -298,7 +298,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.698984905477!2d-116.7568405!3d32.534185599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d915809dd5d4c5%3A0x6074f9a05ad1f96f!2sCoatinc%20Mexico!5e0!3m2!1ses-419!2smx!4v1699224202534!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="row">
-        <div class="col-sm-4 offset-sm-8">
+        <div class="col-lg-4 offset-lg-8 col-md-5 offset-md-7">
           <img src="img/mexico.svg" alt="">
           <h4 class="location_title">UBICACIÓN</h4>
           <p class="location_state">Visítanos en nuestras instalaciones en Tijuana,

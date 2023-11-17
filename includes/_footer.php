@@ -61,7 +61,7 @@
           <div class="clear"></div>
           <div class="downloads">
             <a href="<?php echo base_url; ?>productos-interna#requirements">Descargas</a>
-            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/showcase/coatinc-united-states-inc/" target="_BLANK" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
@@ -70,15 +70,15 @@
   <div class="postfooter">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-sm-5">
+        <div class="col-lg-5 col-md-4">
           <p>TheCoatincCompany® México. Todos los Derechos Reservados 2023.</p>
         </div>
-        <div class="col-sm-2">
+        <div class="col-lg-2 col-md-3">
           <a href="<?php echo base_url; ?>" class="logo">
             <img src="img/logo.svg" alt="Logo Coantic Company">
           </a>
         </div>
-        <div class="col-sm-5">
+        <div class="col-lg-5 col-md-5">
           <div class="information_footer">
             <div class="menu_footer">
               <!-- <a href="#">Bolsa de trabajo</a>
