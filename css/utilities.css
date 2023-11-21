@@ -34,3 +34,12 @@
     transform: rotate(359deg);
   }
 }
+
+@keyframes ping {
+
+  75%,
+  to {
+    transform: scale(2);
+    opacity: 0
+  }
+}
