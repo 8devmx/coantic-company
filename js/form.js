@@ -90,7 +90,7 @@ $("#frm_button").click(function () {
       }
     }).then(response => {
       if (response.ok) {
-        window.location.replace($url + "gracias")
+        gtag_report_conversion($url + "gracias")
       } else {
         $("#ajaxBusy").fadeOut(300)
       }
