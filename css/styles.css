@@ -23,6 +23,11 @@
   --open-font: 'Open Sans', sans-serif;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--open-font);
   width: 100%;
@@ -949,6 +954,8 @@ footer .information_footer a .btn {
   color: var(--white-color);
   padding-top: 8px;
   border-top: 1px solid var(--white-color);
+  max-width: 596px;
+  margin: auto;
 }
 
 .aleman_experience {
@@ -1005,6 +1012,7 @@ footer .information_footer a .btn {
   font-weight: 700;
 }
 
+.paila_caracteristicas ul,
 .benefits_detail ul {
   font-size: 16px;
   color: var(--prefooter-background);
@@ -1247,7 +1255,142 @@ footer .information_footer a .btn {
   max-height: 96px;
 }
 
+.filosofia_intro {
+  margin-top: 80px;
+  position: relative;
+}
+
+.slider_filosofia {
+  position: absolute;
+  bottom: -150px;
+  right: -190px;
+  width: 55%;
+}
+
+.slider_filosofia h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--green-900-color);
+  margin-top: 15px;
+  text-align: center;
+}
+
+.industrias_filosofia {
+  margin-top: 155px;
+}
+
+.industrias_filosofia h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: #838E99;
+}
+
+.galvanizar {
+  background: var(--prefooter-background);
+  margin-top: 260px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.galvanizar p {
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.galvanizar .paila_details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.galvanizar .paila_details h4 {
+  color: var(--gold-100-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.galvanizar .paila_details p {
+  margin: 0;
+}
+
+.galvanizar .paila_img {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.paila_caracteristicas {
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+
+.paila_caracteristicas img {
+  max-width: 90%;
+
+}
+
+.paila_caracteristicas ul {
+  line-height: 1.9
+}
+
+.paila_caracteristicas ul li {
+  margin-bottom: 20px;
+}
+
+.button_group {
+  margin-top: 75px;
+}
+
+.button_link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 26px;
+  border: 1px solid #1e1e1e;
+  text-align: center;
+  color: #1e1e1e;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+
+.button_link i {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.button_link:hover {
+  background: var(--gold-100-color);
+  border-color: var(--gold-100-color);
+}
+
+.nuestros_servicios {
+  background: var(--prefooter-background);
+  padding-top: 85px;
+  padding-bottom: 220px;
+  text-align: center;
+}
+
+.nuestros_servicios h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: var(--gold-100-color);
+  margin-bottom: 40px;
+}
+
 @media (min-width: 980px) and (max-width: 1299px) {
+
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
   .benefits .benefits_description br,
   .paila .paila_description br,
@@ -1313,6 +1456,7 @@ footer .information_footer a .btn {
   .gracias .details {
     padding: 80px 0;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -1553,6 +1697,49 @@ footer .information_footer a .btn {
 
   .gracias .gracias_description {
     font-size: 16px;
+  }
+
+  .slider_filosofia {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .slider_filosofia img {
+    margin: auto;
+  }
+
+  .industrias_filosofia {
+    margin-top: 20px;
+  }
+
+  .galvanizar {
+    margin-top: 60px;
+  }
+
+  .galvanizar .paila_details {
+    margin-bottom: 50px;
+  }
+
+  .paila_caracteristicas ul {
+    margin-top: 0;
+    line-height: 1.4;
+  }
+
+  .paila_caracteristicas ul li {
+    margin-bottom: 10px;
+  }
+
+  .md-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .button_group {
+    margin-top: 25px;
   }
 }
 
@@ -1972,4 +2159,40 @@ footer .information_footer a .btn {
     background: var(--prefooter-background);
     width: 140px;
   }
+
+  .slider_filosofia {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .slider_filosofia img {
+    margin: auto;
+  }
+
+  .industrias_filosofia {
+    margin-top: 40px;
+  }
+
+  .galvanizar {
+    margin-top: 60px;
+  }
+
+  .galvanizar .paila_details {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .paila_caracteristicas img {
+    max-width: 100%;
+  }
+
+  .button_link,
+  .nuestros_servicios img {
+    margin-bottom: 35px;
+  }
+
 }

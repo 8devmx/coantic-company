@@ -11,6 +11,10 @@
   display: block;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .mt-35 {
   margin-top: 35px !important;
 }
