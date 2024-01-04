@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .mt-35 {
   margin-top: 35px !important;
 }
@@ -27,6 +31,10 @@
 .error {
   background: #f66 !important;
   color: #fff !important
+}
+
+.bg-white {
+  background: #fff;
 }
 
 @keyframes rotate {

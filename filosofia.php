@@ -7,7 +7,7 @@
 
 <body>
   <?php require_once 'includes/_header.php'; ?>
-  <div class="hero_products_detail">
+  <div class="hero_products_detail hero_filosofia">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">

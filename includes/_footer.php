@@ -57,7 +57,7 @@
           </div> -->
         </div>
         <div class="col-sm-2">
-          <img src="img/500-years.png" class="img_footer float-end" alt="500 Years Family Business">
+          <img src="<?php echo base_url; ?>img/500-years.png" class="img_footer float-end" alt="500 Years Family Business">
           <div class="clear"></div>
           <div class="downloads">
             <a href="<?php echo base_url; ?>productos-interna#requirements">Descargas</a>
@@ -75,7 +75,7 @@
         </div>
         <div class="col-lg-2 col-md-3">
           <a href="<?php echo base_url; ?>" class="logo">
-            <img src="img/logo.svg" alt="Logo Coantic Company">
+            <img src="<?php echo base_url; ?>img/logo.svg" alt="Logo Coantic Company">
           </a>
         </div>
         <div class="col-lg-5 col-md-5">
