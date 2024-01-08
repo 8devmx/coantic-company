@@ -760,19 +760,44 @@ footer .information_footer a .btn {
   margin-top: 50px;
 }
 
-.hero_contacto {
+.hero_contacto,
+.hero_industries {
   background: var(--gray-100-color);
   text-align: center;
   padding-top: 80px;
 }
 
-.hero_contacto h1 {
+.hero_ubicaciones {
+  background: var(--gray-100-color);
+  padding-top: 70px;
+  margin-bottom: 90px;
+}
+
+.hero_ubicaciones h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--prefooter-background);
+  border-bottom: 1px solid #BECCD5;
+  max-width: 624px;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0px auto 8px;
+}
+
+.hero_ubicaciones h2 {
+  font-size: 18px;
+  color: var(--green-100-color);
+}
+
+.hero_contacto h1,
+.hero_industries h1 {
   font-size: 50px;
   font-weight: 700;
   color: var(--prefooter-background);
 }
 
-.hero_contacto p {
+.hero_contacto p,
+.hero_industries p {
   font-size: 20px;
   color: var(--gray-color);
   margin-top: 7px;
@@ -1285,6 +1310,10 @@ footer .information_footer a .btn {
   background-image: url('../img/bg_bolsa.jpg');
 }
 
+.hero_historia {
+  background-image: url('../img/bg_historia.jpg');
+}
+
 .filosofia_intro {
   margin-top: 80px;
   position: relative;
@@ -1313,7 +1342,7 @@ footer .information_footer a .btn {
   font-weight: 700;
   font-size: 25px;
   line-height: 34px;
-  color: #838E99;
+  color: var(--green-100-color);
 }
 
 .galvanizar {
@@ -1430,7 +1459,7 @@ footer .information_footer a .btn {
   font-weight: 700;
   font-size: 25px;
   line-height: 34px;
-  color: #838E99;
+  color: var(--green-100-color);
   margin-bottom: 15px;
 }
 
@@ -1910,6 +1939,363 @@ footer .information_footer a .btn {
   color: #6A6A6A;
 }
 
+.hero_industries {
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.hero_industries h1 {
+  font-size: 36px;
+}
+
+.hero_industries p {
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.hero_industries_slider {
+  width: 100%;
+  height: 538px;
+}
+
+.hero_industries_slider .slick-slide {
+  margin: 0 20px;
+}
+
+.industries_benefits {
+  padding-top: 95px;
+  padding-bottom: 65px;
+  background: url('../img/bg_sustainability.svg') no-repeat;
+  background-position: right -220px bottom;
+}
+
+.industries_benefits h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--prefooter-background);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.industries_benefits_wrapper {
+  margin-top: 80px;
+}
+
+.industries_benefit {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.industries_benefits_icon {
+  flex: 1;
+  width: 87px;
+  height: 87px;
+}
+
+.industries_benefits_text {
+  flex: 5;
+}
+
+.industries_benefits_text h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--prefooter-background);
+}
+
+.industries_benefits_text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6A6A6A;
+}
+
+.industries_contact {
+  background: var(--gold-color);
+  padding: 37px 0 28px;
+}
+
+.industries_contact h2 {
+  color: var(--white-color);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.industries_contact p {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.industries_contact p i {
+  margin-left: 20px;
+}
+
+.industries_contact .btn {
+  border-radius: 30px;
+  border: 1px solid var(--postfooter-background);
+  background: var(--postfooter-background);
+  color: var(--white-color);
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 16px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.industries_applications {
+  background: var(--green-900-color);
+  color: var(--white-color);
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 95px;
+  background-image: url('../img/industries_applications.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom 245px;
+}
+
+.industries_applications h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.industries_applications_details {
+  margin-top: 57px;
+}
+
+.industries_applications_details .requirement {
+  border: 1px solid #BCC3C9;
+  background: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--prefooter-background);
+  font-weight: 600;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.industries_applications_details .requirement:hover {
+  background: var(--postfooter-background);
+  border-color: var(--postfooter-background);
+  color: var(--white-color);
+}
+
+.industries_applications_details .requirement span img {
+  margin-right: 16px;
+}
+
+.industries_applications h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold-100-color);
+  background: url('../img/icon-list.svg') no-repeat;
+  background-position: left top 7px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  line-height: 1.8;
+}
+
+.industries_applications p {
+  color: var(--white-color);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.industries_applications_image {
+  width: 33%;
+  height: 547px;
+  position: absolute;
+  top: 188px;
+  left: 0;
+}
+
+.other_industries {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background: var(--prefooter-background);
+}
+
+.other_industries p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  margin-top: 15px;
+}
+
+.other_industries_title {
+  margin-bottom: 20px;
+}
+
+.other_industries_title h3 {
+  color: var(--gold-100-color);
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.historia_timeline {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 95px;
+}
+
+.historia_item {
+  margin-bottom: 55px;
+}
+
+.historia_item h3,
+.historia_item h4 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--green-100-color);
+}
+
+.historia_item .point {
+  width: 20px;
+  height: 20px;
+  background: var(--gold-color);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.historia_item:not(:first-of-type) .point:before {
+  content: " ";
+  width: 2px;
+  height: 200px;
+  display: block;
+  background: var(--gold-color);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.historia_item:first-of-type {
+  margin-bottom: 110px;
+}
+
+.historia_item:first-of-type .point {
+  margin-bottom: 35px;
+}
+
+.timeline_botonera {
+  margin-bottom: 75px;
+}
+
+.hero_ubicaciones_details {
+  padding-top: 36px;
+  padding-bottom: 60px;
+}
+
+.ubicaciones h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--green-100-color);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.ubicaciones .maps {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.ubicaciones .maps iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.sucursales {
+  background: url('../img/bg-ubicaciones.png') no-repeat;
+  background-size: contain;
+  padding-top: 130px;
+  margin-bottom: 130px;
+}
+
+.sucursales h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--green-100-color);
+  margin-bottom: 30px;
+}
+
+.sucursal {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5.3px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sucursal .title {
+  background: #F1F4F6;
+  border-radius: 40px;
+  padding: 20px 25px;
+}
+
+.sucursal .title h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: var(--green-100-color);
+}
+
+.sucursal p {
+  padding: 0 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2.3;
+  color: #364651;
+  height: 370px;
+}
+
+.sucursal .btn {
+  font-size: 14px;
+  padding: 11px 16px;
+  width: 255px;
+  height: 41px;
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  background: var(--prefooter-background);
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+/* Desktop */
 @media (min-width: 980px) and (max-width: 1299px) {
 
   html {
@@ -1984,6 +2370,7 @@ footer .information_footer a .btn {
 
 }
 
+/* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
   html {
     width: 100%;
@@ -2268,6 +2655,7 @@ footer .information_footer a .btn {
   }
 }
 
+/* mobil */
 @media (min-width: 320px) and (max-width: 767px) {
   html {
     width: 100%;

@@ -6,6 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 #Atrapar Get solo con ruta directa sin escribir la variable
 #Todo lo que venga despues de link/ sera considerado por el servidor como la varieble $_GET[type]
 RewriteRule ^servicios/([a-z0-9_-]+)/?$ productos-interna.php?secc=$1 [NC,L]
+RewriteRule ^industrias/([a-z0-9_-]+)/?$ industrias.php?secc=$1 [NC,L]
 RewriteRule ^blog/([a-z0-9_-]+)/?$ blog-interna.php?secc=$1 [NC,L]
 
 ##Lee el sitemap y lo genera dinamicamente

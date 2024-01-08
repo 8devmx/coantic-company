@@ -30,7 +30,7 @@
     <div class="process_steps">
       <span>1</span>
       <div class="process_image">
-        <img src="img/process-1.png" alt="">
+        <img src="img/proceso-1.png" alt="">
       </div>
       <div class="container">
         <div class="row">
@@ -50,7 +50,7 @@
     <div class="process_steps">
       <span>2</span>
       <div class="process_image right">
-        <img src="img/process-2.png" alt="">
+        <img src="img/proceso-2.png" alt="">
       </div>
       <div class="container">
         <div class="row">
@@ -64,7 +64,7 @@
     <div class="process_steps">
       <span>3</span>
       <div class="process_image">
-        <img src="img/process-3.png" alt="">
+        <img src="img/proceso-3.png" alt="">
       </div>
       <div class="container">
         <div class="row">
@@ -78,7 +78,7 @@
     <div class="process_steps">
       <span>4</span>
       <div class="process_image right">
-        <img src="img/process-4.png" alt="">
+        <img src="img/proceso-4.png" alt="">
       </div>
       <div class="container">
         <div class="row">
@@ -94,7 +94,7 @@
     <div class="process_steps">
       <span>5</span>
       <div class="process_image">
-        <img src="img/process-5.png" alt="">
+        <img src="img/proceso-5.png" alt="">
       </div>
       <div class="container">
         <div class="row">
