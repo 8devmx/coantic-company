@@ -39,30 +39,42 @@
     <div class="slider_filosofia">
       <div class="slides">
         <div>
-          <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
-          <h5>Transporte
-            <br>y Automotriz
-          </h5>
+          <a href="<?php echo base_url; ?>industrias/automotriz">
+            <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
+            <h5>Transporte
+              <br>y Automotriz
+            </h5>
+          </a>
         </div>
         <div>
-          <img src="img/construccion.png" class="img-fluid" alt="Construcción Coantic Company">
-          <h5>Construcción</h5>
+          <a href="<?php echo base_url; ?>industrias/construccion">
+            <img src="img/construccion.png" class="img-fluid" alt="Construcción Coantic Company">
+            <h5>Construcción</h5>
+          </a>
         </div>
         <div>
-          <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coantic Company">
-          <h5>Energías Renovables</h5>
+          <a href="<?php echo base_url; ?>industrias/energias-renovables">
+            <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coantic Company">
+            <h5>Energías Renovables</h5>
+          </a>
         </div>
         <div>
-          <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coantic Company">
-          <h5>Comercio de Acero</h5>
+          <a href="<?php echo base_url; ?>industrias/comercio de acero">
+            <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coantic Company">
+            <h5>Comercio de Acero</h5>
+          </a>
         </div>
         <div>
-          <img src="img/herreria.png" class="img-fluid" alt="Herrería Coantic Company">
-          <h5>Herrería</h5>
+          <a href="<?php echo base_url; ?>industrias/herreria">
+            <img src="img/herreria.png" class="img-fluid" alt="Herrería Coantic Company">
+            <h5>Herrería</h5>
+          </a>
         </div>
         <div>
-          <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coantic Company">
-          <h5>Infraestructura</h5>
+          <a href="<?php echo base_url; ?>industrias/infraestructura">
+            <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coantic Company">
+            <h5>Infraestructura</h5>
+          </a>
         </div>
       </div>
     </div>
@@ -122,15 +134,7 @@
       </div>
     </div>
     <div class="row button_group">
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-globe" aria-hidden="true"></i> Ubicaciones</a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-list-ul" aria-hidden="true"></i> Historia</a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-leaf" aria-hidden="true"></i> Sustentabilidad</a>
-      </div>
+      <?php include 'includes/nosotros.php'; ?>
     </div>
   </div>
   <div class="nuestros_servicios">
@@ -139,15 +143,18 @@
         <div class="col-sm-12">
           <h2>CONOCE NUESTROS SERVICIOS</h2>
         </div>
-        <div class="col-sm-4">
-          <img src="img/acero-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/importacion-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/soluciones-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
+        <?php
+        include 'includes/servicios.php';
+        foreach ($services as $serv => $s) {
+        ?>
+          <div class="col-sm-4">
+            <a href="<?php echo base_url . "servicios/" . $serv; ?>">
+              <img src="img/<?php echo $s['preview']; ?>" alt="" class="img-fluid">
+            </a>
+          </div>
+        <?php
+        }
+        ?>
       </div>
     </div>
   </div>

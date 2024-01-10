@@ -66,7 +66,7 @@
           </p>
         </div>
         <div class="col-xl-1 col-md-3 col-lg-2">
-          <a href="#" class="btn">VENTAS</a>
+          <a href="<?php echo base_url; ?>contacto" class="btn">VENTAS</a>
         </div>
       </div>
     </div>
@@ -123,8 +123,10 @@
             $offset = $counter == 1 ? "offset-lg-1" : "";
         ?>
             <div class="col-sm-4 col-lg-2 col-xl-2 <?php echo $offset; ?>">
-              <img src="<?php echo base_url . 'img/' . $one_industry['image']; ?>" alt="<?php echo $one_industry['title']; ?> | Coatinc Company" class="img-fluid">
-              <p><?php echo $one_industry['title']; ?></p>
+              <a href="<?php echo base_url . "industrias/" . $in; ?>">
+                <img src="<?php echo base_url . 'img/' . $one_industry['image']; ?>" alt="<?php echo $one_industry['title']; ?> | Coatinc Company" class="img-fluid">
+                <p><?php echo $one_industry['title']; ?></p>
+              </a>
             </div>
         <?php
             $counter++;

@@ -39,9 +39,11 @@ $posts = [
         foreach ($posts as $key => $post) {
       ?>
           <div class="col-sm-6">
-            <img src="img/<?php echo $post['img']; ?>" alt="<?php echo $post['title']; ?>" class="img-fluid">
-            <h2><?php echo $post['title']; ?></h2>
-            <h3><?php echo $post['subtitle']; ?></h3>
+            <a href="<?php echo base_url; ?>blog-interna">
+              <img src="img/<?php echo $post['img']; ?>" alt="<?php echo $post['title']; ?>" class="img-fluid">
+              <h2><?php echo $post['title']; ?></h2>
+              <h3><?php echo $post['subtitle']; ?></h3>
+            </a>
           </div>
       <?php
         }

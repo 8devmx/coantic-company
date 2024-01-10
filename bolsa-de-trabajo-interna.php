@@ -10,7 +10,7 @@
   <div class="container-fluid blog_back">
     <div class="row">
       <div class="col-sm-12">
-        <a href="blog">Todos los empleos</a>
+        <a href="<?php echo base_url; ?>bolsa-de-trabajo">Todos los empleos</a>
       </div>
     </div>
   </div>
@@ -37,11 +37,11 @@
           <li>Ultricies aliquam a suspendisse aptent fringilla pretium hac eleifend parturient venenatis.</li>
           <li>Et vel nec interdum eget tempus a ullamcorper sapien sed torquent lobortis lacus at vivamus.</li>
         </ul>
-        <a href="#" class="btn">POSTULARME</a>
+        <a href="#postularme" class="btn">POSTULARME</a>
       </div>
     </div>
   </div>
-  <div class="bolsa_postularme">
+  <div class="bolsa_postularme" id="postularme">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">

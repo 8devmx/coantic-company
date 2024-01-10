@@ -23,6 +23,15 @@
   --open-font: 'Open Sans', sans-serif;
 }
 
+.hamburger {
+  display: none;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  height: 100%;
+  align-items: center;
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
@@ -32,6 +41,10 @@ body {
   font-family: var(--open-font);
   width: 100%;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -2297,6 +2310,38 @@ footer .information_footer a .btn {
 
 /* Desktop */
 @media (min-width: 980px) and (max-width: 1299px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    background-color: var(--prefooter-background);
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  header .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .navbar ul a {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
 
   html {
     width: 100%;
@@ -2384,6 +2429,39 @@ footer .information_footer a .btn {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    background-color: var(--prefooter-background);
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  header .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .navbar ul a {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
   html {
     width: 100%;
     overflow-x: hidden;
@@ -2708,6 +2786,39 @@ footer .information_footer a .btn {
 
 /* mobil */
 @media (min-width: 320px) and (max-width: 767px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 72px;
+    background-color: var(--prefooter-background);
+    width: 100%;
+    height: calc(100vh - 72px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  header .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .navbar ul a {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
   html {
     width: 100%;
     overflow-x: hidden;

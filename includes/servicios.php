@@ -1,6 +1,7 @@
 <?php
 $services = [
   "acero-galvanizado" => [
+    "preview" => "acero-nuestros-servicios.png",
     "hero" => "bg-interna.png",
     "title" => "ACERO GALVANIZADO",
     "subtitle" => "Conoce los beneficios del Acero Galvanizado por Inmersión en Caliente",
@@ -65,6 +66,7 @@ $services = [
   ],
   "importacion-exportacion" => [
     "hero" => "bg-importacion.jpg",
+    "preview" => "importacion-nuestros-servicios.png",
     "title" => "IMPORTACIÓN Y EXPORTACIÓN",
     "subtitle" => "Nos aseguramos de cumplir con las regulaciones y normativas para importar y exportar acero galvanizado",
     "intro" => [
@@ -111,6 +113,7 @@ $services = [
   ],
   "soluciones-logisticas" => [
     "hero" => "bg-soluciones.jpg",
+    "preview" => "soluciones-nuestros-servicios.png",
     "title" => "SOLUCIONES LOGÍSTICAS Y FLETES EN MÉXICO",
     "subtitle" => "Recolección y entrega de acero galvanizado en todo el país ",
     "intro" => [

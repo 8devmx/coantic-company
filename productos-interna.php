@@ -74,7 +74,7 @@
       <div class="col-lg-10 offset-lg-1">
         <h2><?php echo $service['about']['title'] ?></h2>
         <p><?php echo $service['about']['paragraph'] ?></p>
-        <!-- <a href="<?php echo base_url; ?>productos-interna" class="btn">CONOCE NUESTRO PROCESO</a> -->
+        <a href="<?php echo base_url; ?>proceso" class="btn">CONOCE NUESTRO PROCESO</a>
       </div>
     </div>
   </div>

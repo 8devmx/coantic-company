@@ -29,7 +29,7 @@
 
           <p>Hemos estado a la altura de la sostenibilidad en las operaciones diarias durante más de un siglo proporcionando métodos de acabado que extienden claramente la vida útil de las superficies del acero y metal. Esto a su vez significa <strong>menores gastos de mantenimiento, reparación y sustitución, así como menores costes y un menor consumo de recursos.</strong></p>
 
-          <a href="#" class="btn">VISÍTANOS</a>
+          <a href="<?php echo base_url; ?>contacto" class="btn">VISÍTANOS</a>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
               <i class="fa-solid fa-phone"></i>
               <span>+</span>52 664 1158473</a>
           </p>
-          <a href="#" class="btn">CONTÁCTANOS</a>
+          <a href="<?php echo base_url; ?>contacto" class="btn">CONTÁCTANOS</a>
         </div>
       </div>
     </div>
@@ -79,15 +79,7 @@
   <div class="sustentabilidad_botonera">
     <div class="container">
       <div class="row button_group">
-        <div class="col-sm-4">
-          <a href="#" class="button_link"><i class="fa fa-globe" aria-hidden="true"></i> Ubicaciones</a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#" class="button_link"><i class="fa fa-list-ul" aria-hidden="true"></i> Historia</a>
-        </div>
-        <div class="col-sm-4">
-          <a href="#" class="button_link"><i class="fa fa-book" aria-hidden="true"></i> Nuestra filosofía</a>
-        </div>
+        <?php include 'includes/nosotros.php'; ?>
       </div>
     </div>
   </div>

@@ -6,26 +6,30 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
   <div class="container-fluid">
     <div class="row">
       <div class="col-8 col-lg-5 col-md-4">
-        <nav class="navbar">
+        <div class="hamburger">
+          <span id="openHam">&#9776;</span>
+          <span id="closeHam">&#x2716;</span>
+        </div>
+        <nav class="navbar" id="navbar">
           <ul>
             <li>
               <a href="<?php echo base_url; ?>">Inicio</a>
             </li>
             <li>
-              <a href="<?php echo base_url; ?>productos-interna">Acero Galvanizado</a>
-            </li>
-            <!-- <li>
-              <a href="#">Proceso</a>
+              <a href="<?php echo base_url; ?>servicios/acero-galvanizado">Acero Galvanizado</a>
             </li>
             <li>
-              <a href="#">Industrias</a>
+              <a href="<?php echo base_url; ?>proceso">Proceso</a>
             </li>
             <li>
-              <a href="#">Nosotros</a>
+              <a href="<?php echo base_url; ?>industrias/automotriz">Industrias</a>
             </li>
             <li>
-              <a href="#">Blog</a>
-            </li> -->
+              <a href="<?php echo base_url; ?>filosofia">Nosotros</a>
+            </li>
+            <li>
+              <a href="<?php echo base_url; ?>blog">Blog</a>
+            </li>
           </ul>
         </nav>
       </div>

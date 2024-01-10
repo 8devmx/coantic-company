@@ -107,15 +107,7 @@
   </div>
   <div class="container timeline_botonera">
     <div class="row button_group">
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-leaf" aria-hidden="true"></i> Sustentabilidad</a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-list-ul" aria-hidden="true"></i> Historia</a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#" class="button_link"><i class="fa fa-book" aria-hidden="true"></i> Nuestra filosofía</a>
-      </div>
+      <?php include 'includes/nosotros.php'; ?>
     </div>
   </div>
   <div class="nuestros_servicios">

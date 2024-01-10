@@ -21,29 +21,29 @@
     </div>
     <div class="services">
       <div class="service">
-        <a href="<?php echo base_url; ?>">
+        <a href="<?php echo base_url; ?>servicios/acero-galvanizado">
           <img src="img/icon-galvanizado.svg" alt="Galvanizado Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Galvanizado <br>por inmersión en caliente</h4>
-            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
+            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
           </div>
         </a>
       </div>
       <div class="service">
-        <a href="#">
+        <a href="<?php echo base_url ?>servicios/importacion-exportacion">
           <img src="img/icon-importacion.svg" alt="Importación Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Importación <br>y exportación</h4>
-            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
+            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
           </div>
         </a>
       </div>
       <div class="service">
-        <a href="#">
+        <a href="<?php echo base_url ?>servicios/soluciones-logisticas">
           <img src="img/icon-logistica.svg" alt="Logística Coantic Company" class="service_icon">
           <div class="service_title">
             <h4>Soluciones <br>logísticas</h4>
-            <!-- <img src="img/icon-arrow.svg" alt="Arrow Coantic Company"> -->
+            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
           </div>
         </a>
       </div>
@@ -62,7 +62,7 @@
             Alemania para ofrecer a sus
             clientes la
             mejor protección contra la corrosión a través del galvanizado <br>por inmersión en caliente.</p>
-          <a href="<?php echo base_url; ?>productos-interna" class="btn">VER BENEFICIOS</a>
+          <a href="<?php echo base_url; ?>servicios/acero-galvanizado" class="btn">VER BENEFICIOS</a>
         </div>
       </div>
     </div>
@@ -163,7 +163,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 offset-lg-5 col-12">
-          <!-- <a href="<?php echo base_url; ?>productos-interna" class="btn">VER PROCESO A DETALLE</a> -->
+          <a href="<?php echo base_url; ?>proceso" class="btn">VER PROCESO A DETALLE</a>
         </div>
       </div>
     </div>
@@ -179,7 +179,7 @@
             acero por inmersión en caliente. Nuestra experiencia y tecnología nos permiten ofrecer soluciones
             excepcionales para
             diversos sectores.</p>
-          <!-- <a href="#" class="btn">NUESTRA FILOSOFÍA</a> -->
+          <a href="<?php echo base_url; ?>filosofia" class="btn">NUESTRA FILOSOFÍA</a>
         </div>
       </div>
     </div>
@@ -237,32 +237,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-2 col-md-4">
-          <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
-          <h5 class="sectors_title">Transporte
-            <br>y Automotriz
-          </h5>
-        </div>
-        <div class="col-lg-2 col-md-4">
-          <img src="img/construccion.png" class="img-fluid" alt="Construcción Coantic Company">
-          <h5 class="sectors_title">Construcción</h5>
-        </div>
-        <div class="col-lg-2 col-md-4">
-          <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coantic Company">
-          <h5 class="sectors_title">Energías Renovables</h5>
-        </div>
-        <div class="col-lg-2 col-md-4">
-          <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coantic Company">
-          <h5 class="sectors_title">Comercio de Acero</h5>
-        </div>
-        <div class="col-lg-2 col-md-4">
-          <img src="img/herreria.png" class="img-fluid" alt="Herrería Coantic Company">
-          <h5 class="sectors_title">Herrería</h5>
-        </div>
-        <div class="col-lg-2 col-md-4">
-          <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coantic Company">
-          <h5 class="sectors_title">Infraestructura</h5>
-        </div>
+        <?php
+        include 'includes/industries.php';
+        foreach ($all_industries as $ind => $i) {
+        ?>
+          <div class="col-lg-2 col-md-4">
+            <a href="<?php echo base_url . "industrias/" . $ind; ?>">
+              <img src="img/<?php echo $i['image']; ?>" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
+              <h5 class="sectors_title"><?php echo $i['title']; ?>
+              </h5>
+            </a>
+          </div>
+        <?php } ?>
       </div>
     </div>
   </div>
@@ -276,12 +262,16 @@
       </div>
       <div class="row">
         <div class="col-sm-6 other_service">
-          <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
-          <h5>Importación y exportación</h5>
+          <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
+            <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
+            <h5>Importación y exportación</h5>
+          </a>
         </div>
         <div class="col-sm-6 other_service">
-          <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
-          <h5>Soluciones logísticas</h5>
+          <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
+            <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
+            <h5>Soluciones logísticas</h5>
+          </a>
         </div>
       </div>
     </div>
