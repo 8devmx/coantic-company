@@ -34,7 +34,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 offset-sm-7">
+          <div class="col-md-5 col-lg-4 offset-sm-7">
             <h3>Inspección de Material antes del proceso</h3>
             <p>Para poder galvanizar un Material el mismo tiene que cumplir con ciertos requerimientos. La calidad del recubrimiento depende mucho en la calidad del acero y también de algunos detalles constructivos que son necesarios tomar en consideración. Debido a esto inspeccionamos todos los materiales en cuanto llegan a la planta, de tal forma que nos aseguramos de que estos cuenten con las condiciones correctas para ser procesado de manera óptima.</p>
           </div>
@@ -54,7 +54,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 offset-sm-1">
+          <div class="col-lg-4 offset-lg-1 col-md-5">
             <h3 class="text-right">Armado</h3>
             <p class="text-right">Ahí colgamos los materiales en los racks de galvanización para poder procesarlo. Dependiente del tipo y del peso del Material usamos alambre de acero de diferentes espesores o cadenas de acero para amarar los partes de acero en los racks de carga.</p>
           </div>
@@ -68,7 +68,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 offset-sm-7">
+          <div class="col-md-5 col-lg-4 offset-sm-7">
             <h3>Proceso químico</h3>
             <p>Antes de la inmersión en el Zinc Caliente el Material pasa por un proceso de tratamiento químico. A través del cual limpiamos las impurezas que pudiera traer el material derivadas grasas o aceites, que son sustancias que afectan el proceso de galvanización. El siguiente paso es el decapado del material en dónde quitamos toda la corrosión superficial del acero; después se trata el material en una tina de flux para activar la superficie del acero cómo el ultimo paso antes de la galvanización, este permite que la superficie del acero tenga las condiciones adecuadas para unirse perfectamente con el zinc caliente y crear una capa uniforme y resistente.</p>
           </div>
@@ -82,7 +82,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 offset-sm-1">
+          <div class="col-lg-4 offset-lg-1 col-md-5">
             <h3 class="text-right">Proceso de Inmersión en Zinc</h3>
             <p class="text-right">Después de un tiempo corto de secado, se sumerge la carga del material lentamente en el baño de Zinc caliente con una temperatura alrededor de 450 grados centígrados. La carga se mueve ligeramente dentro del baño para formar la capa de zinc, mientras más tiempo dure esta inmersión, mayor será el espesor final. <br><br>
 
@@ -98,7 +98,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 offset-sm-7">
+          <div class="col-md-5 col-lg-4 offset-sm-7">
             <h3>Acabado</h3>
             <p>Después de la galvanización, es normal que el material presente pequeños excesos o gotas de Zinc en esquinas y bordes, estos se quitan con una lima para optimizar la estética del material, siguiendo de la norma ASTM 123; sin dañar la capa de zinc, para no afectar el efecto anticorrosivo.</p>
           </div>

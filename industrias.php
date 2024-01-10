@@ -55,17 +55,17 @@
   </div>
   <div class="industries_contact">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-md-center">
         <div class="col-sm-5">
           <h2>CONTÁCTANOS PARA MAYOR INFORMACIÓN</h2>
         </div>
-        <div class="col-sm-4 offset-sm-2">
+        <div class="col-md-4 offset-xl-2">
           <p>
             <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 309534</span>
             <i>+</i> <span id="cel_country">52 664 1158473</span>
           </p>
         </div>
-        <div class="col-sm-1">
+        <div class="col-xl-1 col-md-3 col-lg-2">
           <a href="#" class="btn">VENTAS</a>
         </div>
       </div>
@@ -86,9 +86,9 @@
           <div class="row">
             <?php
             foreach ($industry["applications"]["items"] as $key => $application) {
-              $right = ($key % 2 == 0) ? '' : 'offset-sm-2';
+              $right = ($key % 2 == 0) ? '' : 'offset-xl-2';
             ?>
-              <div class="col-sm-5 <?php echo $right; ?>">
+              <div class="col-lg-6 col-xl-5 <?php echo $right; ?>">
                 <h3><?php echo $application["title"]; ?></h3>
                 <p><?php echo $application["text"]; ?></p>
               </div>
@@ -120,10 +120,10 @@
         $counter = 1;
         foreach ($all_industries as $in => $one_industry) {
           if ($in != $_GET['secc']) {
-            $offset = $counter == 1 ? "offset-1" : "";
+            $offset = $counter == 1 ? "offset-lg-1" : "";
         ?>
-            <div class="col-sm-2 <?php echo $offset; ?>">
-              <img src="<?php echo base_url . 'img/' . $one_industry['image']; ?>" alt="<?php echo $one_industry['title']; ?> | Coatinc Company">
+            <div class="col-sm-4 col-lg-2 col-xl-2 <?php echo $offset; ?>">
+              <img src="<?php echo base_url . 'img/' . $one_industry['image']; ?>" alt="<?php echo $one_industry['title']; ?> | Coatinc Company" class="img-fluid">
               <p><?php echo $one_industry['title']; ?></p>
             </div>
         <?php
@@ -151,15 +151,13 @@
         responsive: [{
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              centerPadding: '0px',
             }
           },
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
+              centerPadding: '50px',
             }
           }
         ]

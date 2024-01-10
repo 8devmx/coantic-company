@@ -38,7 +38,7 @@
   <div class="sustentabilidad_beneficios">
     <div class="container">
       <div class="row">
-        <div class="col-sm-10 offset-1">
+        <div class="col-sm-10 offset-sm-1">
           <p>Queremos que nuestros clientes de beneficien de los resultados de nuestro trabajo, ofreciéndoles una amplia selección de productos y servicios.
             Buscamos alianzas duraderas con nuestros clientes para juntos alcanzar un futuro próspero.</p>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 offset-8">
+        <div class="col-md-5 offset-md-7 col-lg-4 offset-lg-8">
           <img src="img/mexico.svg" alt="">
           <h2>COATINC MÉXICO</h2>
           <p>Visítanos en nuestras instalaciones en Tijuana, <br>

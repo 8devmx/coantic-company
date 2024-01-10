@@ -2368,6 +2368,18 @@ footer .information_footer a .btn {
     padding: 80px 0;
   }
 
+  .historia_item:not(:first-of-type) .point:before {
+    height: 100px;
+  }
+
+  .sucursal {
+    margin-bottom: 30px;
+  }
+
+  .hero_industries_slider {
+    height: auto;
+  }
+
 }
 
 /* Tablet */
@@ -2540,7 +2552,9 @@ footer .information_footer a .btn {
 
   .hero_products_detail,
   .hero_contacto,
-  .aviso_de_privacidad {
+  .aviso_de_privacidad,
+  .hero_ubicaciones,
+  .hero_industries {
     margin-top: 90px;
   }
 
@@ -2652,6 +2666,43 @@ footer .information_footer a .btn {
 
   .button_group {
     margin-top: 25px;
+  }
+
+  .button_link {
+    padding: 15px;
+  }
+
+  .historia_item h3,
+  .historia_item h4 {
+    font-size: 20px;
+  }
+
+  .historia_item:not(:first-of-type) .point:before {
+    height: 75px;
+  }
+
+  .sucursal {
+    margin-bottom: 30px;
+  }
+
+  .hero_industries_slider {
+    height: auto;
+  }
+
+  .industries_contact p {
+    text-align: left;
+  }
+
+  .industries_contact p i {
+    display: none;
+  }
+
+  .industries_contact span {
+    display: block;
+  }
+
+  .industries_contact .btn {
+    margin-top: 0;
   }
 }
 
@@ -2929,6 +2980,7 @@ footer .information_footer a .btn {
 
   .benefits_detail {
     padding-bottom: 0;
+    display: block;
   }
 
   .benefits_detail .benefits_detail_image {
@@ -2944,6 +2996,10 @@ footer .information_footer a .btn {
 
   .benefits_detail ul {
     font-size: 14px;
+  }
+
+  .application_materials {
+    padding: 15px;
   }
 
   .requirements {
@@ -2963,15 +3019,21 @@ footer .information_footer a .btn {
     margin-bottom: 20px;
   }
 
-  .hero_contacto {
+  .hero_contacto,
+  .hero_ubicaciones,
+  .hero_industries {
     padding-top: 150px;
   }
 
-  .hero_contacto h1 {
+  .hero_contacto h1,
+  .hero_ubicaciones h1,
+  .hero_industries h1 {
     font-size: 35px;
   }
 
-  .hero_contacto p {
+  .hero_contacto p,
+  .hero_ubicaciones p,
+  .hero_industries p {
     font-size: 16px;
   }
 
@@ -3108,4 +3170,131 @@ footer .information_footer a .btn {
     margin-bottom: 35px;
   }
 
+  .pagination {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+  }
+
+  .pagination a {
+    margin: auto;
+  }
+
+  .bolsa_interna_post h1 {
+    font-size: 25px;
+  }
+
+  .bolsa_interna_post h2 {
+    font-size: 22px;
+  }
+
+  .bolsa_interna_post h3 {
+    font-size: 20px;
+  }
+
+  .bolsa_interna_post h4 {
+    font-size: 18px;
+  }
+
+
+  .process .process_step_number {
+    top: 0;
+  }
+
+  .process_image {
+    position: initial;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .process_timeline::before {
+    height: 0;
+  }
+
+  .sustentabilidad_ubicacion {
+    display: block;
+    height: auto;
+  }
+
+  .sustentabilidad_ubicacion .maps {
+    position: initial;
+    width: 100%;
+    height: 350px;
+  }
+
+  .historia_item:not(:first-of-type) .point:before {
+    display: none;
+  }
+
+  .historia_item .point {
+    margin-bottom: 40px;
+  }
+
+  .historia_item:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .historia_item p {
+    text-align: left;
+  }
+
+  .ubicaciones .maps iframe {
+    height: 300px;
+  }
+
+  .sucursal {
+    margin-bottom: 30px;
+  }
+
+  .hero_industries_slider {
+    height: auto;
+  }
+
+  .hero_industries h1 {
+    font-size: 25px;
+  }
+
+  .industries_benefits h2,
+  .industries_applications h2 {
+    font-size: 20px;
+  }
+
+  .industries_benefit {
+    text-align: center;
+    display: block;
+  }
+
+  .industries_benefits_icon {
+    margin: 15px auto;
+  }
+
+  .industries_contact {
+    text-align: center;
+  }
+
+  .industries_contact p {
+    text-align: center;
+    font-size: 16px;
+    margin: 35px auto;
+  }
+
+  .industries_contact p i {
+    margin-left: 0;
+  }
+
+  .industries_applications_image {
+    width: 100%;
+    display: block;
+    position: initial;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .other_industries {
+    text-align: center;
+  }
+
+  .other_industries p {
+    margin-bottom: 50px;
+  }
 }

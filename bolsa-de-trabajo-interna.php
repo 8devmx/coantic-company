@@ -44,7 +44,7 @@
   <div class="bolsa_postularme">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 offset-4">
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
           <h4>Postularme para este empleo</h4>
           <h5>Envíanos tus datos y pronto te contactaremos.</h5>
           <form action="#">

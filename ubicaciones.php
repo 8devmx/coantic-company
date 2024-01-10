@@ -12,10 +12,10 @@
     <h2 class="text-center">The Coatinc Company: Líder internacional en soluciones de Galvanizado</h2>
     <div class="container hero_ubicaciones_details">
       <div class="row align-items-center">
-        <div class="col-sm-5 offset-sm-1">
+        <div class="col-lg-5 offset-lg-1 col-md-6">
           <img src="img/mapa-ubicaciones.png" alt="" class="img-fluid">
         </div>
-        <div class="col-sm-4 offset-sm-1">
+        <div class="col-lg-4 offset-lg-1 col-md-6">
           <p>Contamos con instalaciones de galvanización por inmersión en caliente ubicadas estratégicamente alrededor del mundo para atender diversas necesidades industriales.</p>
 
           <p>Nuestras plantas de galvanización están equipadas con tecnología de punta y cumplen con los más altos estándares de la industria, lo que garantiza una protección superior para sus productos metálicos contra la corrosión. Desde los bulliciosos paisajes urbanos hasta el sereno campo, nuestra empresa de recubrimientos ha establecido ubicaciones de galvanización en regiones clave, lo que hace que sea conveniente para las empresas de todo el mundo acceder a servicios de alta calidad.</p>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-xl-3 col-md-6">
           <div class="sucursal">
             <div class="title">
               <h4>ALEMANIA</h4>
@@ -63,7 +63,7 @@
             <a href="#" class="btn">VER DETALLE</a>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xl-3 col-md-6">
           <div class="sucursal">
             <div class="title">
               <h4>PAÍSES BAJOS</h4>
@@ -80,7 +80,7 @@
             <a href="#" class="btn">VER DETALLE</a>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xl-3 col-md-6">
           <div class="sucursal">
             <div class="title">
               <h4>BÉGICA</h4>
@@ -91,7 +91,7 @@
             <a href="#" class="btn">VER DETALLE</a>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xl-3 col-md-6">
           <div class="sucursal">
             <div class="title">
               <h4>REPÚBLICA CHECA</h4>
