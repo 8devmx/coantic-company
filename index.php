@@ -292,7 +292,7 @@
           <p class="location_address">Andador Vecinal 3001, Colonia Otra No Especificada en el Catálogo, Valle Redondo,
             22720 Tijuana, B.C.</p>
           <p class="location_phone">
-            <i class="fa-solid fa-phone">+</i> 52 664 309534
+            <i class="fa-solid fa-phone">+</i> 52 664 3095346
           </p>
           <p class="location_phone">
             <i class="fa-solid fa-phone">+</i> 52 664 1158473

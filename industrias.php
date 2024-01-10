@@ -61,7 +61,7 @@
         </div>
         <div class="col-md-4 offset-xl-2">
           <p>
-            <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 309534</span>
+            <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 3095346</span>
             <i>+</i> <span id="cel_country">52 664 1158473</span>
           </p>
         </div>

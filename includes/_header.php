@@ -47,7 +47,7 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
         <div class="information">
           <div class="phones">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+52664309534"><span>+</span>52 664 309534</a>
+            <a href="tel:+526643095346"><span>+</span>52 664 3095346</a>
             <a href="https://wa.link/pt2weh" target="_BLANK"><span>+</span>52 664 1158473</a>
           </div>
           <a href="<?php echo base_url; ?>contacto" class="btn">VENTAS</a>

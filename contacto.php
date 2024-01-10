@@ -19,7 +19,7 @@
     </div>
     <div class="phones">
       <p class="phone">
-        <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 309534</span>
+        <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 3095346</span>
       </p>
       <p class="phone">
         <i>+</i> <span id="cel_country">52 664 1158473</span>
@@ -101,7 +101,7 @@
     const countries = {
       "mx": {
         flag: "fi-mx",
-        tel: "52 664 309534",
+        tel: "52 664 3095346",
         cel: "52 664 1158473",
         email: "ernesto.tovar@coatinc.com"
       },
