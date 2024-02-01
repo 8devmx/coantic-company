@@ -4,7 +4,7 @@ $industries = [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR AUTOMOTRIZ Y TRANSPORTE",
       "subtitle" => "Galvanizado por inmersión en caliente para la industria automotriz",
-      "slider" => ["slide-industrias-1.jpg", "slide-construccion.jpg", "slide-energias.jpg", "slide-herreria.jpg", "slide-infraestructura.jpg", "slide-comercio.jpg"]
+      "slider" => ["industrias/automotriz/1.jpg", "industrias/automotriz/2.jpg", "industrias/automotriz/3.jpg", "industrias/automotriz/4.jpg", "industrias/automotriz/5.jpg", "industrias/automotriz/6.jpg", "industrias/automotriz/7.jpg", "industrias/automotriz/8.jpg"]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA AUTOMOTRIZ",
@@ -56,15 +56,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]
@@ -74,7 +66,14 @@ $industries = [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR CONSTRUCCIÓN",
       "subtitle" => "Galvanizado por inmersión en caliente para la industria de construcción",
-      "slider" => ["slide-construccion.jpg", "slide-industrias-1.jpg", "slide-energias.jpg", "slide-herreria.jpg", "slide-infraestructura.jpg", "slide-comercio.jpg"]
+      "slider" => [
+        "industrias/construccion/1.jpg",
+        "industrias/construccion/2.jpg",
+        "industrias/construccion/3.jpg",
+        "industrias/construccion/4.jpg",
+        "industrias/construccion/5.jpg",
+        "industrias/construccion/6.jpg"
+      ]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE CONSTRUCCIÓN",
@@ -138,15 +137,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]
@@ -156,7 +147,14 @@ $industries = [
     "hero" => [
       "title" => "ACERO GALVANIZADO APLICADO A ENERGÍAS RENOVABLES",
       "subtitle" => "Galvanizado por inmersión en caliente para la industria de energías renovables",
-      "slider" => ["slide-energias.jpg", "slide-construccion.jpg", "slide-industrias-1.jpg", "slide-herreria.jpg", "slide-infraestructura.jpg", "slide-comercio.jpg"]
+      "slider" => [
+        "industrias/renovables/1.jpg",
+        "industrias/renovables/2.jpg",
+        "industrias/renovables/3.jpg",
+        "industrias/renovables/4.jpg",
+        "industrias/renovables/5.jpg",
+        "industrias/renovables/6.jpg",
+      ]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE ENERGÍAS RENOVABLES",
@@ -208,15 +206,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]
@@ -226,7 +216,12 @@ $industries = [
     "hero" => [
       "title" => "Acero galvanizado APLICADO A COMERCIO DE ACERO",
       "subtitle" => "Galvanizado por inmersión en caliente para la industria de acero",
-      "slider" => ["slide-comercio.jpg", "slide-energias.jpg", "slide-construccion.jpg", "slide-industrias-1.jpg", "slide-herreria.jpg", "slide-infraestructura.jpg"]
+      "slider" => [
+        "industrias/comercio/1.jpg",
+        "industrias/comercio/2.jpg",
+        "industrias/comercio/3.jpg",
+        "industrias/comercio/4.jpg"
+      ]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN EL COMERCIO DE ACERO",
@@ -272,15 +267,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]
@@ -290,7 +277,18 @@ $industries = [
     "hero" => [
       "title" => "ACERO GALVANIZADO EN HERRERÍA",
       "subtitle" => "Galvanizado por inmersión en caliente para herrería",
-      "slider" => ["slide-herreria.jpg", "slide-energias.jpg", "slide-construccion.jpg", "slide-industrias-1.jpg", "slide-infraestructura.jpg", "slide-comercio.jpg"]
+      "slider" => [
+        "industrias/herreria/1.jpg",
+        "industrias/herreria/2.jpg",
+        "industrias/herreria/3.jpg",
+        "industrias/herreria/4.jpg",
+        "industrias/herreria/5.jpg",
+        "industrias/herreria/6.jpg",
+        "industrias/herreria/7.jpg",
+        "industrias/herreria/8.jpg",
+        "industrias/herreria/9.jpg",
+        "industrias/herreria/10.jpg",
+      ]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE HERRERÍA",
@@ -341,15 +339,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]
@@ -359,7 +349,12 @@ $industries = [
     "hero" => [
       "title" => "ACERO GALVANIZADO PARA INFRAESTRUCTURA",
       "subtitle" => "Galvanizado por inmersión en caliente para la construcción de grandes estructuras",
-      "slider" => ["slide-infraestructura.jpg", "slide-energias.jpg", "slide-construccion.jpg", "slide-industrias-1.jpg", "slide-herreria.jpg",  "slide-comercio.jpg"]
+      "slider" => [
+        "industrias/infraestructura/1.jpg",
+        "industrias/infraestructura/2.jpg",
+        "industrias/infraestructura/1.jpg",
+        "industrias/infraestructura/2.jpg"
+      ]
     ],
     "benefits" => [
       "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA CONSTRUCCIÓN DE INFRAESTRUCTURAS",
@@ -410,15 +405,7 @@ $industries = [
       ],
       "downloads" => [
         [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
-          "title" => "¿Cómo preparar los materiales?"
-        ],
-        [
-          "url" => "#",
+          "url" => base_url . "uploads/como-preparar-los-materiales.pptx",
           "title" => "¿Cómo preparar los materiales?"
         ]
       ]

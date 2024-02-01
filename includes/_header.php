@@ -4,7 +4,7 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
 
 <header class="<?php echo $dark; ?>">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row header-container">
       <div class="col-8 col-lg-5 col-md-4">
         <div class="hamburger">
           <span id="openHam">&#9776;</span>
@@ -16,16 +16,41 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
               <a href="<?php echo base_url; ?>">Inicio</a>
             </li>
             <li>
-              <a href="<?php echo base_url; ?>servicios/acero-galvanizado">Acero Galvanizado</a>
+              <a href="#">Servicios</a>
+              <ul>
+                <li>
+                  <a href="<?php echo base_url; ?>servicios/acero-galvanizado">Galvanizado de Acero</a>
+                </li>
+                <li>
+                  <a href="<?php echo base_url; ?>servicios/importacion-exportacion">Importación / Exportación (Internacional)</a>
+                </li>
+                <li>
+                  <a href="<?php echo base_url; ?>servicios/soluciones-logisticas">Recolección y Transporte en México</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="<?php echo base_url; ?>proceso">Proceso</a>
             </li>
             <li>
-              <a href="<?php echo base_url; ?>industrias/automotriz">Industrias</a>
+              <a href="#">Industrias</a>
+              <ul>
+                <li><a href="<?php echo base_url; ?>industrias/automotriz">Automotriz y Transporte</a></li>
+                <li><a href="<?php echo base_url; ?>industrias/construccion">Construcción</a></li>
+                <li><a href="<?php echo base_url; ?>industrias/energias-renovables">Energías Renovables</a></li>
+                <li><a href="<?php echo base_url; ?>industrias/comercio-de-acero">Comercio de Acero</a></li>
+                <li><a href="<?php echo base_url; ?>industrias/herreria">Herrería</a></li>
+                <li><a href="<?php echo base_url; ?>industrias/infraestructura">Infraestructura</a></li>
+              </ul>
             </li>
             <li>
-              <a href="<?php echo base_url; ?>filosofia">Nosotros</a>
+              <a href="#">Nosotros</a>
+              <ul>
+                <li><a href="<?php echo base_url; ?>historia">Historia</a></li>
+                <li><a href="<?php echo base_url; ?>filosofia">Filosofía</a></li>
+                <li><a href="<?php echo base_url; ?>ubicaciones">Ubicaciones</a></li>
+                <li><a href="<?php echo base_url; ?>sustentabilidad">Sustentabilidad</a></li>
+              </ul>
             </li>
             <li>
               <a href="<?php echo base_url; ?>blog">Blog</a>

@@ -3,6 +3,7 @@
 
 <head>
   <?php require_once 'includes/scripts.php'; ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -33,11 +34,15 @@
         <div class="col-lg-5 offset-lg-1">
           <h3>INDUSTRIAS</h3>
           <p>Los ámbitos de aplicación son diversos: <strong>construcción metálica, partes para tráilers y tractocamiones, cerrajería, herrería, arte, piezas en serie, energías renovables y comercio de acero.</strong></p>
+          <div class="filosofia-btn-wrap">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
         </div>
       </div>
     </div>
     <div class="slider_filosofia">
-      <div class="slides">
+      <div class="filosofia_slider">
         <div>
           <a href="<?php echo base_url; ?>industrias/automotriz">
             <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
@@ -157,13 +162,21 @@
         ?>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 blog_interna_share_this_dark">
+          <p class="text-center">Comparte esta página:</p>
+          <div class="sharethis-inline-share-buttons"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <?php require_once 'includes/_footer.php'; ?>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/slick/slick.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('.slides').slick({
+      $('.filosofia_slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
@@ -186,6 +199,27 @@
           }
         ]
       })
+
+      $(".prev-btn").click(function() {
+        $(".filosofia_slider").slick("slickPrev");
+      });
+
+      $(".next-btn").click(function() {
+        $(".filosofia_slider").slick("slickNext");
+      });
+      $(".prev-btn").addClass("slick-disabled");
+      $(".filosofia_slider").on("afterChange", function() {
+        if ($(".slick-prev").hasClass("slick-disabled")) {
+          $(".prev-btn").addClass("slick-disabled");
+        } else {
+          $(".prev-btn").removeClass("slick-disabled");
+        }
+        if ($(".slick-next").hasClass("slick-disabled")) {
+          $(".next-btn").addClass("slick-disabled");
+        } else {
+          $(".next-btn").removeClass("slick-disabled");
+        }
+      });
     })
   </script>
 </body>

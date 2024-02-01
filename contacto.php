@@ -52,9 +52,9 @@
             </div>
             <div class="col-6">
               <select name="interes" id="interes">
-                <option value="Acero galvanizado">Acero galvanizado</option>
-                <option value="Importación y exportación">Importación y exportación</option>
-                <option value="Fletes">Fletes</option>
+                <option value="Servicio de Galvanizado">Servicio de Galvanizado</option>
+                <option value="Galvanizado + Importación/ Exportación (Internacional)">Galvanizado + Importación/ Exportación (Internacional)</option>
+                <option value="Galvanizado + Recolección y Transporte en México">Galvanizado + Recolección y Transporte en México</option>
               </select>
             </div>
             <div class="col-12">

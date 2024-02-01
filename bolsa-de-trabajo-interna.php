@@ -3,6 +3,7 @@
 
 <head>
   <?php require_once 'includes/scripts.php'; ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -40,6 +41,12 @@
         <a href="#postularme" class="btn">POSTULARME</a>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 blog_interna_share_this_left">
+        <p>Comparte esté artículo:</p>
+        <div class="sharethis-inline-share-buttons"></div>
+      </div>
+    </div>
   </div>
   <div class="bolsa_postularme" id="postularme">
     <div class="container">
@@ -50,7 +57,13 @@
           <form action="#">
             <input type="text" placeholder="Nombre:*">
             <input type="text" placeholder="Teléfono:*">
-            <input type="file">
+            <div class="d-flex justify-content-center file_wrapper align-items-center">
+              <input type="file" name="file" id="file" class="file">
+              <div class="d-flex">
+                <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly" placeholder="Sube tu Solicitud o CV *">
+                <input type="button" class="btn_file" value="SELECCIONAR">
+              </div>
+            </div>
             <button class="btn">ENVIAR DATOS</button>
           </form>
         </div>
@@ -85,6 +98,15 @@
           }
         ]
       })
+
+      $('.btn_file').on('click', function() {
+        $('.file').trigger('click');
+      });
+
+      $('.file').on('change', function() {
+        var fileName = $(this)[0].files[0].name;
+        $('#file-name').val(fileName);
+      });
     })
   </script>
 </body>

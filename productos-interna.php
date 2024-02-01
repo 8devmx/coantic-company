@@ -8,6 +8,7 @@
 
   $service = array_key_exists($_GET["secc"], $services) ? $services[$_GET["secc"]] : header("Location:" . base_url);
   ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -120,7 +121,7 @@
           <?php
           for ($i = 0; $i < count($service["downloads"]["files"]); $i++) {
           ?>
-            <a href="uploads/<?php echo $service['downloads']['files'][$i]['file']; ?>" target="_BLANK" class="requirement">
+            <a href="uploads/<?php echo $service['downloads']['files'][$i]['file']; ?>" target="_BLANK" class="requirement" download="<?php echo $service['downloads']['files'][$i]['file']; ?>">
               <span>
                 <img src="<?php echo base_url; ?>img/pdf.svg" alt="">
                 <?php echo $service['downloads']['files'][$i]['title']; ?></span>
@@ -139,7 +140,7 @@
     <div class="container entrega_express">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <img src="<?php echo base_url; ?>img/entrega-express.png" alt="">
+          <img src="<?php echo base_url; ?>img/entrega-express.svg" alt="">
           <h2><?php echo $service['extras']['title'] ?></h2>
           <p><?php echo $service['extras']['text'] ?></p>
         </div>
@@ -157,6 +158,14 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 blog_interna_share_this">
+        <p class="text-center">Comparte esta página:</p>
+        <div class="sharethis-inline-share-buttons"></div>
       </div>
     </div>
   </div>

@@ -3,6 +3,7 @@
 
 <head>
   <?php require_once 'includes/scripts.php'; ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -14,9 +15,9 @@
       </div>
     </div>
   </div>
-  <div class="container blog_post">
+  <div class="container blog_post_interna">
     <div class="row">
-      <div class="col-lg-12 col-md-10 offset-md-1 offset-lg-0">
+      <div class="col-md-10 offset-md-1">
         <h1>Éste es el H1 del artículo</h1>
         <img src="img/blog_interna.jpg" class="img-fluid">
         <h2>Éste es el H2 del artículo</h2>
@@ -36,7 +37,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-md-10 offset-md-1">
         <div class="slider_blog_interna">
           <img src="img/blog_interna_slider.jpg" alt="">
           <img src="img/blog_interna_slider.jpg" alt="">
@@ -45,6 +46,12 @@
           <img src="img/blog_interna_slider.jpg" alt="">
           <img src="img/blog_interna_slider.jpg" alt="">
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 blog_interna_share_this">
+        <p class="text-center">Comparte esté artículo:</p>
+        <div class="sharethis-inline-share-buttons"></div>
       </div>
     </div>
   </div>
@@ -56,7 +63,7 @@
       $('.slider_blog_interna').slick({
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 2,
         SlidesToScroll: 1,

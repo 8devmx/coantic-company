@@ -3,6 +3,7 @@
 
 <head>
   <?php require_once 'includes/scripts.php'; ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -47,61 +48,97 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-3 col-md-6">
-          <div class="sucursal">
-            <div class="title">
-              <h4>ALEMANIA</h4>
+        <div class="ubicaciones_slider">
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>ALEMANIA</h4>
+              </div>
+              <p>Bochum / D <br>
+                Groß-Rohrheim / D <br>
+                Peine / D <br>
+                Saarlouis – Lisdorfer Berg / D <br>
+                Siegen / D <br>
+                Siegen – PreGa / D <br>
+                Wildeshausen / D <br>
+                Würzburg / D</p>
             </div>
-            <p>Bochum / D <br>
-              Groß-Rohrheim / D <br>
-              Peine / D <br>
-              Saarlouis – Lisdorfer Berg / D <br>
-              Siegen / D <br>
-              Siegen – PreGa / D <br>
-              Wildeshausen / D <br>
-              Würzburg / D</p>
-            <a href="#" class="btn">VER DETALLE</a>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>PAÍSES BAJOS</h4>
+              </div>
+              <p>Alblasserdam / NL <br>
+                Amsterdam / NL <br>
+                Barneveld / NL <br>
+                De Meern / NL <br>
+                Groningen / NL <br>
+                Mook / NL <br>
+                Mook – PreGa / NL <br>
+                Roermond / NL <br>
+                Scherpenzeel / NL</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>BÉGICA</h4>
+              </div>
+              <p>Ninove/B <br>
+                Ninove – NinoCoat / B <br>
+                Genk/B</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>REPÚBLICA CHECA</h4>
+              </div>
+              <p>Decin/ CZ <br>
+                Ostrava-Kuncice/ CZ <br>
+                Roudnice/ CZ</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>TURQUÍA</h4>
+              </div>
+              <p>Corlu / TR <br>
+                Gebze/TR <br>
+                Esmirna / TR
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>ESLOVAQUIA</h4>
+              </div>
+              <p>Malacky / SK</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>ESTADOS UNIDOS</h4>
+              </div>
+              <p>San Diego</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="sucursal">
+              <div class="title">
+                <h4>MÉXICO</h4>
+              </div>
+              <p>Tijuana</p>
+            </div>
           </div>
         </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="sucursal">
-            <div class="title">
-              <h4>PAÍSES BAJOS</h4>
-            </div>
-            <p>Alblasserdam / NL <br>
-              Amsterdam / NL <br>
-              Barneveld / NL <br>
-              De Meern / NL <br>
-              Groningen / NL <br>
-              Mook / NL <br>
-              Mook – PreGa / NL <br>
-              Roermond / NL <br>
-              Scherpenzeel / NL</p>
-            <a href="#" class="btn">VER DETALLE</a>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="sucursal">
-            <div class="title">
-              <h4>BÉGICA</h4>
-            </div>
-            <p>Ninove/B <br>
-              Ninove – NinoCoat / B <br>
-              Genk/B</p>
-            <a href="#" class="btn">VER DETALLE</a>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="sucursal">
-            <div class="title">
-              <h4>REPÚBLICA CHECA</h4>
-            </div>
-            <p>Decin/ CZ <br>
-              Ostrava-Kuncice/ CZ <br>
-              Roudnice/ CZ</p>
-            <a href="#" class="btn">VER DETALLE</a>
-          </div>
-        </div>
+      </div>
+      <div class="col-sm-12 ubicaciones_action">
+        <a href="<?php echo base_url . "contacto"; ?>" class="btn">CONTÁCTANOS</a>
       </div>
     </div>
   </div>
@@ -127,8 +164,45 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 blog_interna_share_this_dark">
+          <p class="text-center">Comparte esta página:</p>
+          <div class="sharethis-inline-share-buttons"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <?php require_once 'includes/_footer.php'; ?>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.ubicaciones_slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        SlidesToScroll: 1,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      })
+    })
+  </script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 <html lang="es-MX">
 
 <head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <?php require_once 'includes/scripts.php'; ?>
 </head>
 
@@ -19,7 +20,7 @@
       <p>Conoce la Calidad Alemana en Servicios de Galvanizado en México</p>
       <a href="<?php echo base_url; ?>contacto" class="btn mt-35">CONTÁCTANOS</a>
     </div>
-    <div class="services">
+    <div class="services" data-aos="fade-up">
       <div class="service">
         <a href="<?php echo base_url; ?>servicios/acero-galvanizado">
           <img src="img/icon-galvanizado.svg" alt="Galvanizado Coantic Company" class="service_icon">
@@ -49,7 +50,7 @@
       </div>
     </div>
   </div>
-  <div class="benefits">
+  <div class="benefits" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -68,7 +69,7 @@
     </div>
   </div>
   <div class="paila">
-    <div class="container">
+    <div class="container " data-aos="fade-up">
       <div class="row">
         <div class="col-sm-6">
           <div class="paila_slider">
@@ -123,7 +124,7 @@
         </div>
       </div>
     </div>
-    <div class="process_steps">
+    <div class="process_steps" data-aos="fade-up">
       <div class="process_step">
         <img src="img/process-1.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
         <div class="process_step_number">
@@ -183,11 +184,11 @@
         </div>
       </div>
     </div>
-    <div class="company_image">
+    <div class="company_image " data-aos="fade-up">
       <img src="img/company_image.jpg" alt="" class="img-fluid">
     </div>
   </div>
-  <div class="sustainability">
+  <div class="sustainability" data-aos="fade-up">
     <div class="sustainability_image">
       <img src="img/empresa-sustentable.svg" alt="Empresa Sustentable Coantic Company" class="logo_infinite">
       <img src="img/sustentable-image.png" alt="Empresa Sustentable Coantic Company">
@@ -229,7 +230,7 @@
     </div>
   </div>
   <div class="sectors">
-    <div class="container">
+    <div class="container " data-aos="fade-up">
       <div class="row">
         <div class="col-12">
           <h4>SECTORES</h4>
@@ -237,18 +238,22 @@
         </div>
       </div>
       <div class="row">
-        <?php
-        include 'includes/industries.php';
-        foreach ($all_industries as $ind => $i) {
-        ?>
-          <div class="col-lg-2 col-md-4">
-            <a href="<?php echo base_url . "industrias/" . $ind; ?>">
-              <img src="img/<?php echo $i['image']; ?>" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
-              <h5 class="sectors_title"><?php echo $i['title']; ?>
-              </h5>
-            </a>
+        <div class="col-12">
+          <div class="sectors_slider">
+            <?php
+            include 'includes/industries.php';
+            for ($a = 0; $a < 2; $a++) {
+              foreach ($all_industries as $ind => $i) {
+            ?>
+                <a href="<?php echo base_url . "industrias/" . $ind; ?>">
+                  <img src="img/<?php echo $i['image']; ?>" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
+                  <h5 class="sectors_title"><?php echo $i['title']; ?>
+                  </h5>
+                </a>
+            <?php }
+            } ?>
           </div>
-        <?php } ?>
+        </div>
       </div>
     </div>
   </div>
@@ -261,22 +266,36 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 other_service">
-          <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
-            <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
-            <h5>Importación y exportación</h5>
-          </a>
-        </div>
-        <div class="col-sm-6 other_service">
-          <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
-            <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
-            <h5>Soluciones logísticas</h5>
-          </a>
+        <div class="services_slider">
+          <div class="other_service">
+            <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
+              <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
+              <h5>Importación y exportación</h5>
+            </a>
+          </div>
+          <div class="other_service">
+            <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
+              <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
+              <h5>Soluciones logísticas</h5>
+            </a>
+          </div>
+          <div class="other_service">
+            <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
+              <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
+              <h5>Importación y exportación</h5>
+            </a>
+          </div>
+          <div class="other_service">
+            <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
+              <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
+              <h5>Soluciones logísticas</h5>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="location">
+  <div class="location" data-aos="fade-up">
     <div class="container">
       <div class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.698984905477!2d-116.7568405!3d32.534185599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d915809dd5d4c5%3A0x6074f9a05ad1f96f!2sCoatinc%20Mexico!5e0!3m2!1ses-419!2smx!4v1699224202534!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -305,6 +324,7 @@
   <?php require_once 'includes/_footer.php'; ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/index.js"></script>
 </body>
 

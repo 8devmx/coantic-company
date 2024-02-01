@@ -44,12 +44,14 @@
               <ul>
                 <li><a href="<?php echo base_url; ?>historia">Historia</a></li>
                 <li><a href="<?php echo base_url; ?>filosofia">Filosofía</a></li>
+                <li><a href="<?php echo base_url; ?>sustentabilidad">Responsabilidad</a></li>
               </ul>
             </div>
             <div class="col-sm-6">
               <ul>
                 <li><a href="<?php echo base_url; ?>proceso">Nuestro proceso</a></li>
                 <li><a href="<?php echo base_url; ?>sustentabilidad">Sustentabilidad</a></li>
+                <li><a href="<?php echo base_url; ?>ubicaciones">Ubicaciones</a></li>
               </ul>
             </div>
           </div>
@@ -69,7 +71,7 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-4">
-          <p>TheCoatincCompany® México. Todos los Derechos Reservados 2023.</p>
+          <p>TheCoatincCompany® México. Todos los Derechos Reservados <?php echo date("Y"); ?>.</p>
         </div>
         <div class="col-lg-2 col-md-3">
           <a href="<?php echo base_url; ?>" class="logo">

@@ -7,6 +7,7 @@
   include_once 'includes/industries.php';
   $industry = array_key_exists($_GET["secc"], $industries) ? $industries[$_GET["secc"]] : header("Location:" . base_url);
   ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -99,7 +100,7 @@
         foreach ($industry["applications"]["downloads"] as $index => $download) {
         ?>
           <div class="col-sm-7 offset-sm-5">
-            <a href="<?php echo $download['url']; ?>" target="_BLANK" class="requirement">
+            <a href="<?php echo $download['url']; ?>" target="_BLANK" class="requirement" download="como-preparar-los-materiales.pptx">
               <span>
                 <img src="<?php echo base_url; ?>img/pdf.svg" alt="">
                 <?php echo $download['title']; ?></span>
@@ -135,6 +136,14 @@
         ?>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 blog_interna_share_this_dark">
+          <p class="text-center">Comparte esta página:</p>
+          <div class="sharethis-inline-share-buttons"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <?php require_once 'includes/_footer.php'; ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -144,7 +153,7 @@
       $('.hero_industries_slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 1,
         SlidesToScroll: 1,

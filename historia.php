@@ -5,6 +5,7 @@
   <?php
   require_once 'includes/scripts.php';
   ?>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
@@ -179,6 +180,14 @@
         </div>
         <div class="col-sm-4">
           <img src="img/soluciones-nuestros-servicios.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 blog_interna_share_this_dark">
+          <p class="text-center">Comparte esta página:</p>
+          <div class="sharethis-inline-share-buttons"></div>
         </div>
       </div>
     </div>

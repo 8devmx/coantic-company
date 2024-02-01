@@ -40,7 +40,6 @@ html {
 body {
   font-family: var(--open-font);
   width: 100%;
-  overflow-x: hidden;
 }
 
 a {
@@ -69,24 +68,76 @@ header {
   transition: all 0.5s ease;
 }
 
+header .navbar {
+  height: 100%;
+}
+
 header .navbar ul {
-  margin-top: 35px;
   list-style: none;
   padding-left: 0;
   display: flex;
   gap: 22px;
-
+  position: relative;
+  height: 100%;
+  margin-bottom: 0;
 }
 
 header .navbar ul a {
   color: var(--white-color);
   text-decoration: none;
   font-size: 15px;
-
+  display: block;
+  padding: 35px 0;
 }
 
 header .navbar ul a:hover {
   color: var(--gray-hover-color);
+}
+
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  min-width: max-content;
+  height: auto;
+}
+
+header .navbar ul ul li {
+  float: none;
+  width: 100%;
+}
+
+header .navbar ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+  color: var(--prefooter-background);
+}
+
+header .navbar ul li:hover>ul {
+  display: block;
+}
+
+header .navbar ul li ul li a {
+  transition: all 0.1s ease-out;
+}
+
+header .navbar ul li ul li a:hover {
+  font-weight: bold;
+  color: var(--prefooter-background);
 }
 
 header .logo {
@@ -149,7 +200,6 @@ header .btn {
 header.dark {
   position: sticky;
   background: var(--prefooter-background);
-  padding-bottom: 5px;
 }
 
 .whatsapp {
@@ -687,6 +737,7 @@ footer .information_footer a .btn {
 
 .other_services .other_service {
   position: relative;
+  padding: 10px;
 }
 
 .other_services .other_service h5 {
@@ -1445,7 +1496,6 @@ footer .information_footer a .btn {
 .nuestros_servicios {
   background: var(--prefooter-background);
   padding-top: 85px;
-  padding-bottom: 220px;
   text-align: center;
 }
 
@@ -1666,45 +1716,81 @@ footer .information_footer a .btn {
   color: var(--green-900-color);
 }
 
-.blog_post h1,
-.blog_post h2,
-.blog_post h3,
-.blog_post h4,
-.blog_post h5,
-.blog_post h6 {
+.blog_post_interna h1,
+.blog_post_interna h2,
+.blog_post_interna h3,
+.blog_post_interna h4,
+.blog_post_interna h5,
+.blog_post_interna h6 {
   font-weight: 700;
   line-height: 1.14;
   color: var(--green-900-color);
   margin-bottom: 28px;
 }
 
-.blog_post img {
+.blog_post_interna img {
   margin-bottom: 30px;
 }
 
-.blog_post p {
+.blog_post_interna p {
   margin-bottom: 45px;
 }
 
-.blog_post h1 {
+.blog_post_interna h1 {
   font-size: 45px;
 }
 
-.blog_post h2 {
+.blog_post_interna h2 {
   font-size: 28px;
 }
 
-.blog_post h3 {
+.blog_post_interna h3 {
   font-size: 20px;
 }
 
-.blog_post h4 {
+.blog_post_interna h4 {
   font-size: 18px;
 }
 
-.blog_post h5,
-.blog_post h6 {
+.blog_post_interna h5,
+.blog_post_interna h6 {
   font-size: 16px;
+}
+
+.blog_interna_share_this_left {
+  width: fit-content;
+  margin-top: 120px;
+}
+
+.blog_interna_share_this {
+  margin-bottom: 115px;
+}
+
+.blog_interna_share_this p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--prefooter-background);
+}
+
+.blog_interna_share_this_dark {
+  margin-top: 90px;
+  margin-bottom: 65px;
+}
+
+.blog_interna_share_this_dark div {
+  background: none !important;
+}
+
+.blog_interna_share_this_dark img {
+  filter: invert(0%) sepia(0%) saturate(0) hue-rotate(273deg) brightness(111%) contrast(100%) !important;
+}
+
+.blog_interna_share_this_dark p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--white-color);
 }
 
 .slider_blog_interna {
@@ -1815,7 +1901,7 @@ footer .information_footer a .btn {
   color: var(--gray-color);
 }
 
-.bolsa_postularme input {
+.bolsa_postularme input[type=text] {
   width: 100%;
   padding: 12px 20px;
   font-size: 14px;
@@ -1825,6 +1911,35 @@ footer .information_footer a .btn {
   border: 1px solid #BAC7CF;
   border-radius: 47px;
   margin-bottom: 15px;
+}
+
+.file_wrapper .d-flex {
+  position: relative;
+  width: 100%;
+}
+
+.file {
+  display: none;
+}
+
+.file-name {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.btn_file {
+  background: var(--green-900-color);
+  transition: all 0.6s;
+  color: var(--white-color);
+  height: 45px;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 0 22px;
 }
 
 .bolsa_postularme .btn {
@@ -1969,6 +2084,7 @@ footer .information_footer a .btn {
 .hero_industries_slider {
   width: 100%;
   height: 538px;
+  overflow: hidden;
 }
 
 .hero_industries_slider .slick-slide {
@@ -2293,7 +2409,7 @@ footer .information_footer a .btn {
   height: 370px;
 }
 
-.sucursal .btn {
+.ubicaciones_action .btn {
   font-size: 14px;
   padding: 11px 16px;
   width: 255px;
@@ -2305,8 +2421,237 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-weight: 600;
   text-align: center;
-  margin: 0 auto 28px;
+  margin: 45px auto;
 }
+
+.ubicaciones_slider .slick-list {
+  padding-bottom: 10px;
+}
+
+.ubicaciones_slider .slick-slide {
+  padding: 10px;
+}
+
+.hero_industries_slider .slick-arrow {
+  font-size: 1px !important;
+  color: transparent;
+}
+
+.hero_industries_slider .slick-arrow {
+  position: absolute;
+  background: var(--white-color);
+  opacity: 0.7;
+  top: 55%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s;
+}
+
+.hero_industries_slider .slick-arrow:hover,
+.hero_industries_slider .slick-arrow:focus {
+  color: var(--white-color);
+  background: var(--white-color);
+  opacity: 1;
+}
+
+.hero_industries_slider .slick-arrow:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.hero_industries_slider .slick-prev {
+  left: 100px;
+}
+
+.hero_industries_slider .slick-next {
+  right: 100px;
+}
+
+.hero_industries_slider .slick-prev:before {
+  content: "\f060";
+  font: var(--fa-font-solid);
+  color: var(--prefooter-background);
+  font-size: 16px;
+  left: 1px;
+  position: relative;
+}
+
+.hero_industries_slider .slick-next:before {
+  content: "\f061";
+  font: var(--fa-font-solid);
+  color: var(--prefooter-background);
+  font-size: 16px;
+}
+
+.slider_blog_interna .slick-arrow {
+  font-size: 1px !important;
+  color: transparent;
+}
+
+.slider_blog_interna .slick-arrow {
+  position: absolute;
+  background: var(--prefooter-background);
+  opacity: 0.9;
+  top: 40%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s;
+}
+
+.slider_blog_interna .slick-arrow:hover,
+.slider_blog_interna .slick-arrow:focus {
+  color: var(--prefooter-background);
+  background: var(--prefooter-background);
+  opacity: 1;
+}
+
+.slider_blog_interna .slick-arrow:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.slider_blog_interna .slick-prev {
+  left: -50px;
+}
+
+.slider_blog_interna .slick-next {
+  right: -50px;
+}
+
+.slider_blog_interna .slick-prev:before {
+  content: "\f060";
+  font: var(--fa-font-solid);
+  color: white;
+  font-size: 16px;
+  left: 1px;
+  position: relative;
+}
+
+.slider_blog_interna .slick-next:before {
+  content: "\f061";
+  font: var(--fa-font-solid);
+  color: white;
+  font-size: 16px;
+}
+
+.slide .slick-arrow {
+  font-size: 1px !important;
+  color: transparent;
+}
+
+.slide .slick-arrow {
+  position: absolute;
+  background: var(--prefooter-background);
+  opacity: 0.9;
+  top: 55%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s;
+}
+
+.slide .slick-arrow:hover,
+.slide .slick-arrow:focus {
+  color: var(--prefooter-background);
+  background: var(--prefooter-background);
+  opacity: 1;
+}
+
+.slide .slick-arrow:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.slide .slick-prev {
+  left: -20px;
+}
+
+.slide .slick-next {
+  right: -20px;
+}
+
+.slide .slick-prev:before {
+  content: "\f060";
+  font: var(--fa-font-solid);
+  color: white;
+  font-size: 16px;
+  left: 1px;
+  position: relative;
+}
+
+.slide .slick-next:before {
+  content: "\f061";
+  font: var(--fa-font-solid);
+  color: white;
+  font-size: 16px;
+}
+
+.filosofia_slider .slick-slide {
+  padding: 10px;
+}
+
+.filosofia-btn-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.filosofia-btn-wrap .prev-btn,
+.filosofia-btn-wrap .next-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--green-900-color);
+  color: var(--white-color);
+  border: none;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+}
+
+.filosofia-btn-wrap .prev-btn:hover,
+.filosofia-btn-wrap .next-btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.blog_post {
+  opacity: 0.95;
+  transition: all ease 0.5s;
+}
+
+.blog_post:hover {
+  opacity: 1;
+  transform: scale(1.02)
+}
+
+.blog_post:hover h2 {
+  animation: bouncing 0.5s .3s;
+}
+
+.sectors_slider .slick-slide {
+  padding: 10px;
+}
+
+
 
 /* Desktop */
 @media (min-width: 980px) and (max-width: 1299px) {
@@ -2319,16 +2664,16 @@ footer .information_footer a .btn {
     display: none;
   }
 
-  .navbar {
+  header .navbar {
     display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 66px;
     background-color: var(--prefooter-background);
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 66px);
     padding-top: 60px;
     gap: 10vh;
   }
@@ -2339,8 +2684,29 @@ footer .information_footer a .btn {
   }
 
   header .navbar ul a {
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  header .navbar ul li {
+    float: none;
+  }
+
+  header .navbar ul ul {
+    display: block;
+    position: initial;
+    top: auto;
+    left: auto;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  header .navbar ul ul a {
+    color: var(--gray-200-color);
+    font-size: 0.9rem;
+
   }
 
   html {
@@ -2438,16 +2804,16 @@ footer .information_footer a .btn {
     display: none;
   }
 
-  .navbar {
+  header .navbar {
     display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 66px;
     background-color: var(--prefooter-background);
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 66px);
     padding-top: 60px;
     gap: 10vh;
   }
@@ -2458,8 +2824,29 @@ footer .information_footer a .btn {
   }
 
   header .navbar ul a {
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  header .navbar ul li {
+    float: none;
+  }
+
+  header .navbar ul ul {
+    display: block;
+    position: initial;
+    top: auto;
+    left: auto;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  header .navbar ul ul a {
+    color: var(--gray-200-color);
+    font-size: 0.9rem;
+
   }
 
   html {
@@ -2606,14 +2993,6 @@ footer .information_footer a .btn {
     padding-bottom: 70px;
   }
 
-  .other_services .other_service {
-    margin-bottom: 20px;
-  }
-
-  .other_services .other_service img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .location {
     padding-bottom: 37px;
@@ -2786,25 +3165,30 @@ footer .information_footer a .btn {
 
 /* mobil */
 @media (min-width: 320px) and (max-width: 767px) {
+  .header-container {
+    flex-direction: row-reverse;
+  }
+
   .hamburger {
     display: flex;
     cursor: pointer;
+    justify-content: end;
   }
 
   .hamburger #closeHam {
     display: none;
   }
 
-  .navbar {
+  header .navbar {
     display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
     right: 0;
-    top: 72px;
+    top: 66px;
     background-color: var(--prefooter-background);
     width: 100%;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 66px);
     padding-top: 60px;
     gap: 10vh;
   }
@@ -2815,8 +3199,29 @@ footer .information_footer a .btn {
   }
 
   header .navbar ul a {
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  header .navbar ul li {
+    float: none;
+  }
+
+  header .navbar ul ul {
+    display: block;
+    position: initial;
+    top: auto;
+    left: auto;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  header .navbar ul ul a {
+    color: var(--gray-200-color);
+    font-size: 0.9rem;
+
   }
 
   html {
@@ -2831,11 +3236,11 @@ footer .information_footer a .btn {
   header {
     position: fixed !important;
     padding: 0;
+    z-index: 3;
   }
 
   header .navbar ul {
     justify-content: center;
-    margin-top: 25px;
   }
 
   header .logo_mobil {
@@ -2847,7 +3252,6 @@ footer .information_footer a .btn {
     margin-bottom: 10px;
     width: auto;
     height: auto;
-    float: right;
   }
 
   header .information {
@@ -2860,10 +3264,21 @@ footer .information_footer a .btn {
     float: none;
     padding: 10px;
     gap: 10px;
+    justify-content: space-between;
   }
 
-  .phones:nth-child(2) {
-    margin-right: 5px;
+  header .phones :nth-child(2) {
+    margin-right: 0;
+  }
+
+  header .phones a:last-of-type {
+    display: block;
+    text-align: right;
+  }
+
+  header .phones i {
+    position: relative;
+    top: 10px;
   }
 
   .whatsapp {
@@ -3018,14 +3433,6 @@ footer .information_footer a .btn {
     font-size: 22px;
   }
 
-  .other_services .other_service {
-    margin-bottom: 20px;
-  }
-
-  .other_services .other_service img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .location {
     padding-top: 450px;
@@ -3077,7 +3484,7 @@ footer .information_footer a .btn {
 
   .hero_products_detail {
     height: 310px;
-    margin-top: 72px;
+    margin-top: 66px;
   }
 
   .hero_products_detail h1 {
@@ -3252,11 +3659,17 @@ footer .information_footer a .btn {
     right: 0;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
+    width: calc(100% - 30px);
+    margin-top: 50px;
   }
 
   .slider_filosofia img {
     margin: auto;
+  }
+
+  .filosofia-btn-wrap {
+    justify-content: center;
+    align-items: center;
   }
 
   .industrias_filosofia {
@@ -3279,6 +3692,15 @@ footer .information_footer a .btn {
   .button_link,
   .nuestros_servicios img {
     margin-bottom: 35px;
+  }
+
+  .nuestros_servicios {
+    padding-bottom: 40px;
+  }
+
+
+  .sectors_slider img {
+    margin: auto;
   }
 
   .pagination {

@@ -38,7 +38,7 @@ $posts = [
       for ($i = 0; $i < 4; $i++) {
         foreach ($posts as $key => $post) {
       ?>
-          <div class="col-sm-6">
+          <div class="col-sm-6 blog_post">
             <a href="<?php echo base_url; ?>blog-interna">
               <img src="img/<?php echo $post['img']; ?>" alt="<?php echo $post['title']; ?>" class="img-fluid">
               <h2><?php echo $post['title']; ?></h2>
