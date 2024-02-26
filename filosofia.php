@@ -45,7 +45,7 @@
       <div class="filosofia_slider">
         <div>
           <a href="<?php echo base_url; ?>industrias/automotriz">
-            <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
+            <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coatinc Company">
             <h5>Transporte
               <br>y Automotriz
             </h5>
@@ -53,31 +53,31 @@
         </div>
         <div>
           <a href="<?php echo base_url; ?>industrias/construccion">
-            <img src="img/construccion.png" class="img-fluid" alt="Construcción Coantic Company">
+            <img src="img/construccion.png" class="img-fluid" alt="Construcción Coatinc Company">
             <h5>Construcción</h5>
           </a>
         </div>
         <div>
           <a href="<?php echo base_url; ?>industrias/energias-renovables">
-            <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coantic Company">
+            <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coatinc Company">
             <h5>Energías Renovables</h5>
           </a>
         </div>
         <div>
           <a href="<?php echo base_url; ?>industrias/comercio de acero">
-            <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coantic Company">
+            <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coatinc Company">
             <h5>Comercio de Acero</h5>
           </a>
         </div>
         <div>
           <a href="<?php echo base_url; ?>industrias/herreria">
-            <img src="img/herreria.png" class="img-fluid" alt="Herrería Coantic Company">
+            <img src="img/herreria.png" class="img-fluid" alt="Herrería Coatinc Company">
             <h5>Herrería</h5>
           </a>
         </div>
         <div>
           <a href="<?php echo base_url; ?>industrias/infraestructura">
-            <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coantic Company">
+            <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coatinc Company">
             <h5>Infraestructura</h5>
           </a>
         </div>

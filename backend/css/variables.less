@@ -1,0 +1,220 @@
+/*********************************************
+**************  VARIABLES DEL TEMA
+*********************************************/
+@primario: #96902D;
+@secundario: #D0CA64;
+@blanco: #fff;
+@negro: #1F333A;
+@gris: #364651;
+@grisClaro: #838E99;
+@textosMenu: #B0B0B0;
+@colorTextos: #606060;
+@colorOvers: @secundario;
+@oddTable: @primario;
+@evenTable: @secundario;
+@inputBorder: #ECECEC;
+@inputHeight: 40px;
+@labelSize: 14px;
+
+@menuWidth: 0px;
+@menuMin: 0px;
+
+/*********************************************
+**************  FUNCIONES
+*********************************************/
+.hardwareAccel() {
+  transform: tranlateZ(0);
+}
+
+.transition(@tiempo: 0.5s) {
+  transition: all @tiempo;
+}
+
+.fuente(@weight: 400; @size: 14px; @font-family: 'Open Sans', sans-serif) {
+  font: @arguments;
+}
+
+.roundCorners(@rad1: 8px; @rad2: @rad1; @rad3: @rad1; @rad4: @rad1) {
+  border-top-right-radius: unit(@rad1, px);
+  border-bottom-right-radius: unit(@rad2, px);
+  border-bottom-left-radius: unit(@rad3, px);
+  border-top-left-radius: unit(@rad4, px);
+}
+
+.h5 {
+  margin: 0px;
+  height: 5px;
+}
+
+/*********************************************
+**************  EFECTOS Y ANIMACIONES
+*********************************************/
+.pt-page-scaleUpDown {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+
+.pt-page-scaleDownUp {
+  -webkit-animation: scaleDownUp .5s ease both;
+  -moz-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both;
+}
+
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@-moz-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+}
+
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    transform: scale(1.21);
+  }
+}
+
+
+@-webkit-keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@-moz-keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+}
+
+@keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*********************************************
+************** MEDIDAS DE LAS PANTALLAS
+*********************************************/
+@container-padding-left: 30px;
+@container-padding-right: 30px;
+
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+@padding-base-vertical: 6px;
+@padding-base-horizontal: 12px;
+
+@padding-large-vertical: 10px;
+@padding-large-horizontal: 16px;
+
+@padding-small-vertical: 5px;
+@padding-small-horizontal: 10px;
+
+@padding-xs-vertical: 1px;
+@padding-xs-horizontal: 5px;
+
+@line-height-large: 1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small: 1.5;
+
+/********************************************************************
+**************  GENERADOR DE ALTURAS .h10, h20, etc para espacios
+********************************************************************/
+.clearfix {
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.fix-display {
+  display: block;
+  clear: both;
+  width: 100%;
+  &:extend(.clearfix all);
+}
+
+.clearHeight (@i) when (@i>0) {
+  .h@{i} {
+    &:extend(.fix-display);
+    height: unit(@i, px);
+
+    @media screen and (max-width: @screen-sm-max) {
+      & when (@i>=25) and (@i <30) {
+        height: unit((@i - 5), px);
+      }
+
+      & when (@i>=30) and (@i <60) {
+        height: unit((@i - 10), px);
+      }
+
+      & when (@i>=60) {
+        height: unit((@i - 30), px);
+      }
+    }
+
+    @media screen and (max-width: @screen-xs-max) {
+      & when (@i>=25) and (@i <=30) {
+        height: unit((@i - 10), px);
+      }
+
+      & when (@i>30) and (@i <60) {
+        height: unit((@i - 15), px);
+      }
+
+      & when (@i>=60) {
+        height: unit((@i - 35), px);
+      }
+    }
+  }
+
+  .clearHeight((@i - 5));
+}
+
+/* Height's máximos */
+.clearHeight(200);

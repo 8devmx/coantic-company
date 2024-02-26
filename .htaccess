@@ -8,6 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^servicios/([a-z0-9_-]+)/?$ productos-interna.php?secc=$1 [NC,L]
 RewriteRule ^industrias/([a-z0-9_-]+)/?$ industrias.php?secc=$1 [NC,L]
 RewriteRule ^blog/([a-z0-9_-]+)/?$ blog-interna.php?secc=$1 [NC,L]
+RewriteRule ^vacantes/([a-z0-9_-]+)/?$ bolsa-de-trabajo-interna.php?secc=$1 [NC,L]
 
 ##Lee el sitemap y lo genera dinamicamente
 #RewriteRule ^sitemap\.xml$ sitemap\.php [L]

@@ -3,11 +3,11 @@ $industries = [
   "automotriz" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR AUTOMOTRIZ Y TRANSPORTE",
-      "subtitle" => "Galvanizado por inmersión en caliente para la industria automotriz",
+      "subtitle" => "Somos empresa líder internacional",
       "slider" => ["industrias/automotriz/1.jpg", "industrias/automotriz/2.jpg", "industrias/automotriz/3.jpg", "industrias/automotriz/4.jpg", "industrias/automotriz/5.jpg", "industrias/automotriz/6.jpg", "industrias/automotriz/7.jpg", "industrias/automotriz/8.jpg"]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA AUTOMOTRIZ",
+      "title" => "BENEFICIOS",
       "text" => "<strong>Galvanizamos partes estructurales para carrocerías de tráileres y vehículos.</strong> En la industria automotriz, cada vez es más importante utilizar materiales que sean duraderos, resistentes a la corrosión y que ofrezcan un alto rendimiento. Uno de los materiales preferidos por los fabricantes de automóviles es el acero galvanizado.",
       "items" => [
         [
@@ -38,7 +38,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "APLICACIONES DE ACERO GALVANIZADO EN LA INDUSTRIA AUTOMOTRIZ Y TRANSPORTE",
+      "title" => "APLICACIONES",
       "image" => "industries_applications.png",
       "items" => [
         [
@@ -65,7 +65,7 @@ $industries = [
   "construccion" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR CONSTRUCCIÓN",
-      "subtitle" => "Galvanizado por inmersión en caliente para la industria de construcción",
+      "subtitle" => "Somos empresa líder en México",
       "slider" => [
         "industrias/construccion/1.jpg",
         "industrias/construccion/2.jpg",
@@ -76,7 +76,7 @@ $industries = [
       ]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE CONSTRUCCIÓN",
+      "title" => "BENEFICIOS",
       "text" => "La industria de la construcción está constantemente buscando materiales duraderos y resistentes para garantizar la seguridad y longevidad de las estructuras. Uno de los materiales más populares y confiables en este sentido es el acero galvanizado.",
       "items" => [
         [
@@ -107,7 +107,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "Aplicaciones de acero galvanizado en la construcción",
+      "title" => "APLICACIONES",
       "image" => "applications-construccion.png",
       "items" => [
         [
@@ -146,7 +146,7 @@ $industries = [
   "energias-renovables" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO APLICADO A ENERGÍAS RENOVABLES",
-      "subtitle" => "Galvanizado por inmersión en caliente para la industria de energías renovables",
+      "subtitle" => "Empresa responsable con el medio ambiente",
       "slider" => [
         "industrias/renovables/1.jpg",
         "industrias/renovables/2.jpg",
@@ -157,7 +157,7 @@ $industries = [
       ]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE ENERGÍAS RENOVABLES",
+      "title" => "BENEFICIOS",
       "text" => "La industria de la construcción está constantemente buscando materiales duraderos y resistentes para garantizar la seguridad y longevidad de las estructuras. Uno de los materiales más populares y confiables en este sentido es el acero galvanizado.",
       "items" => [
         [
@@ -188,7 +188,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "Aplicaciones de acero galvanizado en energías renovables",
+      "title" => "APLICACIONES",
       "image" => "applications-energias-renovables.png",
       "items" => [
         [
@@ -215,7 +215,7 @@ $industries = [
   "comercio-de-acero" => [
     "hero" => [
       "title" => "Acero galvanizado APLICADO A COMERCIO DE ACERO",
-      "subtitle" => "Galvanizado por inmersión en caliente para la industria de acero",
+      "subtitle" => "Mejora la vida útil de los productos",
       "slider" => [
         "industrias/comercio/1.jpg",
         "industrias/comercio/2.jpg",
@@ -224,7 +224,7 @@ $industries = [
       ]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN EL COMERCIO DE ACERO",
+      "title" => "BENEFICIOS",
       "text" => "El acero galvanizado es un material ampliamente utilizado en el sector del comercio de acero debido a sus numerosos beneficios y aplicaciones. Conoce cómo el acero galvanizado puede mejorar la calidad y durabilidad de los productos de acero, así como su relevancia en el comercio actual.",
       "items" => [
         [
@@ -245,7 +245,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "Aplicaciones de acero galvanizado en el comercio de acero",
+      "title" => "APLICACIONES",
       "image" => "applications-comercio-de-acero.png",
       "items" => [
         [
@@ -276,7 +276,7 @@ $industries = [
   "herreria" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO EN HERRERÍA",
-      "subtitle" => "Galvanizado por inmersión en caliente para herrería",
+      "subtitle" => "Tu aliado en mejorar la calidad de tus servicios",
       "slider" => [
         "industrias/herreria/1.jpg",
         "industrias/herreria/2.jpg",
@@ -291,7 +291,7 @@ $industries = [
       ]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA INDUSTRIA DE HERRERÍA",
+      "title" => "BENEFICIOS",
       "text" => "Ofrecemos una gama completa de servicios que no se encuentran en todas partes: antes de la galvanización, podemos proporcionar limpieza con chorro de arena, eliminación de pintura y capas de zinc existentes, etc. y, después del acabado, nos encargamos del mantenimiento del brillo, el desbarbado o el recubrimiento dúplex.",
       "items" => [
         [
@@ -317,7 +317,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "Aplicaciones de acero galvanizado en HERRERÍA",
+      "title" => "APLICACIONES",
       "image" => "applications-herreria.png",
       "items" => [
         [
@@ -348,7 +348,7 @@ $industries = [
   "infraestructura" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO PARA INFRAESTRUCTURA",
-      "subtitle" => "Galvanizado por inmersión en caliente para la construcción de grandes estructuras",
+      "subtitle" => "Tu aliado para la construcción de grandes estructuras",
       "slider" => [
         "industrias/infraestructura/1.jpg",
         "industrias/infraestructura/2.jpg",
@@ -357,7 +357,7 @@ $industries = [
       ]
     ],
     "benefits" => [
-      "title" => "BENEFICIOS DE UTILIZAR ACERO GALVANIZADO EN LA CONSTRUCCIÓN DE INFRAESTRUCTURAS",
+      "title" => "BENEFICIOS",
       "text" => "El acero galvanizado es un material ampliamente utilizado en la construcción de infraestructuras debido a sus numerosos beneficios y aplicaciones.",
       "items" => [
         [
@@ -383,7 +383,7 @@ $industries = [
       ]
     ],
     "applications" => [
-      "title" => "Aplicaciones de acero galvanizado en INFRAESTRUCTURA",
+      "title" => "APLICACIONES",
       "image" => "applications-infraestructura.png",
       "items" => [
         [

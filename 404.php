@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Coantic Company</title>
+  <title>The Coatinc Company</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.14.0/css/flag-icons.min.css" />
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="image">
-      <img src="img/404.jpg" alt="Gracias Coantic Company" class="img-fluid">
+      <img src="img/404.jpg" alt="Gracias Coatinc Company" class="img-fluid">
     </div>
   </div>
   <?php require_once 'includes/_footer.php'; ?>

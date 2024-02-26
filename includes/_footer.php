@@ -75,7 +75,7 @@
         </div>
         <div class="col-lg-2 col-md-3">
           <a href="<?php echo base_url; ?>" class="logo">
-            <img src="<?php echo base_url; ?>img/logo.svg" alt="Logo Coantic Company">
+            <img src="<?php echo base_url; ?>img/logo.svg" alt="Logo Coatinc Company">
           </a>
         </div>
         <div class="col-lg-5 col-md-5">

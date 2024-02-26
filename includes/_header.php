@@ -60,12 +60,12 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
       </div>
       <div class="d-none d-sm-block col-lg-2 col-md-3">
         <a href="<?php echo base_url; ?>" class="logo">
-          <img src="<?php echo base_url; ?>img/logo.svg" alt="Logo Coantic Company">
+          <img src="<?php echo base_url; ?>img/logo.svg" alt="Logo Coatinc Company">
         </a>
       </div>
       <div class="d-sm-none d-block col-4">
         <a href="<?php echo base_url; ?>" class="logo">
-          <img src="<?php echo base_url; ?>img/coatinc-logo.png" alt="Logo Coantic Company" class="img-fluid logo_mobil">
+          <img src="<?php echo base_url; ?>img/coatinc-logo.png" alt="Logo Coatinc Company" class="img-fluid logo_mobil">
         </a>
       </div>
       <div class="col-sm-5">

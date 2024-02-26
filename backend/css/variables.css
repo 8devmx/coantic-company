@@ -1,0 +1,730 @@
+/*********************************************
+**************  VARIABLES DEL TEMA
+*********************************************/
+/*********************************************
+**************  FUNCIONES
+*********************************************/
+.h5 {
+  margin: 0px;
+  height: 5px;
+}
+/*********************************************
+**************  EFECTOS Y ANIMACIONES
+*********************************************/
+.pt-page-scaleUpDown {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+.pt-page-scaleDownUp {
+  -webkit-animation: scaleDownUp .5s ease both;
+  -moz-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both;
+}
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+}
+@-moz-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+}
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    transform: scale(1.21);
+  }
+}
+@-webkit-keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+}
+@-moz-keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+}
+@keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*********************************************
+************** MEDIDAS DE LAS PANTALLAS
+*********************************************/
+/********************************************************************
+**************  GENERADOR DE ALTURAS .h10, h20, etc para espacios
+********************************************************************/
+.clearfix:before,
+.clearfix:after,
+.fix-display:before,
+.fix-display:after,
+.h200:before,
+.h200:after,
+.h195:before,
+.h195:after,
+.h190:before,
+.h190:after,
+.h185:before,
+.h185:after,
+.h180:before,
+.h180:after,
+.h175:before,
+.h175:after,
+.h170:before,
+.h170:after,
+.h165:before,
+.h165:after,
+.h160:before,
+.h160:after,
+.h155:before,
+.h155:after,
+.h150:before,
+.h150:after,
+.h145:before,
+.h145:after,
+.h140:before,
+.h140:after,
+.h135:before,
+.h135:after,
+.h130:before,
+.h130:after,
+.h125:before,
+.h125:after,
+.h120:before,
+.h120:after,
+.h115:before,
+.h115:after,
+.h110:before,
+.h110:after,
+.h105:before,
+.h105:after,
+.h100:before,
+.h100:after,
+.h95:before,
+.h95:after,
+.h90:before,
+.h90:after,
+.h85:before,
+.h85:after,
+.h80:before,
+.h80:after,
+.h75:before,
+.h75:after,
+.h70:before,
+.h70:after,
+.h65:before,
+.h65:after,
+.h60:before,
+.h60:after,
+.h55:before,
+.h55:after,
+.h50:before,
+.h50:after,
+.h45:before,
+.h45:after,
+.h40:before,
+.h40:after,
+.h35:before,
+.h35:after,
+.h30:before,
+.h30:after,
+.h25:before,
+.h25:after,
+.h20:before,
+.h20:after,
+.h15:before,
+.h15:after,
+.h10:before,
+.h10:after,
+.h5:before,
+.h5:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.fix-display:after,
+.h200:after,
+.h195:after,
+.h190:after,
+.h185:after,
+.h180:after,
+.h175:after,
+.h170:after,
+.h165:after,
+.h160:after,
+.h155:after,
+.h150:after,
+.h145:after,
+.h140:after,
+.h135:after,
+.h130:after,
+.h125:after,
+.h120:after,
+.h115:after,
+.h110:after,
+.h105:after,
+.h100:after,
+.h95:after,
+.h90:after,
+.h85:after,
+.h80:after,
+.h75:after,
+.h70:after,
+.h65:after,
+.h60:after,
+.h55:after,
+.h50:after,
+.h45:after,
+.h40:after,
+.h35:after,
+.h30:after,
+.h25:after,
+.h20:after,
+.h15:after,
+.h10:after,
+.h5:after {
+  clear: both;
+}
+.fix-display,
+.h200,
+.h195,
+.h190,
+.h185,
+.h180,
+.h175,
+.h170,
+.h165,
+.h160,
+.h155,
+.h150,
+.h145,
+.h140,
+.h135,
+.h130,
+.h125,
+.h120,
+.h115,
+.h110,
+.h105,
+.h100,
+.h95,
+.h90,
+.h85,
+.h80,
+.h75,
+.h70,
+.h65,
+.h60,
+.h55,
+.h50,
+.h45,
+.h40,
+.h35,
+.h30,
+.h25,
+.h20,
+.h15,
+.h10,
+.h5 {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+/* Height's máximos */
+.h200 {
+  height: 200px;
+}
+@media screen and (max-width: 991px) {
+  .h200 {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h200 {
+    height: 165px;
+  }
+}
+.h195 {
+  height: 195px;
+}
+@media screen and (max-width: 991px) {
+  .h195 {
+    height: 165px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h195 {
+    height: 160px;
+  }
+}
+.h190 {
+  height: 190px;
+}
+@media screen and (max-width: 991px) {
+  .h190 {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h190 {
+    height: 155px;
+  }
+}
+.h185 {
+  height: 185px;
+}
+@media screen and (max-width: 991px) {
+  .h185 {
+    height: 155px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h185 {
+    height: 150px;
+  }
+}
+.h180 {
+  height: 180px;
+}
+@media screen and (max-width: 991px) {
+  .h180 {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h180 {
+    height: 145px;
+  }
+}
+.h175 {
+  height: 175px;
+}
+@media screen and (max-width: 991px) {
+  .h175 {
+    height: 145px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h175 {
+    height: 140px;
+  }
+}
+.h170 {
+  height: 170px;
+}
+@media screen and (max-width: 991px) {
+  .h170 {
+    height: 140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h170 {
+    height: 135px;
+  }
+}
+.h165 {
+  height: 165px;
+}
+@media screen and (max-width: 991px) {
+  .h165 {
+    height: 135px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h165 {
+    height: 130px;
+  }
+}
+.h160 {
+  height: 160px;
+}
+@media screen and (max-width: 991px) {
+  .h160 {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h160 {
+    height: 125px;
+  }
+}
+.h155 {
+  height: 155px;
+}
+@media screen and (max-width: 991px) {
+  .h155 {
+    height: 125px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h155 {
+    height: 120px;
+  }
+}
+.h150 {
+  height: 150px;
+}
+@media screen and (max-width: 991px) {
+  .h150 {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h150 {
+    height: 115px;
+  }
+}
+.h145 {
+  height: 145px;
+}
+@media screen and (max-width: 991px) {
+  .h145 {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h145 {
+    height: 110px;
+  }
+}
+.h140 {
+  height: 140px;
+}
+@media screen and (max-width: 991px) {
+  .h140 {
+    height: 110px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h140 {
+    height: 105px;
+  }
+}
+.h135 {
+  height: 135px;
+}
+@media screen and (max-width: 991px) {
+  .h135 {
+    height: 105px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h135 {
+    height: 100px;
+  }
+}
+.h130 {
+  height: 130px;
+}
+@media screen and (max-width: 991px) {
+  .h130 {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h130 {
+    height: 95px;
+  }
+}
+.h125 {
+  height: 125px;
+}
+@media screen and (max-width: 991px) {
+  .h125 {
+    height: 95px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h125 {
+    height: 90px;
+  }
+}
+.h120 {
+  height: 120px;
+}
+@media screen and (max-width: 991px) {
+  .h120 {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h120 {
+    height: 85px;
+  }
+}
+.h115 {
+  height: 115px;
+}
+@media screen and (max-width: 991px) {
+  .h115 {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h115 {
+    height: 80px;
+  }
+}
+.h110 {
+  height: 110px;
+}
+@media screen and (max-width: 991px) {
+  .h110 {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h110 {
+    height: 75px;
+  }
+}
+.h105 {
+  height: 105px;
+}
+@media screen and (max-width: 991px) {
+  .h105 {
+    height: 75px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h105 {
+    height: 70px;
+  }
+}
+.h100 {
+  height: 100px;
+}
+@media screen and (max-width: 991px) {
+  .h100 {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h100 {
+    height: 65px;
+  }
+}
+.h95 {
+  height: 95px;
+}
+@media screen and (max-width: 991px) {
+  .h95 {
+    height: 65px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h95 {
+    height: 60px;
+  }
+}
+.h90 {
+  height: 90px;
+}
+@media screen and (max-width: 991px) {
+  .h90 {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h90 {
+    height: 55px;
+  }
+}
+.h85 {
+  height: 85px;
+}
+@media screen and (max-width: 991px) {
+  .h85 {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h85 {
+    height: 50px;
+  }
+}
+.h80 {
+  height: 80px;
+}
+@media screen and (max-width: 991px) {
+  .h80 {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h80 {
+    height: 45px;
+  }
+}
+.h75 {
+  height: 75px;
+}
+@media screen and (max-width: 991px) {
+  .h75 {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h75 {
+    height: 40px;
+  }
+}
+.h70 {
+  height: 70px;
+}
+@media screen and (max-width: 991px) {
+  .h70 {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h70 {
+    height: 35px;
+  }
+}
+.h65 {
+  height: 65px;
+}
+@media screen and (max-width: 991px) {
+  .h65 {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h65 {
+    height: 30px;
+  }
+}
+.h60 {
+  height: 60px;
+}
+@media screen and (max-width: 991px) {
+  .h60 {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h60 {
+    height: 25px;
+  }
+}
+.h55 {
+  height: 55px;
+}
+@media screen and (max-width: 991px) {
+  .h55 {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h55 {
+    height: 40px;
+  }
+}
+.h50 {
+  height: 50px;
+}
+@media screen and (max-width: 991px) {
+  .h50 {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h50 {
+    height: 35px;
+  }
+}
+.h45 {
+  height: 45px;
+}
+@media screen and (max-width: 991px) {
+  .h45 {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h45 {
+    height: 30px;
+  }
+}
+.h40 {
+  height: 40px;
+}
+@media screen and (max-width: 991px) {
+  .h40 {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h40 {
+    height: 25px;
+  }
+}
+.h35 {
+  height: 35px;
+}
+@media screen and (max-width: 991px) {
+  .h35 {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h35 {
+    height: 20px;
+  }
+}
+.h30 {
+  height: 30px;
+}
+@media screen and (max-width: 991px) {
+  .h30 {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h30 {
+    height: 20px;
+  }
+}
+.h25 {
+  height: 25px;
+}
+@media screen and (max-width: 991px) {
+  .h25 {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h25 {
+    height: 15px;
+  }
+}
+.h20 {
+  height: 20px;
+}
+.h15 {
+  height: 15px;
+}
+.h10 {
+  height: 10px;
+}
+.h5 {
+  height: 5px;
+}

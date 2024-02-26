@@ -62,8 +62,8 @@
         </div>
         <div class="col-md-4 offset-xl-2">
           <p>
-            <i class="fa-solid fa-phone">+</i> <span id="tel_country">52 664 3095346</span>
-            <i>+</i> <span id="cel_country">52 664 1158473</span>
+            <i class="fa-solid fa-phone"></i> <span id="tel_country">+ 52 664 3095346</span>
+            <span id="cel_country">+ 52 664 1158473</span>
           </p>
         </div>
         <div class="col-xl-1 col-md-3 col-lg-2">
@@ -114,7 +114,7 @@
   <div class="other_industries">
     <div class="container">
       <div class="row other_industries_title">
-        <h3>OTRAS INDUSTRIAS DONDE APLICAMOS ACERO GALVANIZADO</h3>
+        <h3>OTRAS INDUSTRIAS</h3>
       </div>
       <div class="row">
         <?php
@@ -123,7 +123,7 @@
           if ($in != $_GET['secc']) {
             $offset = $counter == 1 ? "offset-lg-1" : "";
         ?>
-            <div class="col-sm-4 col-lg-2 col-xl-2 <?php echo $offset; ?>">
+            <div class="col-sm-4 col-lg-2 col-xl-2 <?php echo $offset; ?> industries_slide">
               <a href="<?php echo base_url . "industrias/" . $in; ?>">
                 <img src="<?php echo base_url . 'img/' . $one_industry['image']; ?>" alt="<?php echo $one_industry['title']; ?> | Coatinc Company" class="img-fluid">
                 <p><?php echo $one_industry['title']; ?></p>

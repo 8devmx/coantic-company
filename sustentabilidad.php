@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="sustentabilidad_responsability">
-    <img src="img/empresa-sustentable.svg" alt="Empresa Sustentable Coantic Company" class="logo_infinite">
+    <img src="img/empresa-sustentable.svg" alt="Empresa Sustentable Coatinc Company" class="logo_infinite">
     <div class="container">
       <div class="row">
         <div class="col sm-10 offset-1">

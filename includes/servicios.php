@@ -4,7 +4,7 @@ $services = [
     "preview" => "acero-nuestros-servicios.png",
     "hero" => "bg-interna.png",
     "title" => "ACERO GALVANIZADO",
-    "subtitle" => "Conoce los beneficios del Acero Galvanizado por Inmersión en Caliente",
+    "subtitle" => "Conoce los beneficios del Galvanizado por Inmersión en Caliente",
     "intro" => [
       "title" => "EXPERIENCIA ALEMANA",
       "paragraphs" => [
@@ -15,7 +15,7 @@ $services = [
     "benefits" => [
       "title" => "BENEFICIOS",
       "text" => [
-        "Protección contra corrosión de 35 – 75 años",
+        "Protección contra corrosión por 75 años",
         "Mantiene la durabilidad estructural",
         "Conservación y protección de estética en construcciones",
         "Reducción de costos por libertad de mantenimiento sobre el ciclo de vida de materiales galvanizados",
@@ -25,7 +25,7 @@ $services = [
     ],
     "about" => [
       "title" => "QUÉ ES EL ACERO GALVANIZADO",
-      "paragraph" => "El Galvanizado por inmersión en Caliente es un proceso industrial cuyo objetivo es brindar protección contra la corrosión por hasta 70 años (dependiendo del uso y condiciones ambientales donde se utilice el acero), adhiriendo una capa de zinc a estructuras de hierro o acero a través de la inmersión de los materiales en un baño de zinc fundido a 450°C."
+      "paragraph" => "El Galvanizado por inmersión en Caliente es un proceso industrial cuyo objetivo es brindar protección contra la corrosión por hasta 75 años (dependiendo del uso y condiciones ambientales donde se utilice el acero), adhiriendo una capa de zinc a estructuras de hierro o acero a través de la inmersión de los materiales en un baño de zinc fundido a 450°C."
     ],
     "caracteristics" => [
       "title" => "MATERIALES DE APLICACIÓN",
@@ -68,7 +68,7 @@ $services = [
       "text" => "Podemos galvanizar una gran variedad de estructuras y piezas. Garantizamos un servicio rápido, en un máximo de 5 días que nuestros clientes pueden confiar en tener un resultado de gran calidad en el recubrimiento de sus piezas."
     ]
   ],
-  "importacion-exportacion" => [
+  "importacion-y-exportacion" => [
     "hero" => "bg-importacion.jpg",
     "preview" => "importacion-nuestros-servicios.png",
     "title" => "IMPORTACIÓN Y EXPORTACIÓN",
@@ -115,13 +115,13 @@ $services = [
       ]
     ]
   ],
-  "soluciones-logisticas" => [
+  "soluciones-logisticas-y-fletes-en-mexico" => [
     "hero" => "bg-soluciones.jpg",
     "preview" => "soluciones-nuestros-servicios.png",
     "title" => "SOLUCIONES LOGÍSTICAS Y FLETES EN MÉXICO",
-    "subtitle" => "Recolección y entrega de acero galvanizado en todo el país ",
+    "subtitle" => "Servicio de galvanizado y transporte en todo el país",
     "intro" => [
-      "title" => "SERVICIOS DE RECOLECCIÓN Y TRANSPORTE",
+      "title" => "SERVICIOS DE RECOLECCIÓN Y ENTREGA",
       "paragraphs" => [
         "En la industria del acero, es esencial contar con una cadena de suministro eficiente y confiable. En The Coatinc Company, nos especializamos en ofrecer soluciones logísticas completas, desde la recolección del material en sitio, hasta la entrega del material galvanizado.",
         "Nuestro equipo altamente capacitado se encarga de recoger el material directamente en las instalaciones de nuestros clientes. Contamos con una flota de vehículos adecuada para cumplir con sus requerimientos. Nos aseguramos de que el material llegue a nuestra planta para ser galvanizado en condiciones óptimas."

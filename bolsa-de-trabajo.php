@@ -2,7 +2,12 @@
 <html lang="es-MX">
 
 <head>
-  <?php require_once 'includes/scripts.php'; ?>
+  <?php
+  require_once 'includes/scripts.php';
+  require_once 'includes/_functions.php';
+  $vacantes = $db->select("vacantes", "*", ["activo_vac" => 1]);
+  ?>
+
 </head>
 
 <body>
@@ -12,7 +17,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1>BOLSA DE TRABAJO</h1>
-          <p>Empleos en Baja California</p>
+          <p>Empleos</p>
         </div>
       </div>
     </div>
@@ -20,17 +25,17 @@
   <div class="container bolsa_posts">
     <div class="row">
       <div class="col-sm-12">
-        <p class="bolsa_title"><strong>Vacantes disponibles en Tijuana.</strong></p>
+        <p class="bolsa_title"><strong>Vacantes disponibles.</strong></p>
       </div>
     </div>
     <div class="row">
       <?php
-      for ($i = 0; $i < 8; $i++) {
+      foreach ($vacantes as $key => $vac) {
       ?>
         <div class="col-sm-6">
           <div class="bolsa_post">
-            <h2>Éste es el H1 - Nombre de la Vacante</h2>
-            <a href="bolsa-de-trabajo-interna" class="btn">VER DETALLES</a>
+            <h2><?php echo $vac['nom_vac']; ?></h2>
+            <a href="<?php echo base_url; ?>vacantes/<?php echo $vac['url_vac']; ?>" class="btn">VER DETALLES</a>
           </div>
         </div>
       <?php

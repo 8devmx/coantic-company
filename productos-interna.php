@@ -3,22 +3,30 @@
 
 <head>
   <?php
+  require_once 'includes/_functions.php';
   require_once 'includes/scripts.php';
   include_once 'includes/servicios.php';
 
-  $service = array_key_exists($_GET["secc"], $services) ? $services[$_GET["secc"]] : header("Location:" . base_url);
+  $service = array_key_exists($_GET["secc"], $services) ? $services[$_GET["secc"]] : [];
+  $servicio = $db->get("servicios", "*", [
+    "AND" => [
+      "url_ser" => $_GET['secc'],
+      "activo_ser" => 1,
+    ]
+  ]);
   ?>
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
 <body>
-  <?php require_once 'includes/_header.php'; ?>
-  <div class="hero_products_detail" style="background-image: url(<?php echo base_url . 'img/' . $service['hero'] ?>);">
+  <?php
+  require_once 'includes/_header.php'; ?>
+  <div class="hero_products_detail" style="background-image: url(<?php echo base_url . 'uploads/servicios/' . $servicio['hero_ser'] ?>);">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <h1><?php echo $service["title"] ?></h1>
-          <p><?php echo $service["title"] ?></p>
+          <h1><?php echo $servicio["titulo_ser"] ?></h1>
+          <p><?php echo $servicio["subtitulo_ser"] ?></p>
         </div>
       </div>
     </div>
@@ -27,15 +35,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <img src="<?php echo base_url; ?>img/icon-aleman-experence.svg" alt="Acero Galvanizado Coantic Company" class="icon">
-          <h2><?php echo $service["intro"]["title"] ?></h2>
-          <?php
-          for ($i = 0; $i < count($service["intro"]["paragraphs"]); $i++) {
-          ?>
-            <p><?php echo $service["intro"]["paragraphs"][$i]; ?></p>
-          <?php
-          }
-          ?>
+          <img src="<?php echo base_url; ?>img/icon-aleman-experence.svg" alt="Acero Galvanizado Coatinc Company" class="icon">
+          <?php echo $servicio["descripcion_ser"]; ?>
           <a href="<?php echo base_url; ?>contacto" class="btn">ME INTERESA</a>
         </div>
       </div>
@@ -45,36 +46,16 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <h2><?php echo $service["benefits"]["title"] ?></h2>
-          <?php
-          if (gettype($service["benefits"]["text"]) == 'array') {
-          ?>
-            <ul>
-              <?php
-              for ($i = 0; $i < count($service["benefits"]["text"]); $i++) {
-              ?>
-                <li><?php echo $service["benefits"]["text"][$i]; ?></li>
-              <?php
-              }
-              ?>
-            </ul>
-          <?php
-          } else {
-          ?>
-            <p><?php echo $service["benefits"]["text"]; ?></p>
-          <?php
-          }
-          ?>
+          <?php echo $servicio["beneficios_ser"]; ?>
         </div>
       </div>
     </div>
-    <img src="<?php echo base_url; ?>img/<?php echo $service['benefits']['image'] ?>" alt="<?php echo $service['benefits']['title'] ?> Coantic Company" class="benefits_detail_image">
+    <img src="<?php echo base_url; ?>uploads/servicios/<?php echo $servicio['beneficios_imagen_ser']; ?>" alt="Coatinc Company" class="benefits_detail_image">
   </div>
   <div class="container acero_galvanizado">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <h2><?php echo $service['about']['title'] ?></h2>
-        <p><?php echo $service['about']['paragraph'] ?></p>
+        <?php echo $servicio["acerca_ser"]; ?>
         <a href="<?php echo base_url; ?>proceso" class="btn">CONOCE NUESTRO PROCESO</a>
       </div>
     </div>
@@ -83,24 +64,26 @@
     <div class="row">
       <div class="col-12">
         <div class="application_materials">
-          <h2><?php echo $service['caracteristics']['title'] ?></h2>
-          <p><?php echo $service['caracteristics']['paragraph'] ?></p>
+          <?php echo $servicio["caracteristicas_ser"]; ?>
         </div>
       </div>
     </div>
   </div>
   <?php
-  if (array_key_exists('slider', $service)) {
+  if ($servicio["slider_ser"] != "**") {
+    $slider = explode("**", $servicio["slider_ser"]);
   ?>
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="slide">
             <?php
-            for ($i = 0; $i < count($service["slider"]); $i++) {
+            for ($i = 0; $i < count($slider); $i++) {
+              if ($slider[$i] != "") {
             ?>
-              <img src="<?php echo base_url; ?>img/<?php echo $service['slider'][$i]; ?>" alt="">
+                <img src="<?php echo base_url; ?>uploads/servicios/<?php echo $slider[$i]; ?>" alt="">
             <?php
+              }
             }
             ?>
           </div>
@@ -119,12 +102,14 @@
           <p>Descarga nuestros brochures para conocer más</p>
 
           <?php
-          for ($i = 0; $i < count($service["downloads"]["files"]); $i++) {
+          $descargas = json_decode($servicio["descargas_ser"]);
+          foreach ($descargas as $key => $descarga) {
+
           ?>
-            <a href="uploads/<?php echo $service['downloads']['files'][$i]['file']; ?>" target="_BLANK" class="requirement" download="<?php echo $service['downloads']['files'][$i]['file']; ?>">
+            <a href="uploads/servicios/<?php echo $descarga->url; ?>" target="_BLANK" class="requirement" download="<?php echo $descarga->name; ?>">
               <span>
                 <img src="<?php echo base_url; ?>img/pdf.svg" alt="">
-                <?php echo $service['downloads']['files'][$i]['title']; ?></span>
+                <?php echo $descarga->title; ?></span>
               <img src="<?php echo base_url; ?>img/gold-arrow.svg" alt="">
             </a>
           <?php

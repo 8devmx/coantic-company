@@ -17,34 +17,34 @@
       <h1>GALVANIZADO DE ACERO
         <strong>POR INMERSIÓN EN CALIENTE</strong>
       </h1>
-      <p>Conoce la Calidad Alemana en Servicios de Galvanizado en México</p>
+      <p>Empresa líder en México con experiencia desde Alemania</p>
       <a href="<?php echo base_url; ?>contacto" class="btn mt-35">CONTÁCTANOS</a>
     </div>
     <div class="services" data-aos="fade-up">
       <div class="service">
         <a href="<?php echo base_url; ?>servicios/acero-galvanizado">
-          <img src="img/icon-galvanizado.svg" alt="Galvanizado Coantic Company" class="service_icon">
+          <img src="img/icon-galvanizado.svg" alt="Galvanizado Coatinc Company" class="service_icon">
           <div class="service_title">
-            <h4>Galvanizado <br>por inmersión en caliente</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <h4>Servicio <br>de galvanizado</h4>
+            <img src="img/icon-arrow.svg" alt="Arrow Coatinc Company">
           </div>
         </a>
       </div>
       <div class="service">
         <a href="<?php echo base_url ?>servicios/importacion-exportacion">
-          <img src="img/icon-importacion.svg" alt="Importación Coantic Company" class="service_icon">
+          <img src="img/icon-importacion.svg" alt="Importación Coatinc Company" class="service_icon">
           <div class="service_title">
             <h4>Importación <br>y exportación</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <img src="img/icon-arrow.svg" alt="Arrow Coatinc Company">
           </div>
         </a>
       </div>
       <div class="service">
         <a href="<?php echo base_url ?>servicios/soluciones-logisticas">
-          <img src="img/icon-logistica.svg" alt="Logística Coantic Company" class="service_icon">
+          <img src="img/icon-logistica.svg" alt="Logística Coatinc Company" class="service_icon">
           <div class="service_title">
             <h4>Soluciones <br>logísticas</h4>
-            <img src="img/icon-arrow.svg" alt="Arrow Coantic Company">
+            <img src="img/icon-arrow.svg" alt="Arrow Coatinc Company">
           </div>
         </a>
       </div>
@@ -54,11 +54,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3>GALVANIZADO DE ACERO POR INMERSIÓN EN CALIENTE</h3>
-          <p class="benefits_subtitle"><strong>El Galvanizado por Inmersión en Caliente es un proceso de recubrimiento
-              del acero esencial para
-              garantizar la protección
-              y durabilidad del acero</strong></p>
+          <h3>SOMOS TU ALIADO PARA MEJORAR LA CALIDAD DE TUS PRODUCTOS Y SERVICIOS</h3>
+          <p class="benefits_subtitle"><strong>Garantiza la vida útil de cada producto</strong></p>
           <p class="benefits_description">Ubicados en Tijuana Baja California, The Coatinc Company llegó a México desde
             Alemania para ofrecer a sus
             clientes la
@@ -73,10 +70,10 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="paila_slider">
-            <img src="img/paila-principal-1.png" alt="Paila más grande Coantic" class="paila_principal">
-            <img src="img/paila-principal-2.png" alt="Paila más grande Coantic" class="paila_principal">
-            <img src="img/paila-principal-3.png" alt="Paila más grande Coantic" class="paila_principal">
-            <img src="img/paila-principal-4.png" alt="Paila más grande Coantic" class="paila_principal">
+            <img src="img/paila-principal-1.png" alt="Paila más grande Coatinc" class="paila_principal">
+            <img src="img/paila-principal-2.png" alt="Paila más grande Coatinc" class="paila_principal">
+            <img src="img/paila-principal-3.png" alt="Paila más grande Coatinc" class="paila_principal">
+            <img src="img/paila-principal-4.png" alt="Paila más grande Coatinc" class="paila_principal">
           </div>
         </div>
         <div class="col-sm-6">
@@ -126,35 +123,35 @@
     </div>
     <div class="process_steps" data-aos="fade-up">
       <div class="process_step">
-        <img src="img/process-1.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
+        <img src="img/process-1.png" alt="Proceso de Galvanizado Coatinc Company" class="img-fluid">
         <div class="process_step_number">
           <strong>1</strong>
           <p>Inspección de Material</p>
         </div>
       </div>
       <div class="process_step">
-        <img src="img/process-2.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
+        <img src="img/process-2.png" alt="Proceso de Galvanizado Coatinc Company" class="img-fluid">
         <div class="process_step_number">
           <strong>2</strong>
           <p>Armado</p>
         </div>
       </div>
       <div class="process_step">
-        <img src="img/process-3.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
+        <img src="img/process-3.png" alt="Proceso de Galvanizado Coatinc Company" class="img-fluid">
         <div class="process_step_number">
           <strong>3</strong>
           <p>Proceso químico</p>
         </div>
       </div>
       <div class="process_step">
-        <img src="img/process-4.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
+        <img src="img/process-4.png" alt="Proceso de Galvanizado Coatinc Company" class="img-fluid">
         <div class="process_step_number">
           <strong>4</strong>
           <p>Inmersión en Zinc</p>
         </div>
       </div>
       <div class="process_step">
-        <img src="img/process-5.png" alt="Proceso de Galvanizado Coantic Company" class="img-fluid">
+        <img src="img/process-5.png" alt="Proceso de Galvanizado Coatinc Company" class="img-fluid">
         <div class="process_step_number">
           <strong>5</strong>
           <p>Acabado</p>
@@ -190,8 +187,8 @@
   </div>
   <div class="sustainability" data-aos="fade-up">
     <div class="sustainability_image">
-      <img src="img/empresa-sustentable.svg" alt="Empresa Sustentable Coantic Company" class="logo_infinite">
-      <img src="img/sustentable-image.png" alt="Empresa Sustentable Coantic Company">
+      <img src="img/empresa-sustentable.svg" alt="Empresa Sustentable Coatinc Company" class="logo_infinite">
+      <img src="img/sustentable-image.png" alt="Empresa Sustentable Coatinc Company">
     </div>
     <div class="container">
       <div class="row">
@@ -246,7 +243,7 @@
               foreach ($all_industries as $ind => $i) {
             ?>
                 <a href="<?php echo base_url . "industrias/" . $ind; ?>">
-                  <img src="img/<?php echo $i['image']; ?>" class="img-fluid" alt="Transporte y Automotriz Coantic Company">
+                  <img src="img/<?php echo $i['image']; ?>" class="img-fluid" alt="Transporte y Automotriz Coatinc Company">
                   <h5 class="sectors_title"><?php echo $i['title']; ?>
                   </h5>
                 </a>
@@ -266,32 +263,19 @@
         </div>
       </div>
       <div class="row">
-        <div class="services_slider">
-          <div class="other_service">
-            <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
-              <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
-              <h5>Importación y exportación</h5>
-            </a>
-          </div>
-          <div class="other_service">
-            <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
-              <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
-              <h5>Soluciones logísticas</h5>
-            </a>
-          </div>
-          <div class="other_service">
-            <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
-              <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coantic Company">
-              <h5>Importación y exportación</h5>
-            </a>
-          </div>
-          <div class="other_service">
-            <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
-              <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coantic Company">
-              <h5>Soluciones logísticas</h5>
-            </a>
-          </div>
+        <div class="other_service col-sm-6">
+          <a href="<?php echo base_url . "servicios/importacion-exportacion"; ?>">
+            <img src="img/importacion.png" class="img-fluid" alt="Importación y exportación Coatinc Company">
+            <h5>Importación y exportación</h5>
+          </a>
         </div>
+        <div class="other_service col-sm-6">
+          <a href="<?php echo base_url . "servicios/soluciones-logisticas"; ?>">
+            <img src="img/soluciones-logisticas.png" class="img-fluid" alt="Soluciones logísticas Coatinc Company">
+            <h5>Soluciones logísticas</h5>
+          </a>
+        </div>
+
       </div>
     </div>
   </div>

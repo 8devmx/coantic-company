@@ -1,0 +1,237 @@
+/*********************************************
+**************  LOGIN
+*********************************************/
+.login-back {
+  background: url(../img/login.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.back-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.recoverfields {
+  color: #fff;
+}
+
+.logo-login {
+  width: 100%;
+  position: relative;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.flashmsg {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 110%;
+  margin-left: -5%;
+
+  > div {
+    width: 93%;
+    .fuente(normal;13px);
+    line-height: 1;
+    position: absolute;
+    top: -22px;
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+  }
+  .texto {
+    padding: 0 5px;
+    line-height: 21px;
+    width: 100%;
+  }
+  i {
+    font-size: 22px;
+  }
+  .logindisabled .texto {
+    color: #ebb600;
+  }
+  .loginfailed .texto {
+    color: #ca0000;
+  }
+  .loginsent .texto,
+  .loginrecovery .texto {
+    color: #00bda0;
+  }
+}
+
+.error {
+  border: 1px solid #ff5959 !important;
+}
+
+.login {
+  .graypart {
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 45px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+
+    input {
+      border: none;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: #606060;
+      &:focus {
+        background: @primario !important;
+        color: @blanco !important;
+        //font-size: 17px;
+        &::-webkit-input-placeholder {
+          color: @blanco !important;
+        }
+        &::-moz-placeholder {
+          color: @blanco !important;
+        }
+        &:-ms-input-placeholder {
+          color: @blanco !important;
+        }
+        &:-moz-placeholder {
+          color: @blanco !important;
+        }
+      }
+    }
+
+    .botonRecovery,
+    .botonIngresar {
+      text-transform: uppercase;
+      outline: 0;
+      background: @secundario;
+      color: @blanco;
+      width: 100%;
+      border: 0;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+      font-size: 12px;
+      float: right;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      &:hover {
+        background-color: @primario;
+        color: @blanco;
+      }
+    }
+
+    &.cargando:before {
+      background: #fff;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+    }
+    &.cargando:after {
+      content: "";
+      display: block;
+      background: #fff;
+      width: 80px;
+      height: 80px;
+      background: url(../img/wait.gif) no-repeat center center;
+      background-size: cover;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+  }
+
+  .logintitle {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .lostpass {
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+    strong {
+      color: @secundario;
+    }
+    a:hover strong {
+      color: #fff;
+    }
+  }
+}
+
+.botonVerde {
+  background-color: #71bf44;
+  .fuente(400, 15px);
+  line-height: 28px;
+  color: @blanco;
+  display: inline-block;
+  padding: 5px 15px 5px 5px;
+  position: relative;
+  border-radius: 5px;
+  &:hover {
+    background-color: @colorOvers;
+  }
+  [class^="utilicons"] {
+    margin: 0 5px;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .flashmsg i {
+    font-size: 25px;
+  }
+  .flashmsg > div {
+    font-size: 12px;
+  }
+  .login .graypart {
+    width: 100%;
+    padding: 45px 25px;
+  }
+  .login .lostpass {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}

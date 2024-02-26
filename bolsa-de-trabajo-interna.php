@@ -2,7 +2,16 @@
 <html lang="es-MX">
 
 <head>
-  <?php require_once 'includes/scripts.php'; ?>
+  <?php
+  require_once 'includes/_functions.php';
+  require_once 'includes/scripts.php';
+  $vacante = $db->get("vacantes", "*", [
+    "AND" => [
+      "url_vac" => $_GET['secc'],
+      "activo_vac" => 1,
+    ]
+  ]);
+  ?>
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
@@ -18,26 +27,10 @@
   <div class="container bolsa_interna_post">
     <div class="row">
       <div class="col-lg-12 col-md-10 offset-md-1 offset-lg-0">
-        <h1>Éste es el H1 - Nombre de la vacante</h1>
-        <h5>Tiempo completo</h5>
+        <h1><?php echo $vacante['nom_vac']; ?></h1>
+        <h5><?php echo $vacante['texto1_vac']; ?></h5>
         <h3>Descripción del puesto</h3>
-        <p>Dictum turpis consectetur facilisis curae purus blandit potenti amet a ante a ullamcorper cubilia nisl. Pharetra parturient fusce suspendisse in eros aliquam consectetur a suspendisse ultricies aliquam a suspendisse aptent fringilla pretium hac eleifend parturient venenatis. Et vel nec interdum eget tempus a ullamcorper sapien sed torquent lobortis lacus at vivamus.</p>
-        <h4>Responsabilidades</h4>
-        <p>· Dictum turpis consectetur facilisis curae purus blandit potenti amet a ante a ullamcorper cubilia nisl.
-        </p>
-        <ul>
-          <li>Pharetra parturient fusce suspendisse in eros aliquam consectetur a suspendisse</li>
-          <li>Ultricies aliquam a suspendisse aptent fringilla pretium hac eleifend parturient venenatis.</li>
-          <li>Et vel nec interdum eget tempus a ullamcorper sapien sed torquent lobortis lacus at vivamus.</li>
-        </ul>
-        <h4>Requisitos</h4>
-        <p>· Dictum turpis consectetur facilisis curae purus blandit potenti amet a ante a ullamcorper cubilia nisl.
-        </p>
-        <ul>
-          <li>Pharetra parturient fusce suspendisse in eros aliquam consectetur a suspendisse</li>
-          <li>Ultricies aliquam a suspendisse aptent fringilla pretium hac eleifend parturient venenatis.</li>
-          <li>Et vel nec interdum eget tempus a ullamcorper sapien sed torquent lobortis lacus at vivamus.</li>
-        </ul>
+        <?php echo $vacante['desc_vac']; ?>
         <a href="#postularme" class="btn">POSTULARME</a>
       </div>
     </div>
@@ -61,6 +54,7 @@
               <input type="file" name="file" id="file" class="file">
               <div class="d-flex">
                 <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly" placeholder="Sube tu Solicitud o CV *">
+                <input type="hidden" name="vacante" id="vacante" value="<?php echo $vacante['nom_vac']; ?>">
                 <input type="button" class="btn_file" value="SELECCIONAR">
               </div>
             </div>
@@ -72,32 +66,8 @@
   </div>
   <?php require_once 'includes/_footer.php'; ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/slick/slick.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('.slider_blog_interna').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 2,
-        SlidesToScroll: 1,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      })
 
       $('.btn_file').on('click', function() {
         $('.file').trigger('click');

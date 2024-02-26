@@ -33,31 +33,6 @@ $(document).ready(function () {
       }
     ]
   })
-  $('.services_slider').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 2,
-    SlidesToScroll: 1,
-    slide: "div",
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  })
 
 })
 $(document).on("scroll", () => {

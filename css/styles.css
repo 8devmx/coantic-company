@@ -64,7 +64,7 @@ header {
   top: 0;
   width: 100%;
   padding: 0 15px;
-  z-index: 2;
+  z-index: 9;
   transition: all 0.5s ease;
 }
 
@@ -123,7 +123,7 @@ header .navbar ul ul li {
 
 header .navbar ul ul a {
   line-height: 120%;
-  padding: 10px 15px;
+  padding: 2px 15px;
   color: var(--prefooter-background);
 }
 
@@ -183,6 +183,12 @@ header .btn {
   background: var(--gold-color);
   border-radius: 30px;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.bolsa_postularme .btn:hover,
+header .btn:hover {
+  background: var(--green-color);
 }
 
 .languages a,
@@ -315,6 +321,11 @@ header.dark {
   padding: 11px 16px;
   text-decoration: none;
   width: 140px;
+  transition: all 0.5s ease;
+}
+
+.hero_description .btn:hover {
+  background: var(--gold-color);
 }
 
 footer .prefooter {
@@ -393,6 +404,11 @@ footer .information_footer a .btn {
   font-size: 14px;
   background: var(--gold-color);
   padding: 11px 16px;
+  transition: all 0.5s ease;
+}
+
+footer .information_footer a .btn:hover {
+  background: var(--green-color);
 }
 
 .services {
@@ -437,6 +453,9 @@ footer .information_footer a .btn {
 
 .services .service:hover {
   background: var(--green-900-color);
+}
+
+.services .service:hover h4 {
   color: var(--white-color);
 }
 
@@ -480,6 +499,15 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-weight: 600;
   margin: 28px auto 0;
+  transition: all 0.5s ease;
+}
+
+.btn_file:hover,
+.ubicaciones_action .btn:hover,
+.industries_contact .btn:hover,
+.benefits .btn:hover {
+  background: var(--prefooter-background);
+  color: var(--white-color);
 }
 
 .paila {
@@ -549,6 +577,11 @@ footer .information_footer a .btn {
   background: var(--gold-color);
   border-radius: 30px;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.process .btn:hover {
+  background: var(--green-color);
 }
 
 .process .process_steps {
@@ -615,6 +648,11 @@ footer .information_footer a .btn {
   font-weight: 600;
   border: 1px solid var(--prefooter-background);
   color: var(--prefooter-background);
+}
+
+.company .btn:hover {
+  background: var(--prefooter-background);
+  color: white;
 }
 
 .company .company_image {
@@ -688,6 +726,10 @@ footer .information_footer a .btn {
   font-weight: 600;
 }
 
+.interest .btn:hover {
+  background: var(--green-color);
+}
+
 .sectors {
   padding-top: 102px;
   padding-bottom: 95px;
@@ -738,6 +780,8 @@ footer .information_footer a .btn {
 .other_services .other_service {
   position: relative;
   padding: 10px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
 }
 
 .other_services .other_service h5 {
@@ -749,6 +793,21 @@ footer .information_footer a .btn {
   font-weight: 700;
   text-align: center;
   color: var(--white-color);
+}
+
+.other_service:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.industries_slide {
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.industries_slide:hover {
+  opacity: 1;
+  transform: scale(1.02);
 }
 
 .location {
@@ -822,6 +881,11 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-weight: 600;
   margin-top: 50px;
+  transition: all 0.5s ease;
+}
+
+.location .btn:hover {
+  background: var(--prefooter-background);
 }
 
 .hero_contacto,
@@ -978,6 +1042,11 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-weight: 600;
   border: none;
+  transition: all 0.5s ease;
+}
+
+.form_contacto .btn:hover {
+  background: var(--green-color);
 }
 
 .location_contacto {
@@ -1011,6 +1080,12 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-weight: 600;
   margin-top: -17px;
+  transition: all 0.5s ease;
+}
+
+.location_contacto .btn:hover {
+  background: var(--prefooter-background);
+  color: var(--white-color);
 }
 
 .location_contacto .maps {
@@ -1081,6 +1156,11 @@ footer .information_footer a .btn {
   color: var(--white-color);
   margin: 35px auto;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.aleman_experience .btn:hover {
+  background: var(--prefooter-background);
 }
 
 .benefits_detail {
@@ -1147,6 +1227,11 @@ footer .information_footer a .btn {
   color: var(--white-color);
   margin: 35px auto;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.acero_galvanizado .btn:hover {
+  background: var(--prefooter-background);
 }
 
 .application_materials {
@@ -1184,6 +1269,7 @@ footer .information_footer a .btn {
   padding-top: 65px;
   min-height: 515px;
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .requirements h2 {
@@ -1344,6 +1430,10 @@ footer .information_footer a .btn {
   font-weight: 600;
 }
 
+.gracias .btn:hover {
+  background: var(--green-color);
+}
+
 .gracias .buttons {
   display: flex;
   gap: 15px;
@@ -1352,6 +1442,11 @@ footer .information_footer a .btn {
 .gracias .buttons .btn:last-child {
   background: var(--prefooter-background);
   width: 140px;
+  transition: all 0.5s ease;
+}
+
+.gracias .buttons .btn:last-child:hover {
+  background: var(--green-900-color);
 }
 
 .img_footer {
@@ -1544,6 +1639,13 @@ footer .information_footer a .btn {
   margin: 40px auto;
   font-weight: 600;
   text-align: center;
+}
+
+.sustentabilidad_responsability .btn:hover,
+.sustentabilidad_ubicacion .btn:hover,
+.bolsa_post .btn:hover,
+.bolsa_interna_post .btn:hover {
+  background: var(--prefooter-background);
 }
 
 .sustentabilidad_responsability .logo_infinite {
@@ -1940,6 +2042,7 @@ footer .information_footer a .btn {
   border-radius: 30px;
   font-size: 14px;
   padding: 0 22px;
+  transition: all 0.5s ease-in-out;
 }
 
 .bolsa_postularme .btn {
@@ -1956,6 +2059,7 @@ footer .information_footer a .btn {
   text-align: center;
   font-weight: 600;
   margin: 30px auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .process_intro {
@@ -2005,7 +2109,7 @@ footer .information_footer a .btn {
 }
 
 .process_steps:nth-child(2) {
-  min-height: 430px;
+  min-height: 330px;
 }
 
 .process_steps:nth-child(3) {
@@ -2159,8 +2263,8 @@ footer .information_footer a .btn {
   text-align: right;
 }
 
-.industries_contact p i {
-  margin-left: 20px;
+.industries_contact p span:first-of-type {
+  margin-right: 20px;
 }
 
 .industries_contact .btn {
@@ -3189,7 +3293,7 @@ footer .information_footer a .btn {
     background-color: var(--prefooter-background);
     width: 100%;
     height: calc(100vh - 66px);
-    padding-top: 60px;
+    padding-top: 0px;
     gap: 10vh;
   }
 
@@ -3200,7 +3304,7 @@ footer .information_footer a .btn {
 
   header .navbar ul a {
     font-size: 1.2rem;
-    padding: 10px 0;
+    padding: 0;
   }
 
   header .navbar ul li {
@@ -3224,7 +3328,8 @@ footer .information_footer a .btn {
 
   }
 
-  html {
+  html,
+  body {
     width: 100%;
     overflow-x: hidden;
   }
