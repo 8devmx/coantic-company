@@ -50,7 +50,7 @@
 #upload ul li {
     position: relative;
     overflow: hidden;
-    width: 25%;
+    width: 24%;
     display: inline-flex;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;

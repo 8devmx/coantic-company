@@ -485,9 +485,10 @@ function resetInputs () {
     $("#icono").val('');
     $("#icono2").val('');
     $("#icono3").val('');
-    $(".imagenesResp").html('');
-    $(".imagenesResp2").html('');
-    $(".imagenesResp3").html('');
+    $(".imagenesResp").html('').css({ "z-index": -1 });
+    $(".imagenesResp2").html('').css({ "z-index": -1 });
+    $(".imagenesResp3").html('').css({ "z-index": -1 });
+    $("#respuestafoto1").css({ "z-index": -1 });
     $("#respuestafoto").css({ "z-index": -1 });
     $("#respuestafoto2").css({ "z-index": -1 });
     $("#respuestafoto3").css({ "z-index": -1 });

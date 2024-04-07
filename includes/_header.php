@@ -1,5 +1,7 @@
 <?php
 $dark = (get_filename_page() != "index.php") ? "dark" : "";
+
+require_once '_functions.php';
 ?>
 
 <header class="<?php echo $dark; ?>">
@@ -18,15 +20,19 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
             <li>
               <a href="#">Servicios</a>
               <ul>
-                <li>
-                  <a href="<?php echo base_url; ?>servicios/acero-galvanizado">Galvanizado de Acero</a>
-                </li>
-                <li>
-                  <a href="<?php echo base_url; ?>servicios/importacion-exportacion">Importación / Exportación (Internacional)</a>
-                </li>
-                <li>
-                  <a href="<?php echo base_url; ?>servicios/soluciones-logisticas">Recolección y Transporte en México</a>
-                </li>
+                <?php
+                $servicios = $db->select("servicios", "*", [
+                  "activo_ser" => 1
+                ]);
+                foreach ($servicios as $key => $s) {
+                ?>
+                  <li>
+                    <a href="<?php echo base_url . "servicios/" . $s['url_ser']; ?>"><?php echo  $s['titulo_ser'] ?></a>
+                  </li>
+
+                <?php
+                }
+                ?>
               </ul>
             </li>
             <li>
@@ -35,12 +41,19 @@ $dark = (get_filename_page() != "index.php") ? "dark" : "";
             <li>
               <a href="#">Industrias</a>
               <ul>
-                <li><a href="<?php echo base_url; ?>industrias/automotriz">Automotriz y Transporte</a></li>
-                <li><a href="<?php echo base_url; ?>industrias/construccion">Construcción</a></li>
-                <li><a href="<?php echo base_url; ?>industrias/energias-renovables">Energías Renovables</a></li>
-                <li><a href="<?php echo base_url; ?>industrias/comercio-de-acero">Comercio de Acero</a></li>
-                <li><a href="<?php echo base_url; ?>industrias/herreria">Herrería</a></li>
-                <li><a href="<?php echo base_url; ?>industrias/infraestructura">Infraestructura</a></li>
+                <?php
+                $industrias = $db->select("industrias", "*", [
+                  "activo_ind" => 1
+                ]);
+                foreach ($industrias as $key => $industria) {
+                ?>
+                  <li>
+                    <a href="<?php echo base_url . "industrias/" . $industria['url_ind']; ?>"><?php echo  $industria['titulo_ind'] ?></a>
+                  </li>
+
+                <?php
+                }
+                ?>
               </ul>
             </li>
             <li>

@@ -12,10 +12,10 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
 } else {
     $db = new medoo([
         'database_type' => 'mysql',
-        'database_name' => 'coatinc',
+        'database_name' => 'qxpmaqmy_web',
         'server' => 'localhost',
-        'username' => 'root',
-        'password' => '',
+        'username' => 'qxpmaqmy_web',
+        'password' => 'Web.2024!',
         'charset' => 'utf8'
     ]);
 }

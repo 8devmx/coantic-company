@@ -47,14 +47,14 @@ function guardar()
     $existe = $resValida[0]['existe'];
 
     if ($existe == 0) {
-        $idInsert = $db->insert("vacantes", [
+        $db->insert("vacantes", [
             "url_vac" => $url_vac,
             "nom_vac" => $_POST["nom_vac"],
             "texto1_vac" => $_POST["texto1_vac"],
             "desc_vac" => $_POST["desc_vac"],
             "fechaact_vac" => $fechareg
         ]);
-
+        $idInsert = $db->id();
         if ($idInsert > 0) {
             $resp = $idInsert;
         } else {
@@ -151,9 +151,7 @@ function editar()
             "fechaact_vac" => $fechareg,
         ], ["id_vac" => $_SESSION['idses_vac']]);
 
-        if (!$resp) {
-            // $respuesta = "=>" . mysql_error() . ": " . $sql;
-        } else {
+        if ($resp->rowCount()) {
             $respuesta = 1;
         }
     } else {
@@ -176,7 +174,7 @@ function eliminar()
         "fechaact_vac" => $fechareg
     ], ["id_vac" => $_POST['id_vac']]);
 
-    echo $resp;
+    echo $resp->rowCount();
 }
 
 function duplicar()

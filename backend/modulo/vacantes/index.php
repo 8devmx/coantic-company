@@ -3,7 +3,7 @@ $valTablaSeleccion = 'vacantes';
 $valTerminoSeleccion = 'vac';
 require_once '../../includes/_funciones.php';
 include '../../includes/_header.php';
-page_protect();
+// page_protect();
 $title = "Vacante";
 $description = "";
 

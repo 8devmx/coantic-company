@@ -18,7 +18,7 @@
     <meta name="ICBM" content="21.164057, -86.822498" />
     <meta name="DC.Language" content="es-MX">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="canonical" href="https://www.apex.com/" />
+    <link rel="canonical" href="https://coatincmx.com/" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",

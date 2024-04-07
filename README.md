@@ -1,2 +1,2 @@
-# coantic-company
+# coatinc-company
  

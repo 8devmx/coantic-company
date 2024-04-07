@@ -1,6 +1,6 @@
 <?php
 $industries = [
-  "automotriz" => [
+  "acero-galvanizado-sector-automotriz-y-transporte" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR AUTOMOTRIZ Y TRANSPORTE",
       "subtitle" => "Somos empresa líder internacional",
@@ -62,7 +62,7 @@ $industries = [
       ]
     ]
   ],
-  "construccion" => [
+  "acero-galvanizado-sector-construccion" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO SECTOR CONSTRUCCIÓN",
       "subtitle" => "Somos empresa líder en México",
@@ -143,7 +143,7 @@ $industries = [
       ]
     ]
   ],
-  "energias-renovables" => [
+  "acero-galvanizado-aplicado-a-energias-renovables" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO APLICADO A ENERGÍAS RENOVABLES",
       "subtitle" => "Empresa responsable con el medio ambiente",
@@ -212,7 +212,7 @@ $industries = [
       ]
     ]
   ],
-  "comercio-de-acero" => [
+  "acero-galvanizado-aplicado-a-comercio-de-acero" => [
     "hero" => [
       "title" => "Acero galvanizado APLICADO A COMERCIO DE ACERO",
       "subtitle" => "Mejora la vida útil de los productos",
@@ -273,7 +273,7 @@ $industries = [
       ]
     ]
   ],
-  "herreria" => [
+  "acero-galvanizado-en-herreria" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO EN HERRERÍA",
       "subtitle" => "Tu aliado en mejorar la calidad de tus servicios",
@@ -345,7 +345,7 @@ $industries = [
       ]
     ]
   ],
-  "infraestructura" => [
+  "acero-galvanizado-para-infraestructura" => [
     "hero" => [
       "title" => "ACERO GALVANIZADO PARA INFRAESTRUCTURA",
       "subtitle" => "Tu aliado para la construcción de grandes estructuras",
@@ -415,27 +415,27 @@ $industries = [
 
 
 $all_industries = [
-  "automotriz" => [
+  "acero-galvanizado-sector-automotriz-y-transporte" => [
     "image" => "automotriz.png",
     "title" => "Automotriz"
   ],
-  "construccion" => [
+  "acero-galvanizado-sector-construccion" => [
     "image" => "construccion.png",
     "title" => "Construcción"
   ],
-  "energias-renovables" => [
+  "acero-galvanizado-aplicado-a-energias-renovables" => [
     "image" => "energias-renovables.png",
     "title" => "Energías Renovables"
   ],
-  "comercio-de-acero" => [
+  "acero-galvanizado-aplicado-a-comercio-de-acero" => [
     "image" => "comercio.png",
     "title" => "Comercio de Acero"
   ],
-  "herreria" => [
+  "acero-galvanizado-en-herreria" => [
     "image" => "herreria.png",
     "title" => "Herrería"
   ],
-  "infraestructura" => [
+  "acero-galvanizado-para-infraestructura" => [
     "image" => "infraestructura.png",
     "title" => "Infraestructura"
   ]

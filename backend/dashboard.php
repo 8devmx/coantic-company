@@ -65,6 +65,26 @@ $total2 = $res2[0]['total2'];
                 </div>
             </a>
         </div>
+        <div class="col-sm-4">
+            <a href="<?= base_url ?>modulo/servicios">
+                <div class="modbox">
+                    <div class="mod-img">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                    </div>
+                    <div class="mod-title">Servicios</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <a href="<?= base_url ?>modulo/industrias">
+                <div class="modbox">
+                    <div class="mod-img">
+                        <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="mod-title">Industrias</div>
+                </div>
+            </a>
+        </div>
 
     </div>
 </div>

@@ -47,7 +47,7 @@ function guardar()
     $existe = $resValida[0]['existe'];
 
     if ($existe == 0) {
-        $idInsert = $db->insert("servicios", [
+        $db->insert("servicios", [
             "url_ser" => $url_ser,
             "titulo_ser" => $_POST["titulo"],
             "subtitulo_ser" => $_POST["subtitulo"],
@@ -62,7 +62,7 @@ function guardar()
             "descargas_ser" => $_POST["downloads"],
             "fechaact_ser" => $fechareg,
         ]);
-
+        $idInsert = $db->id();
         if ($idInsert > 0) {
             $resp = $idInsert;
         } else {
@@ -175,10 +175,7 @@ function editar()
             "fechaact_ser" => $fechareg,
         ], ["id_ser" => $_SESSION['idses_ser']]);
 
-        if (!$resp) {
-
-            $respuesta = "=> " . implode(" | ", $db->error());
-        } else {
+        if ($resp->rowCount()) {
             $respuesta = 1;
         }
     } else {

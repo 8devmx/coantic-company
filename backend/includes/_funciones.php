@@ -3,7 +3,7 @@ error_reporting(0);
 
 if (is_session_started() === FALSE) session_start();
 
-require_once 'medoo.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once '_db.php';
 
 define("base_dir", realpath(__DIR__ . '/../') . DIRECTORY_SEPARATOR);
@@ -24,8 +24,8 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
     $url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 } else {
 
-    define("base_url", "https://" . $_SERVER['HTTP_HOST'] . "" . $carpetaProyecto . "backend/");
-    define("basesite_url", "https://" . $_SERVER['HTTP_HOST'] . "" . $carpetaProyecto . "/");
+    define("base_url", "https://" . $_SERVER['HTTP_HOST'] . "" . $carpetaProyecto . "");
+    define("basesite_url", "https://" . $_SERVER['HTTP_HOST'] . "/");
 
     $url_actual = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

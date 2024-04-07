@@ -47,7 +47,7 @@ function guardar()
     $existe = $resValida[0]['existe'];
 
     if ($existe == 0) {
-        $idInsert = $db->insert("blog", [
+        $db->insert("blog", [
             "url_blog" => $url_blog,
             "nom_blog" => $_POST["nom_blog"],
             "texto1_blog" => $_POST["texto1_blog"],
@@ -56,7 +56,7 @@ function guardar()
             "galeria_blog" => $galeria_blog,
             "fechaact_blog" => $fechareg
         ]);
-
+        $idInsert = $db->id();
         if ($idInsert > 0) {
             $resp = $idInsert;
         } else {
@@ -153,9 +153,7 @@ function editar()
             "fechaact_blog" => $fechareg,
         ], ["id_blog" => $_SESSION['idses_blog']]);
 
-        if (!$resp) {
-            // $respuesta = "=>" . mysql_error() . ": " . $sql;
-        } else {
+        if ($resp->rowCount()) {
             $respuesta = 1;
         }
     } else {
@@ -178,7 +176,7 @@ function eliminar()
         "fechaact_blog" => $fechareg
     ], ["id_blog" => $_POST['id_blog']]);
 
-    echo $resp;
+    echo $resp->rowCount();
 }
 
 function duplicar()

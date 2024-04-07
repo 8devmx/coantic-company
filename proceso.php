@@ -2,7 +2,11 @@
 <html lang="es-MX">
 
 <head>
-  <?php require_once 'includes/scripts.php'; ?>
+  <?php
+  require_once 'includes/_functions.php';
+  require_once 'includes/scripts.php';
+  include_once 'includes/servicios.php';
+  ?>
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
@@ -113,15 +117,22 @@
         <div class="col-sm-12">
           <h2>CONOCE NUESTROS SERVICIOS</h2>
         </div>
-        <div class="col-sm-4">
-          <img src="img/acero-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/importacion-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/soluciones-nuestros-servicios.png" alt="" class="img-fluid">
-        </div>
+        <?php
+        $servicios = $db->select("servicios", "*", [
+          "activo_ser" => 1
+        ]);
+        foreach ($servicios as $key => $servicio) {
+          $service = array_key_exists($servicio['url_ser'], $services) ? $services[$servicio['url_ser']] : [];
+        ?>
+
+          <div class="col-sm-4 service_hover">
+            <a href="<?php echo base_url . "servicios/" . $servicio['url_ser']; ?>">
+              <img src="img/<?php echo $service['preview'] ?>" alt="" class="img-fluid">
+            </a>
+          </div>
+        <?php
+        }
+        ?>
       </div>
       <div class="row">
         <div class="col-sm-12 blog_interna_share_this_dark">

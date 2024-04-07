@@ -118,12 +118,13 @@ header .navbar ul ul {
 
 header .navbar ul ul li {
   float: none;
+  border-bottom: 1px dotted var(--prefooter-background);
   width: 100%;
 }
 
 header .navbar ul ul a {
   line-height: 120%;
-  padding: 2px 15px;
+  padding: 10px 5px;
   color: var(--prefooter-background);
 }
 
@@ -136,8 +137,8 @@ header .navbar ul li ul li a {
 }
 
 header .navbar ul li ul li a:hover {
-  font-weight: bold;
-  color: var(--prefooter-background);
+  background: var(--prefooter-background);
+  color: #fff;
 }
 
 header .logo {
@@ -346,7 +347,11 @@ footer .prefooter ul {
   font-size: 14px;
   color: var(--white-color);
   font-weight: 600;
-  line-height: 2.56;
+  line-height: 1.5;
+}
+
+.two-columns {
+  columns: 2;
 }
 
 footer .prefooter .downloads {
@@ -365,7 +370,8 @@ footer .prefooter a {
   text-decoration: none;
   color: var(--white-color);
   font-size: 14px;
-  line-height: 2.5;
+  margin-bottom: 20px;
+  display: block;
 }
 
 footer .postfooter {
@@ -1112,6 +1118,7 @@ footer .information_footer a .btn:hover {
   font-size: 45px;
   font-weight: bold;
   color: var(--white-color);
+  text-transform: uppercase;
 }
 
 .hero_products_detail p {
@@ -2178,6 +2185,7 @@ footer .information_footer a .btn:hover {
 
 .hero_industries h1 {
   font-size: 36px;
+  text-transform: uppercase;
 }
 
 .hero_industries p {
@@ -2755,7 +2763,13 @@ footer .information_footer a .btn:hover {
   padding: 10px;
 }
 
+.service_hover {
+  transition: all 0.5s ease;
+}
 
+.service_hover:hover {
+  transform: scale(1.02);
+}
 
 /* Desktop */
 @media (min-width: 980px) and (max-width: 1299px) {
@@ -3325,6 +3339,7 @@ footer .information_footer a .btn:hover {
   header .navbar ul ul a {
     color: var(--gray-200-color);
     font-size: 0.9rem;
+    padding: 2px 15px;
 
   }
 
@@ -3934,5 +3949,9 @@ footer .information_footer a .btn:hover {
 
   .other_industries p {
     margin-bottom: 50px;
+  }
+
+  .two-columns {
+    columns: 1;
   }
 }

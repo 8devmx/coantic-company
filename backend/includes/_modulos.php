@@ -7,6 +7,8 @@ class Modulos
             'blog' => ['nombre' => 'Blog'],
             'vacantes' => ['nombre' => 'Vacantes'],
             'usuarios' => ['nombre' => 'Usuarios'],
+            'servicios' => ['nombre' => 'Servicios'],
+            'industrias' => ['nombre' => 'Industrias'],
         ]],
         'catalogos' => ['tipo' => 'configuracion', 'nombre' => 'Catálogos', 'submenu' => []]
     ];

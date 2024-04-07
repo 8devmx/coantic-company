@@ -2,7 +2,12 @@
 <html lang="es-MX">
 
 <head>
-  <?php require_once 'includes/scripts.php'; ?>
+  <?php
+  require_once 'includes/_functions.php';
+  require_once 'includes/scripts.php';
+  include_once 'includes/servicios.php';
+  include_once 'includes/industries.php';
+  ?>
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65b08713f771bd0012374668&product=image-share-buttons' async='async'></script>
 </head>
 
@@ -43,44 +48,21 @@
     </div>
     <div class="slider_filosofia">
       <div class="filosofia_slider">
-        <div>
-          <a href="<?php echo base_url; ?>industrias/automotriz">
-            <img src="img/transporte.png" class="img-fluid" alt="Transporte y Automotriz Coatinc Company">
-            <h5>Transporte
-              <br>y Automotriz
-            </h5>
-          </a>
-        </div>
-        <div>
-          <a href="<?php echo base_url; ?>industrias/construccion">
-            <img src="img/construccion.png" class="img-fluid" alt="Construcción Coatinc Company">
-            <h5>Construcción</h5>
-          </a>
-        </div>
-        <div>
-          <a href="<?php echo base_url; ?>industrias/energias-renovables">
-            <img src="img/energias-renovables.png" class="img-fluid" alt="Energías Renovables Coatinc Company">
-            <h5>Energías Renovables</h5>
-          </a>
-        </div>
-        <div>
-          <a href="<?php echo base_url; ?>industrias/comercio de acero">
-            <img src="img/comercio.png" class="img-fluid" alt="Comercio de Acero Coatinc Company">
-            <h5>Comercio de Acero</h5>
-          </a>
-        </div>
-        <div>
-          <a href="<?php echo base_url; ?>industrias/herreria">
-            <img src="img/herreria.png" class="img-fluid" alt="Herrería Coatinc Company">
-            <h5>Herrería</h5>
-          </a>
-        </div>
-        <div>
-          <a href="<?php echo base_url; ?>industrias/infraestructura">
-            <img src="img/infraestructura.png" class="img-fluid" alt="Infraestructura Coatinc Company">
-            <h5>Infraestructura</h5>
-          </a>
-        </div>
+        <?php
+        $industrias = $db->select("industrias", "*", ["activo_ind" => 1]);
+        foreach ($industrias as $key => $industria) {
+          $industry = array_key_exists($industria['url_ind'], $all_industries) ? $all_industries[$industria['url_ind']] : [];
+        ?>
+          <div>
+            <a href="<?php echo base_url . 'industrias/' . $industria['url_ind']; ?>">
+              <img src="img/<?php echo $industry['image'] ?>" class="img-fluid" alt="Transporte y Automotriz Coatinc Company">
+              <h5><?php echo $industry['title'] ?></h5>
+            </a>
+          </div>
+        <?php
+        }
+        ?>
+
       </div>
     </div>
   </div>
@@ -149,12 +131,16 @@
           <h2>CONOCE NUESTROS SERVICIOS</h2>
         </div>
         <?php
-        include 'includes/servicios.php';
-        foreach ($services as $serv => $s) {
+        $servicios = $db->select("servicios", "*", [
+          "activo_ser" => 1
+        ]);
+        foreach ($servicios as $key => $servicio) {
+          $service = array_key_exists($servicio['url_ser'], $services) ? $services[$servicio['url_ser']] : [];
         ?>
-          <div class="col-sm-4">
-            <a href="<?php echo base_url . "servicios/" . $serv; ?>">
-              <img src="img/<?php echo $s['preview']; ?>" alt="" class="img-fluid">
+
+          <div class="col-sm-4 service_hover">
+            <a href="<?php echo base_url . "servicios" . $servicio['url_ser']; ?>">
+              <img src="img/<?php echo $service['preview'] ?>" alt="" class="img-fluid">
             </a>
           </div>
         <?php

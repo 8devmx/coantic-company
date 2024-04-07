@@ -44,7 +44,8 @@ if ($_POST) {
 function guardar($tabla, $insertar_editar)
 {
     global $db;
-    $idInsert = $db->insert($tabla, $insertar_editar);
+    $db->insert($tabla, $insertar_editar);
+    $idInsert = $db->id();
     if ($idInsert > 0) {
         $respuesta = $idInsert;
     } else {
@@ -96,7 +97,7 @@ function editar($tabla, $sufijo, $insertar_editar)
 {
     global $db;
     $idInsert = $db->update($tabla, $insertar_editar, ["id" . $sufijo => $_SESSION['idses' . $sufijo]]);
-    if ($idInsert > 0) {
+    if ($idInsert->rowCount()) {
         $respuesta = $idInsert;
     } else {
         $respuesta = "No se registro, el usuario ya existe o no ha realizado modificaciones";
@@ -109,9 +110,7 @@ function eliminar($tabla, $sufijo)
     global $db;
     $res = $db->update($tabla, ["activo" . $sufijo => 0], ["id" . $sufijo => $_POST['id' . $sufijo]]);
     $respuesta = 0;
-    if (!$res) {
-        $respuesta = "=>" . mysql_error() . ": " . $sql;
-    } else {
+    if ($res->rowCount()) {
         $respuesta = 1;
     }
     echo $respuesta;
