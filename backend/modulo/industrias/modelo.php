@@ -162,7 +162,7 @@ function editar()
             "descargas_ind" => $_POST["downloads"],
             "fechaact_ind" => $fechareg,
             "url_ind" => $url_ser,
-        ], ["id_ind" => $_SESSION['idses_ser']]);
+        ], ["id_ind" => $_SESSION['idses_ind']]);
 
         if ($resp->rowCount()) {
             $respuesta = 1;
