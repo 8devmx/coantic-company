@@ -94,8 +94,15 @@
         <div class="col-lg-5 col-md-5">
           <div class="information_footer">
             <div class="menu_footer">
-              <a href="<?php echo base_url; ?>bolsa-de-trabajo">Bolsa de trabajo</a>
-              <span> | </span>
+              <?php
+              $vacantes_count = $db->count("vacantes", ["activo_vac" => 1]);
+              if ($vacantes_count > 0) {
+              ?>
+                <a href="<?php echo base_url; ?>bolsa-de-trabajo">Bolsa de trabajo</a>
+                <span> | </span>
+              <?php
+              }
+              ?>
               <a href="<?php echo base_url; ?>aviso-de-privacidad">Aviso de Privacidad</a>
             </div>
             <a href="<?php echo base_url; ?>contacto" class="btn">CONTACTO</a>

@@ -71,7 +71,7 @@ function listar()
 {
     global $db;
 
-    $sql = "SELECT * FROM vacantes WHERE activo_vac = 1 ORDER BY nom_vac ASC";
+    $sql = "SELECT * FROM vacantes WHERE activo_vac in (1,2) ORDER BY nom_vac ASC";
     $res = $db->query($sql)->fetchAll();
 
     $datos = array();
@@ -149,6 +149,7 @@ function editar()
             "foto_vac" => $_POST["foto_vac"],
             "galeria_vac" => $galeria_vac,
             "fechaact_vac" => $fechareg,
+            "activo_vac" => 1
         ], ["id_vac" => $_SESSION['idses_vac']]);
 
         if ($resp->rowCount()) {

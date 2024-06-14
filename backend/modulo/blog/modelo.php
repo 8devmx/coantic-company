@@ -73,7 +73,7 @@ function listar()
 {
     global $db;
 
-    $sql = "SELECT * FROM blog WHERE activo_blog = 1 ORDER BY nom_blog ASC";
+    $sql = "SELECT * FROM blog WHERE activo_blog in (1,2) ORDER BY nom_blog ASC";
     $res = $db->query($sql)->fetchAll();
 
     $datos = array();
@@ -151,6 +151,7 @@ function editar()
             "foto_blog" => $_POST["foto_blog"],
             "galeria_blog" => $galeria_blog,
             "fechaact_blog" => $fechareg,
+            "activo_blog" => 1
         ], ["id_blog" => $_SESSION['idses_blog']]);
 
         if ($resp->rowCount()) {

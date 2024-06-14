@@ -65,9 +65,14 @@ require_once '_functions.php';
                 <li><a href="<?php echo base_url; ?>sustentabilidad">Sustentabilidad</a></li>
               </ul>
             </li>
-            <li>
-              <a href="<?php echo base_url; ?>blog">Blog</a>
-            </li>
+            <?php
+            $blog_count = $db->count("blog", ["activo_blog" => 1]);
+            if ($blog_count > 0) {
+            ?>
+              <li>
+                <a href="<?php echo base_url; ?>blog">Blog</a>
+              </li>
+            <?php } ?>
           </ul>
         </nav>
       </div>
